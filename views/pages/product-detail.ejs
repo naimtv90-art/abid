@@ -1,83 +1,137 @@
 <%- include('../layout/header', { 
-  title: product.name.toUpperCase() + ' &#8211; Abid Hearing Care Centre', 
+  title: product.name.toUpperCase() + ' – Abid Hearing Care Centre', 
   currentPath: '/product/' + product.slug,
-  metaDesc: product.plainDescription.substring(0, 160)
+  metaDesc: (product.plainDescription || '').substring(0, 160)
 }) %>
 
-<div class="ct-container" style="padding-top: 36px; padding-bottom: 70px;">
-  
-  <!-- Breadcrumb -->
-  <nav style="font-size: 0.88rem; color: #64748B; margin-bottom: 28px;">
-    <a href="/" style="color: #64748B;">Home</a> / 
-    <a href="/products" style="color: #64748B;">Products</a> / 
-    <span style="color: #06182F; font-weight: 600;"><%= product.name %></span>
-  </nav>
-
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: start; margin-bottom: 60px;">
-    
-    <!-- Product Image Frame -->
-    <div style="background: #F3F7FC; border: 1px solid #E3EAF3; border-radius: 20px; padding: 32px; text-align: center; box-shadow: 0 4px 18px rgba(6, 24, 47, 0.04);">
-      <img src="<%= product.image %>" alt="<%= product.altText || (product.name + ' - Abid Hearing Care Centre Uttara Dhaka Bangladesh') %>" title="<%= product.name %> in Sector-7 Uttara, Dhaka" style="max-height: 380px; width: 100%; object-fit: contain; margin: 0 auto;">
+<section class="section" style="padding-top: 36px; padding-bottom: 70px;">
+  <div class="container">
+    <!-- Breadcrumbs (Micro Style with Abid Blue) -->
+    <div style="font-size: 0.92rem; color: #64748b; margin-bottom: 28px;">
+      <a href="/" style="color: var(--color-primary); font-weight: 500;">Home</a> &nbsp;/&nbsp; 
+      <a href="/products" style="color: var(--color-primary); font-weight: 500;">Products</a> &nbsp;/&nbsp; 
+      <span style="color: #06182f; font-weight: 700; text-transform: capitalize;"><%= product.name %></span>
     </div>
 
-    <!-- Product Info -->
-    <div>
-      <span style="display: inline-block; padding: 4px 12px; background: #E8F1FF; color: #0A6CFF; font-weight: 700; font-size: 0.85rem; border-radius: 99px; text-transform: uppercase; margin-bottom: 12px;">
-        <%= product.brand %> Official Partner
-      </span>
-      <h1 style="font-size: 2.2rem; font-weight: 800; color: #06182F; margin: 0 0 16px 0; line-height: 1.25;">
-        <%= product.name %>
-      </h1>
-
-      <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px 22px; margin-bottom: 24px;">
-        <div style="font-size: 0.85rem; color: #64748B; font-weight: 600; text-transform: uppercase;">Official Warranty & Fitting</div>
-        <div style="font-size: 1.3rem; font-weight: 800; color: #D32F2F; margin: 4px 0;">Available Upon Clinical Consultation</div>
-        <div style="font-size: 0.9rem; color: #475569;">Includes digital computer-assisted calibration & follow-up care</div>
+    <!-- Product Main Grid Layout (2-Column Micro Style) -->
+    <div class="product-detail-layout">
+      <!-- Product Image Column -->
+      <div style="background: #f8fbff; border: 1px solid #dce8f8; border-radius: var(--radius-xl); padding: 36px; display: flex; align-items: center; justify-content: center; position: relative; box-shadow: 0 4px 20px rgba(6, 24, 47, 0.04);">
+        <span class="product-brand-tag" style="top: 20px; left: 20px; font-size: 0.82rem; padding: 5px 14px; background: rgba(0, 119, 255, 0.92); color: #fff; border-radius: var(--radius-pill); font-weight: 700;">
+          <%= product.brand %> Genuine
+        </span>
+        <img src="<%= product.image %>" 
+             alt="<%= product.altText || (product.name + ' – Abid Hearing Care Centre Uttara Dhaka Bangladesh') %>" 
+             style="max-height: 400px; max-width: 100%; width: auto; object-fit: contain; transition: transform 0.3s ease;">
       </div>
 
-      <div style="font-size: 1.02rem; color: #475569; line-height: 1.7; margin-bottom: 30px;">
-        <%= product.plainDescription %>
-      </div>
+      <!-- Product Details & Actions Column -->
+      <div style="display: flex; flex-direction: column;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); background: var(--color-primary-soft); padding: 4px 14px; border-radius: var(--radius-pill); border: 1px solid #d0e4ff;">
+            <%= product.category || 'Hearing Aids' %>
+          </span>
+          <span style="font-size: 0.85rem; font-weight: 700; color: #16a34a; background: #f0fdf4; padding: 4px 12px; border-radius: var(--radius-pill); border: 1px solid #bbf7d0;">
+            ● In Stock &bull; Authorized Fitting Center
+          </span>
+        </div>
 
-      <!-- Action Buttons -->
-      <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 28px;">
-        <a href="tel:01771237740" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 26px; border-radius: 12px; background: #D32F2F; color: #fff; font-weight: 700; font-size: 1rem; text-decoration: none; box-shadow: 0 6px 20px rgba(211,47,47,0.3);">
-          📞 Call 0177 123 77 40
-        </a>
-        <a href="https://wa.me/8801771237740?text=Hello%20Abid%20Hearing%20Care%2C%20I%20am%20interested%20in%20<%= encodeURIComponent(product.name) %>." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 26px; border-radius: 12px; background: #1FA855; color: #fff; font-weight: 700; font-size: 1rem; text-decoration: none; box-shadow: 0 6px 20px rgba(31,168,85,0.28);">
-          💬 Inquire on WhatsApp
-        </a>
-      </div>
+        <h1 style="font-size: clamp(2rem, 3vw, 2.6rem); font-weight: 800; color: #06182f; line-height: 1.25; margin-bottom: 16px; text-transform: capitalize;">
+          <%= product.name %>
+        </h1>
 
-      <div style="border-top: 1px solid #E3EAF3; padding-top: 20px; font-size: 0.9rem; color: #64748B; line-height: 1.8;">
-        <div><strong>Category:</strong> Hearing Aids, Digital Hearing Devices</div>
-        <div><strong>Clinic Location:</strong> Sector-7, Uttara, Dhaka-1230, Bangladesh</div>
-        <div><strong>Helpline:</strong> 0177 123 77 40, 0171 51 90901</div>
+        <p style="font-size: 1.05rem; color: #475569; line-height: 1.7; margin-bottom: 24px;">
+          <%= product.plainDescription || ('Premium ' + product.brand + ' digital hearing solution provided by Abid Hearing Care Centre Bangladesh with certified audiologist testing, fitting, and warranty support. Engineered with cutting-edge audiological acoustics to optimize speech understanding in all environments.') %>
+        </p>
+
+        <!-- Value Add Badges Box (Abid Brand Inclusions) -->
+        <div style="background: #f0f6ff; border: 1px solid #cbe2ff; border-radius: var(--radius-lg); padding: 22px 24px; margin-bottom: 28px;">
+          <h4 style="font-size: 0.98rem; font-weight: 800; color: #0056cc; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+            <span>🛡️</span> AHCC Patient Care Inclusions:
+          </h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.92rem; color: #06182f; margin: 0; padding: 0;">
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <span style="color: #0077ff; font-weight: 800;">✓</span> Free Soundproof Booth Hearing Evaluation &amp; Device Trial
+            </li>
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <span style="color: #0077ff; font-weight: 800;">✓</span> Computerized Target Gain &amp; Real-Ear Measurement (REM) Programming
+            </li>
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <span style="color: #0077ff; font-weight: 800;">✓</span> 5 Years Free Routine 6-Monthly Servicing, Cleaning &amp; Moisture Check
+            </li>
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <span style="color: #0077ff; font-weight: 800;">✓</span> 2 Years Free Audiometric Retesting &amp; Frequency Fine-Tuning
+            </li>
+          </ul>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto; margin-bottom: 24px;">
+          <a href="https://wa.me/8801771237740?text=Hello%20Abid%20Hearing%20Care%20Centre,%20I%20want%20to%20inquire%20about%20<%= encodeURIComponent(product.name) %>" 
+             target="_blank" 
+             class="btn btn-whatsapp btn-lg" 
+             style="flex: 1; min-width: 220px; border-radius: var(--radius-pill);">
+            💬 Inquire on WhatsApp
+          </a>
+          <button class="btn btn-primary btn-lg" 
+                  data-open-appointment="uttara" 
+                  style="flex: 1; min-width: 200px; border-radius: var(--radius-pill); font-weight: 700;">
+            📅 Book Trial &amp; Fitting
+          </button>
+          <a href="tel:01771237740" 
+             class="btn btn-red btn-lg" 
+             style="border-radius: var(--radius-pill); font-weight: 700;">
+            📞 Call 0177 123 77 40
+          </a>
+        </div>
+
+        <!-- Meta information -->
+        <div style="border-top: 1px solid #e3eaf3; padding-top: 18px; font-size: 0.9rem; color: #64748b; line-height: 1.8;">
+          <div><strong>Brand:</strong> <%= product.brand %> Official Partner</div>
+          <div><strong>Category:</strong> <%= product.category || 'Digital Hearing Aids' %></div>
+          <div><strong>Clinic:</strong> Oasis Complex, House-59, Sector-7, Uttara, Dhaka-1230, Bangladesh</div>
+          <div><strong>Helpline:</strong> 0177 123 77 40, 0171 51 90901 (10:00 AM – 8:00 PM)</div>
+        </div>
       </div>
     </div>
+
+    <!-- Related Products (Micro Style Product Cards Grid) -->
+    <% if (relatedProducts && relatedProducts.length > 0) { %>
+      <div style="margin-top: 60px; border-top: 1px solid #e3eaf3; padding-top: 50px;">
+        <div class="section-header" style="text-align: left; margin-bottom: 28px;">
+          <span class="section-badge">Recommended</span>
+          <h3 style="font-size: 1.6rem; font-weight: 800; color: #06182f; margin: 4px 0 0 0;">
+            More from <%= product.brand %>
+          </h3>
+        </div>
+        <div class="products-grid">
+          <% relatedProducts.forEach(rel => { %>
+            <div class="product-card">
+              <div class="product-thumb">
+                <span class="product-brand-tag"><%= rel.brand %></span>
+                <img src="<%= rel.image %>" alt="<%= rel.altText || (rel.name + ' – Abid Hearing Care Centre') %>" loading="lazy">
+              </div>
+              <div class="product-body">
+                <div class="product-type"><%= rel.category || 'Hearing Aid' %></div>
+                <h4 class="product-title">
+                  <a href="/product/<%= rel.slug %>"><%= rel.name %></a>
+                </h4>
+                <div class="product-meta">
+                  <a href="/product/<%= rel.slug %>" class="btn btn-outline btn-sm" style="flex: 1;">
+                    View Details
+                  </a>
+                  <a href="https://wa.me/8801771237740?text=Hello%20Abid%20Hearing%20Care,%20I%20am%20interested%20in%20<%= encodeURIComponent(rel.name) %>" target="_blank" class="btn btn-whatsapp btn-sm" title="Inquire via WhatsApp">
+                    WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          <% }) %>
+        </div>
+      </div>
+    <% } %>
 
   </div>
-
-  <!-- Related Products (WooCommerce style) -->
-  <% if (relatedProducts && relatedProducts.length > 0) { %>
-    <div style="border-top: 1px solid #E3EAF3; padding-top: 48px;">
-      <h2 style="font-size: 1.6rem; font-weight: 800; color: #06182F; margin-bottom: 24px;">Related products</h2>
-      <div class="woocommerce columns-5">
-        <ul class="products columns-5" data-products="type-1">
-          <% relatedProducts.forEach(rel => { %>
-            <li class="product type-product status-publish instock has-post-thumbnail shipping-taxable product-type-simple">
-              <a href="/product/<%= rel.slug %>" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-                <img loading="lazy" decoding="async" width="300" height="300" src="<%= rel.image %>" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="<%= rel.altText || (rel.name + ' - Abid Hearing Care Centre Uttara Dhaka Bangladesh') %>" title="<%= rel.name %> - Uttara Dhaka">
-                <h2 class="woocommerce-loop-product__title"><%= rel.name %></h2>
-              </a>
-              <a href="/product/<%= rel.slug %>" class="button product_type_simple">Read more</a>
-            </li>
-          <% }) %>
-        </ul>
-      </div>
-    </div>
-  <% } %>
-
-</div>
+</section>
 
 <%- include('../layout/footer') %>

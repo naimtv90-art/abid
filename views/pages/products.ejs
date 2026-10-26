@@ -1,24 +1,237 @@
-<%- include('../layout/header', { title: 'Products &#8211; Abid Hearing Care Centre', currentPath: '/products', metaDesc: 'Browse wide range of hearing aids from Phonak, Rexton, Unitron in Bangladesh with international warranty.' }) %>
+<%- include('../layout/header', { 
+  title: 'Digital Hearing Aids & Accessories Catalog – Abid Hearing Care Centre', 
+  currentPath: '/products', 
+  metaDesc: 'Browse genuine digital hearing aids from Phonak, Rexton, Unitron in Bangladesh with international warranty and clinical fitting in Uttara, Dhaka.' 
+}) %>
 
-<div class="ct-container" style="padding-top: 40px; padding-bottom: 60px;">
-  <div style="margin-bottom: 24px;">
-    <h1 style="font-size: 2rem; font-weight: 800; color: #06182F; margin: 0 0 8px 0;">Products</h1>
-    <p style="color: #64748B; font-size: 0.95rem; margin: 0;">Showing all <%= products.length %> results</p>
+<!-- Products Page Hero (Abid Logo Navy to Blue Gradient) -->
+<section class="section" style="background: linear-gradient(135deg, #06182F 0%, #0B2A52 60%, #0077ff 100%); color: #fff; padding: 55px 0;">
+  <div class="container" style="text-align: center;">
+    <span class="hero-badge" style="background: rgba(255,255,255,0.15); color: #fff; padding: 4px 14px; border-radius: var(--radius-pill); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; display: inline-block; margin-bottom: 12px;">Genuine Authorized Products</span>
+    <h1 style="font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 800; margin-bottom: 12px; color: #fff;">
+      Hearing Aid Products &amp; Accessories
+    </h1>
+    <p style="max-width: 680px; margin: 0 auto; color: #d0e4ff; font-size: 1.05rem; line-height: 1.6;">
+      Explore our complete range of digital hearing aids, pediatric care kits, wireless Roger accessories, and certified batteries from Phonak, Rexton, and Unitron.
+    </p>
   </div>
+</section>
 
-  <div class="woocommerce columns-5">
-    <ul class="products columns-5" data-products="type-1">
+<section class="section section-bg-light">
+  <div class="container">
+    <!-- Live Search & Filter Bar (Micro Structure + Abid Brand Colors) -->
+    <div style="background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 24px; margin-bottom: 40px; box-shadow: var(--shadow-sm);">
+      <div class="filter-bar-header">
+        <input 
+          type="text" 
+          id="productSearchInput" 
+          class="form-control" 
+          placeholder="🔍 Search hearing aids by name, brand or model (e.g. Phonak Naida, CIC, Battery, Roger)..."
+          value=""
+          style="padding: 14px 20px; font-size: 1rem;"
+        >
+        <button class="btn btn-primary" onclick="document.getElementById('productSearchInput').focus()">
+          Search
+        </button>
+      </div>
+
+      <!-- Brand Filter Buttons -->
+      <div style="margin-bottom: 14px;">
+        <span style="font-size: 0.85rem; font-weight: 700; color: #64748b; margin-right: 10px; text-transform: uppercase;">Brand:</span>
+        <div style="display: inline-flex; flex-wrap: wrap; gap: 8px;">
+          <button class="filter-btn active" data-filter-brand="All">All</button>
+          <button class="filter-btn" data-filter-brand="Phonak">Phonak</button>
+          <button class="filter-btn" data-filter-brand="Rexton">Rexton</button>
+          <button class="filter-btn" data-filter-brand="Unitron">Unitron</button>
+        </div>
+      </div>
+
+      <!-- Category Filter Buttons -->
+      <div>
+        <span style="font-size: 0.85rem; font-weight: 700; color: #64748b; margin-right: 10px; text-transform: uppercase;">Category:</span>
+        <div style="display: inline-flex; flex-wrap: wrap; gap: 8px;">
+          <button class="filter-btn active" data-filter-type="All">All</button>
+          <button class="filter-btn" data-filter-type="Hearing Aids">Hearing Aids</button>
+          <button class="filter-btn" data-filter-type="Behind-the-Ear (BTE)">Behind-the-Ear (BTE)</button>
+          <button class="filter-btn" data-filter-type="Invisible / CIC">Invisible / CIC</button>
+          <button class="filter-btn" data-filter-type="Batteries">Batteries</button>
+          <button class="filter-btn" data-filter-type="Accessories">Accessories</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products Count Badge -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+      <h3 style="font-size: 1.25rem; font-weight: 800; color: #06182f; margin: 0;">Authorized Product Collection</h3>
+      <span id="productsCount" style="font-size: 0.9rem; font-weight: 600; color: var(--color-primary); background: var(--color-primary-soft); padding: 4px 14px; border-radius: var(--radius-pill); border: 1px solid #d0e4ff;">
+        Showing all <%= products.length %> products
+      </span>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products-grid" id="productsContainer">
       <% products.forEach(prod => { %>
-        <li class="product type-product status-publish instock has-post-thumbnail shipping-taxable product-type-simple">
-          <a href="/product/<%= prod.slug %>" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-            <img loading="lazy" decoding="async" width="300" height="300" src="<%= prod.image %>" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="<%= prod.altText || (prod.name + ' - Abid Hearing Care Centre Uttara Dhaka Bangladesh') %>" title="<%= prod.name %> - Abid Hearing Care Centre Uttara Dhaka">
-            <h2 class="woocommerce-loop-product__title"><%= prod.name %></h2>
-          </a>
-          <a href="/product/<%= prod.slug %>" class="button product_type_simple">Read more</a>
-        </li>
+        <% 
+          let derivedType = 'Hearing Aids';
+          const nameLower = (prod.name || '').toLowerCase();
+          const catLower = (prod.category || '').toLowerCase();
+          if (nameLower.includes('battery') || nameLower.includes('batteries') || catLower.includes('batter')) {
+            derivedType = 'Batteries';
+          } else if (nameLower.includes('mic') || nameLower.includes('remote') || nameLower.includes('clean') || catLower.includes('accessor')) {
+            derivedType = 'Accessories';
+          } else if (nameLower.includes('cic') || nameLower.includes('invisible') || nameLower.includes('virto')) {
+            derivedType = 'Invisible / CIC';
+          } else if (nameLower.includes('bte') || nameLower.includes('naida') || nameLower.includes('arena') || nameLower.includes('max')) {
+            derivedType = 'Behind-the-Ear (BTE)';
+          }
+        %>
+        <div class="product-card" 
+             data-brand="<%= prod.brand %>" 
+             data-type="<%= derivedType %>" 
+             data-title="<%= prod.name %>"
+             data-desc="<%= prod.plainDescription ? prod.plainDescription.substring(0, 160) : '' %>">
+          <div class="product-thumb">
+            <span class="product-brand-tag"><%= prod.brand %></span>
+            <img src="<%= prod.image %>" alt="<%= prod.altText || (prod.name + ' – Abid Hearing Care Centre Uttara Dhaka Bangladesh') %>" loading="lazy">
+          </div>
+          <div class="product-body">
+            <div class="product-type"><%= derivedType %></div>
+            <h3 class="product-title">
+              <a href="/product/<%= prod.slug %>"><%= prod.name %></a>
+            </h3>
+            <p style="font-size: 0.88rem; color: #52627a; margin-bottom: 14px; line-height: 1.5; flex-grow: 1;">
+              Premium <%= prod.brand %> digital audiology solution provided by Abid Hearing Care Centre Uttara, Dhaka with certified clinical fitting, warranty &amp; lifelong fine-tuning.
+            </p>
+            <div class="product-meta">
+              <a href="/product/<%= prod.slug %>" class="btn btn-outline btn-sm" style="flex: 1;">
+                View Details
+              </a>
+              <a href="https://wa.me/8801771237740?text=Hello%20Abid%20Hearing%20Care%20Centre,%20I%20am%20interested%20in%20<%= encodeURIComponent(prod.name) %>" target="_blank" class="btn btn-whatsapp btn-sm" title="Order via WhatsApp">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.44 0-2.85-.38-4.08-1.1l-.29-.17-3.04.8 1.05-2.97-.19-.3a8.188 8.188 0 01-1.25-4.5c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
       <% }) %>
-    </ul>
+    </div>
+
+    <!-- No Products Found Notification -->
+    <div id="noProductsNotice" style="display: none; text-align: center; padding: 60px 20px;">
+      <div style="font-size: 40px; margin-bottom: 12px;">🔎</div>
+      <h3 style="font-size: 1.4rem; color: #06182f; font-weight: 700;">No products matched your criteria</h3>
+      <p style="color: #64748b; margin-top: 6px;">Try adjusting your search keywords or clearing brand/category filters.</p>
+      <button class="btn btn-primary" onclick="resetAllProductFilters()" style="margin-top: 16px;">
+        Reset All Filters
+      </button>
+    </div>
   </div>
-</div>
+</section>
+
+<!-- Call to action (Micro Structure + Abid Colors) -->
+<section class="section" style="background: linear-gradient(135deg, #06182F 0%, #0B2A52 60%, #0077ff 100%); color: #fff; padding: 50px 0;">
+  <div class="container container-narrow" style="text-align: center;">
+    <h3 style="font-size: clamp(1.6rem, 2.8vw, 2.2rem); font-weight: 800; color: #ffffff; margin-bottom: 14px;">
+      Need Help Choosing the Right Device?
+    </h3>
+    <p style="color: #d0e4ff; font-size: 1.05rem; margin-bottom: 24px; line-height: 1.6;">
+      Our certified clinical audiologists at Oasis Complex, Sector-7, Uttara perform soundproof booth evaluations and recommend instruments tailored specifically to your audiogram and lifestyle.
+    </p>
+    <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+      <button class="btn btn-primary btn-lg" data-open-appointment="uttara" style="border-radius: var(--radius-pill); font-weight: 700;">
+        📅 Book Free Hearing Test
+      </button>
+      <a href="tel:01771237740" class="btn btn-red btn-lg" style="border-radius: var(--radius-pill);">
+        📞 Call Helpline 0177 123 77 40
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Product Filtering Script -->
+<script>
+let currentSelectedBrand = 'All';
+let currentSelectedType = 'All';
+let currentSearchText = '';
+
+function applyFilters() {
+  const cards = document.querySelectorAll('.product-card');
+  const countEl = document.getElementById('productsCount');
+  const noNotice = document.getElementById('noProductsNotice');
+  let visibleCount = 0;
+
+  cards.forEach(card => {
+    const cardBrand = card.getAttribute('data-brand') || '';
+    const cardType = card.getAttribute('data-type') || '';
+    const cardTitle = (card.getAttribute('data-title') || '').toLowerCase();
+    const cardDesc = (card.getAttribute('data-desc') || '').toLowerCase();
+
+    const matchesBrand = (currentSelectedBrand === 'All' || cardBrand.toLowerCase() === currentSelectedBrand.toLowerCase());
+    const matchesType = (currentSelectedType === 'All' || cardType.toLowerCase() === currentSelectedType.toLowerCase());
+    const matchesSearch = !currentSearchText || cardTitle.includes(currentSearchText) || cardDesc.includes(currentSearchText) || cardBrand.toLowerCase().includes(currentSearchText);
+
+    if (matchesBrand && matchesType && matchesSearch) {
+      card.style.display = 'flex';
+      visibleCount++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+
+  if (countEl) {
+    countEl.textContent = `Showing ${visibleCount} products`;
+  }
+  if (noNotice) {
+    noNotice.style.display = visibleCount === 0 ? 'block' : 'none';
+  }
+}
+
+function resetAllProductFilters() {
+  currentSelectedBrand = 'All';
+  currentSelectedType = 'All';
+  currentSearchText = '';
+  const searchInput = document.getElementById('productSearchInput');
+  if (searchInput) searchInput.value = '';
+
+  document.querySelectorAll('[data-filter-brand]').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-filter-brand') === 'All');
+  });
+  document.querySelectorAll('[data-filter-type]').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-filter-type') === 'All');
+  });
+  applyFilters();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Brand buttons
+  document.querySelectorAll('[data-filter-brand]').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('[data-filter-brand]').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      currentSelectedBrand = this.getAttribute('data-filter-brand');
+      applyFilters();
+    });
+  });
+
+  // Type buttons
+  document.querySelectorAll('[data-filter-type]').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('[data-filter-type]').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      currentSelectedType = this.getAttribute('data-filter-type');
+      applyFilters();
+    });
+  });
+
+  // Search input
+  const searchInput = document.getElementById('productSearchInput');
+  if (searchInput) {
+    searchInput.addEventListener('input', function(e) {
+      currentSearchText = e.target.value.trim().toLowerCase();
+      applyFilters();
+    });
+  }
+});
+</script>
 
 <%- include('../layout/footer') %>
