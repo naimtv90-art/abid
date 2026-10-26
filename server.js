@@ -14,7 +14,8 @@ import {
   brands, 
   stylesList, 
   blogPosts, 
-  hearingQuizQuestions 
+  hearingQuizQuestions,
+  galleryItems
 } from './data/siteData.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -77,6 +78,7 @@ app.locals.leadership = leadership;
 app.locals.affiliations = affiliations;
 app.locals.blogPosts = blogPosts;
 app.locals.hearingQuizQuestions = hearingQuizQuestions;
+app.locals.galleryItems = galleryItems;
 
 // Ensure appointments storage directory exists
 const appointmentsFile = path.join(__dirname, 'data', 'appointments.json');
@@ -204,6 +206,25 @@ app.get('/services', (req, res) => {
     title: 'Audiology & Hearing Aid Fitting Services Dhaka',
     currentPath: '/services',
     metaDesc: 'Pure tone audiometry, digital hearing aid trial, custom ear mould lab, and hearing aid servicing at Abid Hearing Care Centre in Uttara, Dhaka.'
+  });
+});
+
+// Photo Gallery Route
+app.get('/photo-gallery', (req, res) => {
+  const category = req.query.category || 'All';
+  const categories = ['All', 'Services', 'Clinics', 'Patient Care', 'Hearing Aids'];
+  
+  const filteredItems = category === 'All' 
+    ? galleryItems 
+    : galleryItems.filter(item => item.category.toLowerCase() === category.toLowerCase());
+
+  res.render('pages/photo-gallery', {
+    title: 'Photo Gallery | Abid Hearing Care Centre Uttara Dhaka',
+    currentPath: '/photo-gallery',
+    metaDesc: 'Explore our modern audiology clinic in Uttara, Sector-7 Dhaka, diagnostic hearing evaluation facilities, digital hearing aid fittings, and clinical ear care.',
+    categories,
+    selectedCategory: category,
+    galleryItems: filteredItems
   });
 });
 

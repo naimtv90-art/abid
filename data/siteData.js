@@ -31,30 +31,31 @@ export const clinicInfo = {
 
 export const navItems = [
   { label: 'Home', url: '/' },
-  { label: 'About Us', url: '/about-us' },
   {
     label: 'Hearing Aids',
     url: '/hearing-aid',
     children: [
-      { label: 'Hearing Aid Guide', url: '/hearing-aid' },
-      { label: 'How Hearing Aids Work', url: '/how-do-hearing-aid-work' },
+      { label: 'Hearing Aids Overview', url: '/hearing-aid' },
+      { label: 'Hearing Aids Style', url: '/hearing-aids-style' },
+      { label: 'How do Hearing Aids Work', url: '/how-do-hearing-aid-work' },
       { label: 'Hearing Aids for Children', url: '/hearing-aid-for-children' },
-      { label: 'Hearing Aids Styles', url: '/hearing-aids-style' },
-      { label: 'Brands in Bangladesh', url: '/hearing-aid-brand-in-bangladesh' }
+      { label: 'Hearing Aid Brands in Bangladesh', url: '/hearing-aid-brand-in-bangladesh' }
     ]
   },
   { label: 'Products', url: '/products' },
   { label: 'Services', url: '/services' },
-  { label: 'Hearing Test', url: '/hearing-test', badge: 'Free Quiz' },
+  { label: 'Photo Gallery', url: '/photo-gallery' },
   {
-    label: 'More',
-    url: '#',
+    label: 'Others',
+    url: '/about-us',
     children: [
+      { label: 'About Us', url: '/about-us' },
       { label: 'Management & Team', url: '/management' },
       { label: 'NGO Affiliations', url: '/affiliation' },
-      { label: 'Blog & Articles', url: '/blog' }
+      { label: 'Hearing Test', url: '/hearing-test' }
     ]
   },
+  { label: 'Blog', url: '/blog' },
   { label: 'Contact Us', url: '/contact-us' }
 ];
 
@@ -391,3 +392,91 @@ export const hearingQuizQuestions = [
     ]
   }
 ];
+
+export const galleryItems = [
+  {
+    id: 1,
+    title: 'Diagnostic Audiometric Evaluation & Pure Tone Testing',
+    category: 'Services',
+    caption: 'Computerized pure-tone audiometry and frequency threshold testing in our calibrated sound-treated booth.',
+    image: '/images/abid-diagnostic-audiometry-evaluation-dhaka-bangladesh.jpg'
+  },
+  {
+    id: 2,
+    title: 'Uttara Head Office Clinic & Patient Lounge',
+    category: 'Clinics',
+    caption: 'Oasis Complex, House-59, Sector-7, Uttara, Dhaka — providing modern audiology diagnostics since 2014.',
+    image: '/images/abid-hearing-care-centre-clinic-dhaka-bangladesh.webp'
+  },
+  {
+    id: 3,
+    title: 'Personalized Digital Hearing Aid Fitting',
+    category: 'Patient Care',
+    caption: 'Expert audiology consultation ensuring optimal speech clarity, custom prescription target gain, and comfortable fit.',
+    image: '/images/abid-digital-hearing-aid-fitting-specialist-uttara-dhaka-bangladesh.jpg'
+  },
+  {
+    id: 4,
+    title: 'Acoustic Repair & Diagnostic Servicing Lab',
+    category: 'Services',
+    caption: 'Specialized ultrasonic hearing aid cleaning, moisture extraction, and micro-component calibration.',
+    image: '/images/abid-hearing-aid-repair-and-servicing-lab-dhaka-bangladesh.jpg'
+  },
+  {
+    id: 5,
+    title: 'Clinical Consultation & Testing Suite',
+    category: 'Clinics',
+    caption: 'Private clinical consultation rooms equipped with state-of-the-art audiological assessment systems.',
+    image: '/images/abid-audiology-hearing-test-clinic-uttara-dhaka.jpeg'
+  },
+  {
+    id: 6,
+    title: 'Pediatric Hearing Care & Testing Kit',
+    category: 'Patient Care',
+    caption: 'Specialized pediatric diagnostic accessories, fun child-friendly earmoulds, and gentle infant care.',
+    image: '/images/abid-phonak-pediatric-child-hearing-care-kit-bangladesh.png'
+  },
+  {
+    id: 7,
+    title: 'Phonak Naida Ultra Power BTE Fitting',
+    category: 'Hearing Aids',
+    caption: 'Swiss high-power digital hearing solution engineered for severe-to-profound hearing loss.',
+    image: '/images/abid-phonak-naida-ultra-power-bte-hearing-aid-uttara-dhaka.png'
+  },
+  {
+    id: 8,
+    title: 'Custom Invisible in Canal (CIC) Devices',
+    category: 'Hearing Aids',
+    caption: 'Ultra-compact custom-crafted completely-in-canal discreet hearing aids crafted for individual ear canals.',
+    image: '/images/abid-completely-in-canal-cic-invisible-hearing-aid-bangladesh.jpg'
+  },
+  {
+    id: 9,
+    title: 'One-on-One Audiology Consultation',
+    category: 'Patient Care',
+    caption: 'Comprehensive hearing counselling, lifestyle needs assessment, and patient education.',
+    image: '/images/abid-audiologist-hearing-aid-consultation-uttara-dhaka.jpeg'
+  },
+  {
+    id: 10,
+    title: 'Roger Multi-Directional Wireless Table Mic',
+    category: 'Hearing Aids',
+    caption: 'Advanced wireless microphone system for crystal-clear hearing in business meetings and noisy environments.',
+    image: '/images/abid-phonak-roger-table-mic-ii-wireless-system-bangladesh.jpg'
+  },
+  {
+    id: 11,
+    title: 'Clinical Maintenance & Sanitization Tools',
+    category: 'Services',
+    caption: 'Professional-grade hearing device cleaning equipment, wax loop tools, and disinfection kits.',
+    image: '/images/abid-hearing-aid-cleaning-maintenance-tools-uttara-dhaka.jpg'
+  },
+  {
+    id: 12,
+    title: 'Genuine Zinc-Air Batteries & Accessories',
+    category: 'Hearing Aids',
+    caption: 'Authorized German zinc-air hearing aid batteries (Size 10, 312, 13, 675) and wax protection filters.',
+    image: '/images/abid-rexton-hearing-aid-zinc-air-batteries-range-bangladesh.jpg'
+  }
+];
+

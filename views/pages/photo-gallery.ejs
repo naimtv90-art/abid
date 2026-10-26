@@ -1,0 +1,344 @@
+<%- include('../layout/header') %>
+
+<!-- Page Hero -->
+<section class="section" style="background: linear-gradient(135deg, #06182F 0%, #0B2A52 60%, #0077ff 100%); color: #fff; padding: 60px 0;">
+  <div class="container" style="text-align: center;">
+    <span class="hero-badge" style="background: rgba(255,255,255,0.15); color: #fff; padding: 4px 14px; border-radius: var(--radius-pill); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; display: inline-block; margin-bottom: 12px;">Visual Journey</span>
+    <h1 style="font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 800; margin-bottom: 14px; color: #fff;">
+      Photo Gallery
+    </h1>
+    <p style="max-width: 740px; margin: 0 auto; color: #d0e4ff; font-size: 1.1rem; line-height: 1.6;">
+      Explore our modern audiology clinic in Uttara, Sector-7 Dhaka, diagnostic hearing evaluation facilities, digital hearing aid fittings, and clinical ear care since 2014.
+    </p>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="section section-bg-light">
+  <div class="container">
+
+    <!-- Category Filter Bar -->
+    <div style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 40px;">
+      <% categories.forEach(function(cat) { %>
+        <% const isActive = selectedCategory.toLowerCase() === cat.toLowerCase(); %>
+        <a href="/photo-gallery<%= cat === 'All' ? '' : '?category=' + encodeURIComponent(cat) %>" 
+           class="btn btn-sm <%= isActive ? 'btn-primary' : 'btn-outline' %>"
+           style="border-radius: var(--radius-pill); padding: 8px 20px; font-weight: 600; text-decoration: none; transition: all 0.2s ease;">
+          <%= cat %>
+        </a>
+      <% }); %>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 26px;">
+      <% galleryItems.forEach(function(item) { %>
+        <div class="gallery-card" data-gallery-item data-full-img="<%= item.image %>" data-title="<%= item.title %>" data-caption="<%= item.caption %>">
+          <div class="gallery-img-wrap">
+            <img src="<%= item.image %>" alt="<%= item.title %> – Abid Hearing Care Centre Uttara Dhaka" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍 View Full Image</span>
+            </div>
+            <span class="gallery-cat-badge"><%= item.category %></span>
+          </div>
+          <div class="gallery-content">
+            <h3 class="gallery-title"><%= item.title %></h3>
+            <p class="gallery-desc"><%= item.caption %></p>
+          </div>
+        </div>
+      <% }); %>
+
+      <!-- Placeholder card for upcoming photos -->
+      <div class="gallery-card gallery-placeholder-card">
+        <div class="gallery-placeholder-inner">
+          <div style="font-size: 2.8rem; margin-bottom: 12px;">📷</div>
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: #06182f; margin-bottom: 8px;">More Photos Coming Soon</h3>
+          <p style="font-size: 0.9rem; color: #64748b; line-height: 1.5; margin: 0 auto; max-width: 270px;">
+            We regularly update this gallery with new clinical audiology sessions, patient fittings, and hearing care workshop moments.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="galleryLightbox" class="lightbox-modal" role="dialog" aria-hidden="true">
+  <div class="lightbox-overlay" data-close-lightbox></div>
+  <div class="lightbox-content">
+    <button class="lightbox-close" data-close-lightbox aria-label="Close image">&times;</button>
+    <div class="lightbox-img-box">
+      <img id="lightboxImg" src="" alt="Full view">
+    </div>
+    <div class="lightbox-caption-box">
+      <h3 id="lightboxTitle"></h3>
+      <p id="lightboxDesc"></p>
+    </div>
+  </div>
+</div>
+
+<!-- CTA Banner (Abid Deep Navy & Logo Blue) -->
+<section class="section" style="background: linear-gradient(135deg, #06182F 0%, #0B2A52 60%, #0077ff 100%); color: #fff; padding: 55px 0;">
+  <div class="container" style="text-align: center;">
+    <h2 style="font-size: clamp(1.6rem, 2.8vw, 2.2rem); font-weight: 800; color: #fff; margin-bottom: 12px;">
+      Experience Our Uttara Clinic in Person
+    </h2>
+    <p style="color: #d0e4ff; max-width: 650px; margin: 0 auto 26px; font-size: 1.05rem; line-height: 1.6;">
+      Visit Abid Hearing Care Centre at Oasis Complex, Sector-7, Uttara, Dhaka for a comprehensive audiometric hearing evaluation and free digital hearing device trial.
+    </p>
+    <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+      <button class="btn btn-primary btn-lg" data-open-appointment="uttara" style="border-radius: var(--radius-pill); font-weight: 700;">
+        📅 Book Consultation
+      </button>
+      <a href="https://wa.me/8801771237740?text=Hello%20Abid%20Hearing%20Care%20Centre,%20I%20saw%20your%20photo%20gallery%20and%20would%20like%20to%20consult%20an%20audiologist" target="_blank" class="btn btn-whatsapp btn-lg" style="border-radius: var(--radius-pill);">
+        💬 WhatsApp Chat
+      </a>
+      <a href="tel:01771237740" class="btn btn-red btn-lg" style="border-radius: var(--radius-pill);">
+        📞 Helpline 0177 123 77 40
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Specific Styles & Interactive Script -->
+<style>
+.gallery-card {
+  background: #ffffff;
+  border: 1px solid #dce8f8;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(6, 24, 47, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.gallery-card:not(.gallery-placeholder-card):hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 119, 255, 0.16);
+  border-color: #0077ff;
+}
+.gallery-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  background: #f8fafc;
+  overflow: hidden;
+}
+.gallery-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 14px;
+  background: #f8fafc;
+  transition: transform 0.35s ease;
+}
+.gallery-card:hover .gallery-img-wrap img {
+  transform: scale(1.06);
+}
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 24, 47, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+.gallery-zoom-icon {
+  background: #ffffff;
+  color: #0077ff;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+.gallery-cat-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(6, 24, 47, 0.82);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.gallery-content {
+  padding: 20px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.gallery-title {
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: #06182f;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.gallery-desc {
+  font-size: 0.92rem;
+  color: #52627a;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Placeholder card */
+.gallery-placeholder-card {
+  background: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  cursor: default;
+}
+.gallery-placeholder-inner {
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Lightbox Modal */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2500;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.lightbox-modal.active {
+  display: flex !important;
+}
+.lightbox-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 24, 47, 0.88);
+  backdrop-filter: blur(6px);
+}
+.lightbox-content {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+  animation: lightboxPop 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes lightboxPop {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+.lightbox-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  background: rgba(6, 24, 47, 0.8);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.lightbox-close:hover {
+  background: #e9102c;
+  transform: scale(1.1);
+}
+.lightbox-img-box {
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 520px;
+  overflow: hidden;
+}
+.lightbox-img-box img {
+  max-width: 100%;
+  max-height: 520px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+.lightbox-caption-box {
+  padding: 22px 28px 24px;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+}
+.lightbox-caption-box h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #06182f;
+  margin-bottom: 6px;
+}
+.lightbox-caption-box p {
+  font-size: 0.95rem;
+  color: #52627a;
+  line-height: 1.5;
+  margin: 0;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const lightbox = document.getElementById('galleryLightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxTitle = document.getElementById('lightboxTitle');
+  const lightboxDesc = document.getElementById('lightboxDesc');
+  const closeBtns = document.querySelectorAll('[data-close-lightbox]');
+
+  document.querySelectorAll('[data-gallery-item]').forEach(function(card) {
+    card.addEventListener('click', function() {
+      const fullImg = this.getAttribute('data-full-img');
+      const title = this.getAttribute('data-title');
+      const caption = this.getAttribute('data-caption');
+
+      if (fullImg) {
+        lightboxImg.src = fullImg;
+        lightboxImg.alt = title || 'Abid Hearing Care Photo';
+        lightboxTitle.textContent = title || '';
+        lightboxDesc.textContent = caption || '';
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  closeBtns.forEach(function(btn) {
+    btn.addEventListener('click', closeLightbox);
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+      closeLightbox();
+    }
+  });
+});
+</script>
+
+<%- include('../layout/footer') %>
