@@ -1,19 +1,53 @@
-<%- include('../layout/header', { title: '404 - Page Not Found | Abid Hearing Care Dhaka', currentPath: '/404', metaDesc: 'The page you are looking for cannot be found.' }) %>
+<%- include('../layout/header', { 
+  title: '404 - Page Not Found | Abid Hearing Care Dhaka', 
+  currentPath: '/404', 
+  metaDesc: 'The page you are looking for cannot be found. Browse our digital hearing aid catalog or contact Abid Hearing Care Centre in Uttara, Dhaka.' 
+}) %>
 
-<div style="padding: 100px 0; text-align: center; background: #f8fafc;">
-  <div class="container" style="max-width: 600px;">
-    <div style="font-size: 4rem; margin-bottom: 16px;">🦻</div>
-    <h1 style="font-size: 3.5rem; color: var(--primary-900); margin: 0 0 12px 0; font-weight: 800;">404</h1>
-    <h2 style="font-size: 1.5rem; color: var(--gray-700); margin: 0 0 16px 0;">Page Not Found</h2>
-    <p style="color: var(--gray-500); font-size: 1.05rem; line-height: 1.6; margin-bottom: 30px;">
-      The page you requested may have been moved or does not exist. Browse our hearing aid catalog or return home.
+<!-- Hero Banner (Micro Style) -->
+<div style="background: linear-gradient(135deg, #06182F 0%, #004b99 50%, #0077ff 100%); color: #ffffff; padding: 60px 0 65px; position: relative; overflow: hidden; text-align: center;">
+  <div style="position: absolute; right: -80px; top: -80px; width: 340px; height: 340px; border-radius: 50%; background: radial-gradient(circle, rgba(0, 119, 255, 0.35) 0%, rgba(233, 16, 44, 0.12) 60%, transparent 80%); pointer-events: none;"></div>
+  <div class="ct-container" style="position: relative; z-index: 1;">
+    <span class="hero-badge" style="background: rgba(233, 16, 44, 0.3); border: 1px solid rgba(233, 16, 44, 0.5);">⚠️ ERROR 404</span>
+    <h1 style="color: #ffffff; font-size: 3.5rem; font-weight: 900; margin: 12px 0 10px; line-height: 1.1; letter-spacing: -0.03em;">
+      Page Not Found
+    </h1>
+    <p style="color: #d0e4ff; max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 1.6;">
+      The page you were trying to access may have moved, been renamed, or is temporarily unavailable.
     </p>
-    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-      <a href="/" class="btn btn-primary">Go to Homepage</a>
-      <a href="/products" class="btn btn-outline">Browse Hearing Aids</a>
-      <a href="/contact-us" class="btn btn-whatsapp">Contact Us on WhatsApp</a>
-    </div>
   </div>
+</div>
+
+<!-- Main Content -->
+<div class="ct-container" style="padding: 60px 20px 90px; max-width: 760px; text-align: center;">
+  
+  <div style="background: #ffffff; border: 1.5px solid #dce8f8; border-radius: 24px; padding: 48px 36px; box-shadow: 0 14px 40px rgba(6, 24, 47, 0.08);">
+    
+    <div style="font-size: 4rem; margin-bottom: 16px;">🦻</div>
+
+    <h2 style="color: #06182f; font-size: 1.6rem; font-weight: 800; margin: 0 0 12px;">
+      Looking for Hearing Care in Dhaka?
+    </h2>
+
+    <p style="color: #52627a; font-size: 1rem; line-height: 1.65; max-width: 520px; margin: 0 auto 30px;">
+      Explore our complete catalog of Swiss and German digital hearing instruments, read audiology guides, or connect directly with our clinic team.
+    </p>
+
+    <!-- Helpful Action Buttons -->
+    <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+      <a href="/" class="btn" style="background: #0077ff; color: #ffffff; padding: 13px 26px; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 8px 20px rgba(0, 119, 255, 0.35);">
+        Return to Home
+      </a>
+      <a href="/products" class="btn" style="background: #f0f6ff; color: #0077ff; border: 1.5px solid #cbe2ff; padding: 13px 24px; border-radius: 50px; font-weight: 700; text-decoration: none;">
+        Browse Products
+      </a>
+      <a href="https://wa.me/8801771237740?text=Hello%20Abid%20Hearing%20Care,%20I%20need%20assistance" target="_blank" rel="noopener noreferrer" class="btn" style="background: #25d366; color: #ffffff; padding: 13px 24px; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);">
+        💬 WhatsApp Us
+      </a>
+    </div>
+
+  </div>
+
 </div>
 
 <%- include('../layout/footer') %>

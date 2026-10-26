@@ -1,28 +1,133 @@
-<%- include('../layout/header', { title: 'Hearing Aids Style &#8211; Abid Hearing Care Centre', currentPath: '/hearing-aids-style', metaDesc: 'Hearing aids come in several physical styles depending on your hearing loss severity, cosmetic preference, and ear canal anatomy.' }) %>
+<%- include('../layout/header', { 
+  title: 'Hearing Aid Styles & Form Factors (BTE, RIC, ITE, CIC) | Abid Hearing Care', 
+  currentPath: '/hearing-aids-style', 
+  metaDesc: 'Explore modern digital hearing aid styles: Behind-The-Ear (BTE), Receiver-In-Canal (RIC), In-The-Ear (ITE), and Completely-In-Canal (CIC). Expert fitting at Uttara, Dhaka.' 
+}) %>
 
-<div class="ct-container" style="padding: 40px 24px 70px;">
-  <div style="font-family: inherit; color: #1e293b; line-height: 1.7; max-width: 960px; margin: 0 auto;">
-    <h1 style="color: #0D529C; font-size: 26px; font-weight: 800; margin-bottom: 16px;">Styles and Form Factors of Hearing Instruments</h1>
-    <p style="font-size: 16px; color: #475569;">
-      Hearing aids come in several physical styles depending on your hearing loss severity, cosmetic preference, ear canal anatomy, and manual dexterity.
+<!-- Hero Banner (Micro Style) -->
+<div style="background: linear-gradient(135deg, #06182F 0%, #004b99 50%, #0077ff 100%); color: #ffffff; padding: 52px 0 56px; position: relative; overflow: hidden;">
+  <div style="position: absolute; right: -80px; top: -80px; width: 340px; height: 340px; border-radius: 50%; background: radial-gradient(circle, rgba(0, 119, 255, 0.35) 0%, rgba(233, 16, 44, 0.12) 60%, transparent 80%); pointer-events: none;"></div>
+  <div class="ct-container" style="position: relative; z-index: 1;">
+    <span class="hero-badge">✨ HEARING INSTRUMENT FORM FACTORS</span>
+    <h1 style="color: #ffffff; font-size: 2.35rem; font-weight: 800; margin: 10px 0 12px; line-height: 1.25; letter-spacing: -0.02em;">
+      Styles &amp; Form Factors of Modern Hearing Aids
+    </h1>
+    <p style="color: #d0e4ff; max-width: 760px; font-size: 1.05rem; line-height: 1.6; margin-bottom: 0;">
+      From discreet invisible-in-canal designs to ultra-powerful behind-the-ear instruments, find the ideal physical form factor matched precisely to your hearing loss degree, lifestyle, and cosmetic preference.
     </p>
+  </div>
+</div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 32px;">
-      <% stylesList.forEach(s => { %>
-        <div style="border: 1px solid #e2e8f0; padding: 24px; border-radius: 16px; background: #ffffff; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 4px 16px rgba(6, 24, 47, 0.04);">
-          <div style="height: 150px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
-            <img src="<%= s.image %>" alt="<%= s.title %> Hearing Aid - Abid Hearing Care Centre Uttara Dhaka Bangladesh" title="<%= s.title %> Uttara Dhaka" loading="lazy" decoding="async" style="max-height: 140px; max-width: 100%; object-fit: contain;">
+<!-- Main Content -->
+<div class="ct-container" style="padding: 50px 20px 80px;">
+  
+  <!-- Section Intro -->
+  <div style="text-align: center; margin-bottom: 40px;">
+    <span class="section-badge">CUSTOM AUDIOLOGICAL SELECTION</span>
+    <h2 style="font-size: 2rem; font-weight: 800; color: #06182f; margin: 8px 0 12px;">
+      Compare 4 Primary Hearing Aid Designs
+    </h2>
+    <p style="color: #52627a; font-size: 1.02rem; max-width: 680px; margin: 0 auto; line-height: 1.6;">
+      At Abid Hearing Care Centre, our certified audiologists guide you through physical ear anatomy measurements and trial fits to recommend the most comfortable and effective model.
+    </p>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="grid-4-col" style="gap: 24px; margin-bottom: 48px;">
+    <% stylesList.forEach(s => { %>
+      <div class="responsive-card-box" style="display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+        
+        <div>
+          <!-- Code Pill -->
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <span style="background: #eef6ff; color: #0077ff; font-weight: 800; font-size: 0.8rem; padding: 4px 12px; border-radius: 50px; border: 1px solid #cbe2ff;">
+              <%= s.code %>
+            </span>
+            <span style="font-size: 0.78rem; color: #64748b; font-weight: 600;">Authorized Swiss/German</span>
           </div>
-          <span style="display: inline-block; padding: 3px 10px; background: #E8F1FF; color: #0A6CFF; font-weight: 700; font-size: 0.75rem; border-radius: 99px; text-transform: uppercase; margin-bottom: 8px;">
-            <%= s.code %>
-          </span>
-          <h3 style="color: #0D529C; margin: 0 0 8px; font-size: 19px; font-weight: 800;"><%= s.title %></h3>
-          <div style="font-size: 0.82rem; color: #64748B; font-weight: 600; margin-bottom: 12px;"><%= s.bestFor %></div>
-          <p style="font-size: 14px; color: #475569; line-height: 1.6; margin: 0;"><%= s.desc %></p>
+
+          <!-- Product Image Frame -->
+          <div style="height: 160px; background: #f8fbff; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; padding: 12px; border: 1px solid #e2edfa;">
+            <img src="<%= s.image %>" alt="<%= s.title %> Hearing Aid - Abid Hearing Care Centre Uttara Dhaka Bangladesh" title="<%= s.title %> Uttara Dhaka" loading="lazy" decoding="async" style="max-height: 135px; max-width: 100%; object-fit: contain; filter: drop-shadow(0 6px 12px rgba(6, 24, 47, 0.08));">
+          </div>
+
+          <!-- Title & Best For -->
+          <h3 style="color: #06182f; font-size: 1.22rem; font-weight: 800; margin: 0 0 6px; line-height: 1.35;">
+            <%= s.title %>
+          </h3>
+          <div style="color: #e9102c; font-weight: 700; font-size: 0.82rem; margin-bottom: 12px; line-height: 1.4;">
+            🎯 <%= s.bestFor %>
+          </div>
+
+          <!-- Description -->
+          <p style="color: #52627a; font-size: 0.92rem; line-height: 1.6; margin: 0 0 16px;">
+            <%= s.desc %>
+          </p>
         </div>
-      <% }) %>
+
+        <!-- Action / Button -->
+        <div style="margin-top: 14px; pt: 14px; border-top: 1px solid #f0f4f9;">
+          <a href="/products" style="display: flex; align-items: center; justify-content: center; gap: 6px; width: 100%; padding: 10px 14px; background: #f0f6ff; color: #0077ff; border-radius: 10px; font-weight: 700; font-size: 0.88rem; text-decoration: none; transition: all 0.2s ease;">
+            Explore <%= s.code %> Models &rarr;
+          </a>
+        </div>
+
+      </div>
+    <% }) %>
+  </div>
+
+  <!-- Comparison & Selection Factors (Micro Value Box) -->
+  <div style="background: #ffffff; border: 1px solid #dce8f8; border-radius: 20px; padding: 36px 30px; margin-bottom: 40px; box-shadow: 0 10px 28px rgba(6, 24, 47, 0.04);">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+      <div style="width: 36px; height: 36px; border-radius: 10px; background: #eef6ff; color: #0077ff; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: 800;">
+        💡
+      </div>
+      <h3 style="font-size: 1.45rem; font-weight: 800; color: #06182f; margin: 0;">
+        How Our Audiologists Choose the Right Style for You
+      </h3>
+    </div>
+    
+    <div class="grid-3-col" style="gap: 20px; margin-top: 20px;">
+      <div style="background: #f8fbff; border: 1px solid #e2edfa; border-radius: 14px; padding: 20px;">
+        <div style="font-weight: 800; color: #0077ff; font-size: 0.98rem; margin-bottom: 8px;">1. Hearing Loss Severity</div>
+        <p style="color: #52627a; font-size: 0.88rem; line-height: 1.6; margin: 0;">
+          Severe to profound hearing losses generally require robust BTE instruments with maximum acoustic gain, while mild-to-moderate high-frequency deficits thrive with open-fit RICs.
+        </p>
+      </div>
+      <div style="background: #f8fbff; border: 1px solid #e2edfa; border-radius: 14px; padding: 20px;">
+        <div style="font-weight: 800; color: #0077ff; font-size: 0.98rem; margin-bottom: 8px;">2. Ear Canal Anatomy</div>
+        <p style="color: #52627a; font-size: 0.88rem; line-height: 1.6; margin: 0;">
+          Narrow, tortuous, or moisture-prone ear canals benefit from ventilated silicone domes or custom 3D-moulded concha shells crafted in our AHCC lab.
+        </p>
+      </div>
+      <div style="background: #f8fbff; border: 1px solid #e2edfa; border-radius: 14px; padding: 20px;">
+        <div style="font-weight: 800; color: #0077ff; font-size: 0.98rem; margin-bottom: 8px;">3. Cosmetic &amp; Dexterity Needs</div>
+        <p style="color: #52627a; font-size: 0.88rem; line-height: 1.6; margin: 0;">
+          If discretion is your top priority, CIC/IIC sits invisible inside the canal. For seniors needing easy handling and rechargeable docks, RIC or BTE is optimal.
+        </p>
+      </div>
     </div>
   </div>
+
+  <!-- Bottom CTA Banner -->
+  <div style="background: linear-gradient(135deg, #06182F 0%, #082d5b 100%); border-radius: 24px; padding: 42px 32px; text-align: center; color: #ffffff; box-shadow: 0 18px 45px rgba(6, 24, 47, 0.18);">
+    <span class="hero-badge" style="background: rgba(255,255,255,0.12); margin-bottom: 12px;">IN-CLINIC PHYSICAL DEMONSTRATION</span>
+    <h3 style="color: #ffffff; font-size: 1.85rem; font-weight: 800; margin: 10px 0 10px;">
+      Try Different Hearing Aid Styles On Your Own Ear
+    </h3>
+    <p style="color: #d0e4ff; max-width: 650px; margin: 0 auto 24px; font-size: 1rem; line-height: 1.6;">
+      Visit Abid Hearing Care Centre in Oasis Complex, Sector-7, Uttara, Dhaka for a physical trial and experience how each style looks and feels.
+    </p>
+    <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+      <a href="/contact-us" class="btn" style="background: #0077ff; color: #ffffff; padding: 13px 26px; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 8px 20px rgba(0, 119, 255, 0.35);">
+        Book Hearing Aid Trial
+      </a>
+      <a href="tel:01771237740" class="btn" style="background: #e9102c; color: #ffffff; padding: 13px 26px; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 8px 20px rgba(233, 16, 44, 0.35);">
+        📞 Call 0177 123 77 40
+      </a>
+    </div>
+  </div>
+
 </div>
 
 <%- include('../layout/footer') %>

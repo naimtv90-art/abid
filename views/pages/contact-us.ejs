@@ -1,74 +1,158 @@
-<%- include('../layout/header', { title: 'Contact Us &#8211; Abid Hearing Care Centre', currentPath: '/contact-us', metaDesc: 'Hearing means quality of life. Make better living. Find, call or write to our clinic in Uttara, Dhaka.' }) %>
+<%- include('../layout/header', { 
+  title: 'Contact Us &bull; Book an Appointment Today – Abid Hearing Care Centre', 
+  currentPath: '/contact-us', 
+  metaDesc: 'Contact Abid Hearing Care Centre in Sector-7, Uttara, Dhaka. Call 0177 123 77 40 or book a consultation online for hearing tests and digital hearing aids.' 
+}) %>
 
-<div id="ahcc-root" style="font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#0F1B2D;line-height:1.65;width:100vw;max-width:100vw;position:relative;left:50%;transform:translateX(-50%);margin:0;overflow:hidden;background:#fff;box-sizing:border-box;">
-  
-  <section style="background:#fff;padding:clamp(40px,6vw,72px) 0 clamp(28px,4vw,48px);margin:0;">
-    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;">
-      <div style="max-width:680px;margin-bottom:clamp(28px,5vw,44px);">
-        <span style="display:inline-block;padding:7px 14px;border-radius:99px;background:#E8F1FF;color:#0A6CFF;font-weight:700;font-size:.85rem;margin-bottom:16px;">Contact us</span>
-        <h1 style="margin:0;font-size:clamp(1.75rem,4.2vw,2.7rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;color:#06182F;">Abid Hearing Care Centre</h1>
-        <p style="margin:14px 0 0;font-size:clamp(1rem,1.6vw,1.1rem);line-height:1.7;color:#52627A;max-width:60ch;">Hearing means quality of life. Make better living. Find, call or write to our clinic in Uttara, Dhaka.</p>
-      </div>
+<!-- Page Hero (Abid Navy to Blue Gradient) -->
+<section class="section" style="background: linear-gradient(135deg, #06182F 0%, #0B2A52 60%, #0077ff 100%); color: #fff; padding: 60px 0;">
+  <div class="container" style="text-align: center;">
+    <span class="hero-badge">Get in Touch</span>
+    <h1 style="font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 800; margin-bottom: 14px; color: #fff;">
+      Contact Us &bull; Book an Appointment Today
+    </h1>
+    <p style="max-width: 740px; margin: 0 auto; color: #d0e4ff; font-size: 1.15rem; line-height: 1.6;">
+      For appointments, diagnostic hearing evaluations, or device inquiries, please call or email us today. As a leading hearing centre in Dhaka since 2014, we are committed to improving hearing health with care, trust and professionalism.
+    </p>
+    <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 26px;">
+      <a href="tel:01771237740" class="btn btn-red btn-lg" style="border-radius: var(--radius-pill); font-weight: 700;">
+        📞 Call 0177 123 77 40
+      </a>
+      <a href="https://wa.me/8801771237740?text=Hello%20Abid%20Hearing%20Care%20Centre,%20I%20would%20like%20to%20inquire%20about%20hearing%20tests%20and%20hearing%20aids" target="_blank" class="btn btn-whatsapp btn-lg" style="border-radius: var(--radius-pill);">
+        💬 WhatsApp Chat
+      </a>
+    </div>
+  </div>
+</section>
 
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:18px;align-items:stretch;">
-        <div style="background:#F3F7FC;border:1px solid #E3EAF3;border-radius:20px;padding:26px;min-width:0;">
-          <div style="width:50px;height:50px;border-radius:14px;background:#E8F1FF;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px;">📍</div>
-          <h2 style="margin:0 0 8px;font-size:1.15rem;font-weight:800;color:#06182F;">Clinic address</h2>
-          <p style="margin:0;color:#52627A;font-size:.95rem;line-height:1.6;">Oasis Complex, House-59, Sonargaon Janapath Road (1st Floor), Sector-7, Uttara, Dhaka-1230, Bangladesh.</p>
+<!-- Contact Form and Clinics Section (Micro Layout) -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      
+      <!-- Interactive Booking Form -->
+      <div class="responsive-card-box">
+        <div style="margin-bottom: 24px;">
+          <span class="section-badge">Fast Online Reservation</span>
+          <h2 style="font-size: 1.8rem; font-weight: 800; color: #06182f; margin-top: 6px;">Book a Consultation</h2>
+          <p style="color: #64748b; font-size: 0.95rem; line-height: 1.6;">Fill in your details below and our clinical team will call to confirm your appointment time.</p>
         </div>
 
-        <div style="background:#F3F7FC;border:1px solid #E3EAF3;border-radius:20px;padding:26px;min-width:0;">
-          <div style="width:50px;height:50px;border-radius:14px;background:#E8F1FF;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px;">📞</div>
-          <h2 style="margin:0 0 8px;font-size:1.15rem;font-weight:800;color:#06182F;">Phone helplines</h2>
-          <p style="margin:0;font-size:.95rem;line-height:1.8;">
-            <a href="tel:01771237740" style="color:#D32F2F;font-weight:800;text-decoration:none;display:block;">0177 123 77 40</a>
-            <a href="tel:01715190901" style="color:#06182F;font-weight:600;text-decoration:none;display:block;">0171 51 90901</a>
-            <span style="color:#52627A;font-size:.88rem;display:block;">Landline: +8802-48961612</span>
+        <form data-booking-form>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" name="name" required class="form-control" placeholder="e.g. Mohammad Rahman">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" name="phone" required class="form-control" placeholder="017XXXXXXXX">
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label">Clinic Location *</label>
+              <select name="branch" class="form-control">
+                <option value="uttara">Uttara Head Office (Sector-7)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Date / Time</label>
+              <input type="text" name="preferredDate" class="form-control" placeholder="e.g. Tomorrow 11:00 AM (10:00 AM – 8:00 PM)">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Patient Age Group</label>
+            <select name="ageGroup" class="form-control">
+              <option value="adult">Adult (18 – 59 years)</option>
+              <option value="senior">Senior (60+ years)</option>
+              <option value="child">Child / Pediatric (Under 18 years)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Your Questions or Requirements</label>
+            <textarea name="message" rows="3" class="form-control" placeholder="Please mention if you need a new hearing test, hearing aid trial, or servicing of an existing device..." style="border-radius: 14px;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; border-radius: var(--radius-pill); font-weight: 700;">
+            Confirm Appointment Request
+          </button>
+        </form>
+      </div>
+
+      <!-- Quick Contact Info Cards -->
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <div class="clinic-info-box">
+          <h3 style="font-size: 1.35rem; font-weight: 800; color: #06182f; margin-bottom: 14px;">Clinic Hours</h3>
+          <p style="color: #06182f; font-size: 1rem; line-height: 1.6; margin-bottom: 6px;">
+            <strong>Regular Working Hours:</strong><br>
+            <span style="color: var(--color-primary); font-weight: 800; font-size: 1.25rem;">10:00 AM – 8:00 PM</span>
           </p>
-        </div>
-
-        <div style="background:#F3F7FC;border:1px solid #E3EAF3;border-radius:20px;padding:26px;min-width:0;">
-          <div style="width:50px;height:50px;border-radius:14px;background:#E8F1FF;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px;">✉️</div>
-          <h2 style="margin:0 0 8px;font-size:1.15rem;font-weight:800;color:#06182F;">Email</h2>
-          <p style="margin:0;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere;">
-            <a href="mailto:abidhearing@gmail.com" style="color:#0A6CFF;font-weight:600;text-decoration:none;display:block;">abidhearing@gmail.com</a>
-            <a href="mailto:info@abidhearing.com" style="color:#0A6CFF;font-weight:600;text-decoration:none;display:block;">info@abidhearing.com</a>
+          <p style="color: #52627a; font-size: 0.95rem; line-height: 1.6; margin-bottom: 10px;">
+            Saturday – Thursday (Friday by appointment only)
           </p>
+          <p style="color: #0056cc; font-size: 0.9rem; font-weight: 600; margin-bottom: 18px;">
+            ✓ Soundproof booth diagnostics available 6 days a week.
+          </p>
+          <div style="border-top: 1px solid #e3eaf3; padding-top: 16px;">
+            <strong style="color: #06182f; display: block; margin-bottom: 4px;">Direct Email:</strong>
+            <a href="mailto:info@abidhearing.com" style="color: var(--color-primary); font-weight: 600; display: block;">info@abidhearing.com</a>
+            <a href="mailto:abidhearing@gmail.com" style="color: var(--color-primary); font-weight: 600; display: block;">abidhearing@gmail.com</a>
+          </div>
         </div>
 
-        <div style="background:#F3F7FC;border:1px solid #E3EAF3;border-radius:20px;padding:26px;min-width:0;">
-          <div style="width:50px;height:50px;border-radius:14px;background:#E8F1FF;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px;">⏰</div>
-          <h2 style="margin:0 0 8px;font-size:1.15rem;font-weight:800;color:#06182F;">Opening hours</h2>
-          <p style="margin:0;color:#52627A;font-size:.95rem;line-height:1.7;">Saturday – Thursday<br /><strong style="color:#06182F;">10:00 AM – 8:00 PM</strong></p>
-          <p style="margin:8px 0 0;color:#D32F2F;font-weight:700;font-size:.88rem;">Friday: by appointment only</p>
+        <div style="background: linear-gradient(135deg, #06182F 0%, #0B2A52 60%, #0077ff 100%); color: #fff; border-radius: var(--radius-xl); padding: 32px; box-shadow: var(--shadow-lg);">
+          <h3 style="font-size: 1.35rem; font-weight: 800; color: #fff; margin-bottom: 10px;">24/7 Phone Support</h3>
+          <p style="color: #d0e4ff; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6;">
+            Have an urgent question about your hearing device, ear mould, or need immediate assistance? Call our direct helpline anytime.
+          </p>
+          <a href="tel:01771237740" class="btn btn-red" style="width: 100%; border-radius: var(--radius-pill); font-weight: 700;">
+            📞 0177 123 77 40
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Clinic Branch Details and Interactive Map (Micro Layout) -->
+<section class="section section-bg-light">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Visit In Person</span>
+      <h2 class="section-title">Our Clinic Location</h2>
+      <p class="section-subtitle">Walk in or schedule an appointment with our senior audiologists in Uttara, Dhaka.</p>
+    </div>
+
+    <div class="clinics-grid">
+      <!-- Uttara Head Office -->
+      <div class="clinic-card">
+        <span class="clinic-type-badge">Head Office</span>
+        <h3 class="clinic-name">Uttara, Dhaka</h3>
+        <div class="clinic-address">
+          <span>📍</span>
+          <span>Oasis Complex, House-59, Sonargaon Janapath Road (1st Floor), Sector-7, Uttara, Dhaka-1230, Bangladesh</span>
+        </div>
+        <div style="font-size: 0.9rem; color: #0056cc; background: #eef6ff; border: 1px solid #cbe2ff; padding: 10px 16px; border-radius: 8px; margin-bottom: 16px;">
+          <span>⏰</span> <strong>Office Hours:</strong> 10:00 AM – 8:00 PM (Saturday – Thursday) • Friday: By Appointment
+        </div>
+        <div class="clinic-phones">
+          <a href="tel:01771237740" class="clinic-phone-btn">📞 0177 123 77 40</a>
+          <a href="tel:01715190901" class="clinic-phone-btn">📞 0171 51 90901</a>
+        </div>
+        <div style="margin-bottom: 22px;">
+          <button class="btn btn-primary btn-sm" data-open-appointment="uttara">Book Consultation at Uttara</button>
+        </div>
+        <div class="clinic-map-wrap">
+          <iframe title="Abid Hearing Care Centre Location Map" src="https://maps.google.com/maps?q=Abid+Hearing+Care+Center+Sector+7+Uttara+Dhaka&amp;hl=en&amp;z=16&amp;output=embed" loading="lazy"></iframe>
         </div>
       </div>
     </div>
-  </section>
-
-  <section style="background:#fff;padding:clamp(20px,3vw,32px) 0;margin:0;">
-    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;">
-      <div style="background:linear-gradient(120deg,#EAF2FF,#fff 60%);border:1px solid #E3EAF3;border-radius:28px;padding:clamp(24px,5vw,48px);display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,40px);align-items:center;justify-content:space-between;">
-        <div style="flex:1 1 300px;min-width:0;">
-          <h2 style="margin:0;font-size:clamp(1.6rem,3.8vw,2.4rem);font-weight:800;line-height:1.2;letter-spacing:-.02em;color:#06182F;">Book an appointment</h2>
-          <p style="margin:12px 0 0;color:#52627A;font-size:clamp(1rem,1.6vw,1.1rem);line-height:1.7;max-width:52ch;">Contact our senior audiologist directly via WhatsApp or phone for fast scheduling.</p>
-        </div>
-        <div style="display:flex;flex-wrap:wrap;gap:12px;flex:0 1 auto;">
-          <a href="https://wa.me/8801771237740?text=Hello%20Abid%20Hearing%20Care%2C%20I%20would%20like%20to%20book%20a%20hearing%20test%20appointment." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:15px 24px;border-radius:12px;background:#1FA855;color:#fff;font-weight:700;font-size:.98rem;line-height:1;text-decoration:none;box-shadow:0 8px 22px rgba(31,168,85,.28);box-sizing:border-box;">💬 Book on WhatsApp</a>
-          <a href="tel:01771237740" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:15px 24px;border-radius:12px;background:#D32F2F;color:#fff;font-weight:700;font-size:.98rem;line-height:1;text-decoration:none;box-shadow:0 8px 22px rgba(211,47,47,.3);box-sizing:border-box;">📞 Call 0177 123 77 40</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section style="background:#fff;padding:clamp(20px,3vw,32px) 0 clamp(52px,8vw,96px);margin:0;">
-    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;">
-      <div style="border-radius:24px;overflow:hidden;border:1px solid #E3EAF3;box-shadow:0 14px 34px rgba(6,24,47,.08);background:#F3F7FC;">
-        <iframe src="https://maps.google.com/maps?q=Abid+Hearing+Care+Center+Sector+7+Uttara+Dhaka&amp;hl=en&amp;z=16&amp;output=embed" title="Abid Hearing Care Centre on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen style="display:block;width:100%;height:clamp(300px,45vw,440px);border:0;"></iframe>
-      </div>
-    </div>
-  </section>
-
-</div>
+  </div>
+</section>
 
 <%- include('../layout/footer') %>

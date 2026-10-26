@@ -1,56 +1,167 @@
-<%- include('../layout/header', { title: 'Blog &#8211; Abid Hearing Care Centre', currentPath: '/blog', metaDesc: 'Practical reading on hearing, hearing aids and everyday ear care from Abid Hearing Care Centre.' }) %>
+<%- include('../layout/header', { 
+  title: typeof featuredPost !== 'undefined' && featuredPost ? featuredPost.title + ' | Abid Hearing Care' : 'Audiology Blog & Hearing Health Articles | Abid Hearing Care', 
+  currentPath: '/blog', 
+  metaDesc: typeof featuredPost !== 'undefined' && featuredPost ? featuredPost.excerpt : 'Practical reading on audiology, pediatric hearing, and hearing aid maintenance from clinical audiologists at Abid Hearing Care Centre.' 
+}) %>
 
-<div class="ct-container" style="padding: 40px 24px 70px;">
-  <div style="max-width: 1000px; margin: 0 auto;">
-    <h1 style="color: #06182F; font-size: 28px; font-weight: 800; margin-bottom: 8px;">Blog posts for readers</h1>
-    <p style="color: #52627A; font-size: 16px; margin-bottom: 36px;">Practical reading on hearing, hearing aids and everyday ear care.</p>
+<!-- Hero Banner (Micro Style) -->
+<div style="background: linear-gradient(135deg, #06182F 0%, #004b99 50%, #0077ff 100%); color: #ffffff; padding: 52px 0 56px; position: relative; overflow: hidden;">
+  <div style="position: absolute; right: -80px; top: -80px; width: 340px; height: 340px; border-radius: 50%; background: radial-gradient(circle, rgba(0, 119, 255, 0.35) 0%, rgba(233, 16, 44, 0.12) 60%, transparent 80%); pointer-events: none;"></div>
+  <div class="ct-container" style="position: relative; z-index: 1;">
+    <span class="hero-badge">📚 CLINICAL AUDIOLOGY JOURNAL</span>
+    <h1 style="color: #ffffff; font-size: 2.35rem; font-weight: 800; margin: 10px 0 12px; line-height: 1.25; letter-spacing: -0.02em;">
+      <% if (typeof featuredPost !== 'undefined' && featuredPost) { %>
+        <%= featuredPost.title %>
+      <% } else { %>
+        Audiology Blog &amp; Patient Guides
+      <% } %>
+    </h1>
+    <p style="color: #d0e4ff; max-width: 760px; font-size: 1.05rem; line-height: 1.6; margin-bottom: 0;">
+      <% if (typeof featuredPost !== 'undefined' && featuredPost) { %>
+        Published <%= featuredPost.date %> &bull; <%= featuredPost.readTime %> &bull; Category: <%= featuredPost.category %>
+      <% } else { %>
+        Practical clinical advice on hearing loss prevention, pediatric speech milestones, and device maintenance in Bangladesh's climate.
+      <% } %>
+    </p>
+  </div>
+</div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+<!-- Main Content -->
+<div class="ct-container" style="padding: 50px 20px 80px;">
+
+  <% if (typeof featuredPost !== 'undefined' && featuredPost) { %>
+    <!-- SINGLE ARTICLE VIEW -->
+    <div style="max-width: 820px; margin: 0 auto;">
       
-      <article style="border: 1px solid #E3EAF3; border-radius: 20px; overflow: hidden; background: #fff; display: flex; flex-direction: column;">
-        <div style="padding: 24px; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
-          <div>
-            <h3 style="margin: 0 0 10px; font-size: 1.15rem; font-weight: 800; color: #06182F; line-height: 1.4;">
-              7 Early Signs of Hearing Loss and Why You Shouldn’t Wait
-            </h3>
-            <p style="margin: 0 0 16px; color: #52627A; font-size: 0.95rem; line-height: 1.6;">
-              Learn the subtle early indicators of hearing loss and why early audiological intervention protects cognitive brain health and communication.
-            </p>
-          </div>
-          <span style="color: #0A6CFF; font-weight: 700; font-size: 0.92rem;">Read more &rarr;</span>
+      <!-- Back Navigation -->
+      <div style="margin-bottom: 24px;">
+        <a href="/blog" style="color: #0077ff; text-decoration: none; font-weight: 700; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 6px;">
+          &larr; Back to All Articles
+        </a>
+      </div>
+
+      <!-- Article Paper -->
+      <article style="background: #ffffff; border: 1.5px solid #dce8f8; border-radius: 24px; padding: 40px 36px; box-shadow: 0 12px 36px rgba(6, 24, 47, 0.06); margin-bottom: 40px;">
+        
+        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 16px;">
+          <span style="background: #eef6ff; color: #0077ff; font-weight: 800; font-size: 0.8rem; padding: 4px 12px; border-radius: 50px; border: 1px solid #cbe2ff;">
+            <%= featuredPost.category %>
+          </span>
+          <span style="color: #64748b; font-size: 0.85rem;">
+            <%= featuredPost.date %> &bull; <%= featuredPost.readTime %>
+          </span>
         </div>
+
+        <div style="font-size: 1.05rem; line-height: 1.8; color: #334155;" class="blog-content">
+          <%- featuredPost.content %>
+        </div>
+
+        <!-- Author / Clinical Verification Signature -->
+        <div style="margin-top: 40px; padding-top: 24px; border-top: 1.5px solid #eef2f6; display: flex; align-items: center; gap: 16px;">
+          <div style="width: 50px; height: 50px; border-radius: 50%; background: #0077ff; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 800;">
+            AH
+          </div>
+          <div>
+            <div style="font-weight: 800; color: #06182f; font-size: 1rem;">Mohammad Haidar Ali &amp; AHCC Clinical Team</div>
+            <div style="font-size: 0.85rem; color: #64748b;">Clinical Audiologist, Abid Hearing Care Centre, Uttara, Dhaka</div>
+          </div>
+        </div>
+
       </article>
 
-      <article style="border: 1px solid #E3EAF3; border-radius: 20px; overflow: hidden; background: #fff; display: flex; flex-direction: column;">
-        <div style="padding: 24px; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
-          <div>
-            <h3 style="margin: 0 0 10px; font-size: 1.15rem; font-weight: 800; color: #06182F; line-height: 1.4;">
-              Pediatric Hearing Care: Speech &amp; Language Milestones
-            </h3>
-            <p style="margin: 0 0 16px; color: #52627A; font-size: 0.95rem; line-height: 1.6;">
-              Discover how newborn OAE/BERA screening and pediatric hearing aids empower children to achieve normal speech development.
-            </p>
-          </div>
-          <span style="color: #0A6CFF; font-weight: 700; font-size: 0.92rem;">Read more &rarr;</span>
+      <!-- Other Articles Grid -->
+      <div style="margin-top: 40px;">
+        <h3 style="color: #06182f; font-size: 1.5rem; font-weight: 800; margin-bottom: 20px;">More Clinical Articles</h3>
+        <div class="grid-2-col" style="gap: 20px;">
+          <% blogPosts.filter(p => p.slug !== featuredPost.slug).forEach(p => { %>
+            <div class="responsive-card-box" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <span style="background: #eef6ff; color: #0077ff; font-weight: 800; font-size: 0.75rem; padding: 3px 10px; border-radius: 50px; display: inline-block; margin-bottom: 10px;">
+                  <%= p.category %>
+                </span>
+                <h4 style="color: #06182f; font-size: 1.15rem; font-weight: 800; margin: 0 0 8px; line-height: 1.4;">
+                  <%= p.title %>
+                </h4>
+                <p style="color: #52627a; font-size: 0.88rem; line-height: 1.6; margin: 0 0 14px;">
+                  <%= p.excerpt %>
+                </p>
+              </div>
+              <a href="/blog/<%= p.slug %>" style="color: #0077ff; font-weight: 700; font-size: 0.88rem; text-decoration: none;">
+                Read Article &rarr;
+              </a>
+            </div>
+          <% }) %>
         </div>
-      </article>
-
-      <article style="border: 1px solid #E3EAF3; border-radius: 20px; overflow: hidden; background: #fff; display: flex; flex-direction: column;">
-        <div style="padding: 24px; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
-          <div>
-            <h3 style="margin: 0 0 10px; font-size: 1.15rem; font-weight: 800; color: #06182F; line-height: 1.4;">
-              How to Care for Your Hearing Aids in Bangladesh Climate
-            </h3>
-            <p style="margin: 0 0 16px; color: #52627A; font-size: 0.95rem; line-height: 1.6;">
-              Humidity, sweat, and earwax are the top enemies of delicate microelectronics. Follow our clinical audiologist’s daily maintenance tips.
-            </p>
-          </div>
-          <span style="color: #0A6CFF; font-weight: 700; font-size: 0.92rem;">Read more &rarr;</span>
-        </div>
-      </article>
+      </div>
 
     </div>
+
+  <% } else { %>
+
+    <!-- BLOG ARCHIVE / LISTING VIEW -->
+    <div style="text-align: center; margin-bottom: 40px;">
+      <span class="section-badge">PATIENT EDUCATION &amp; CARE ADVICE</span>
+      <h2 style="font-size: 2rem; font-weight: 800; color: #06182f; margin: 8px 0 12px;">
+        Evidence-Based Hearing Healthcare Articles
+      </h2>
+      <p style="color: #52627a; font-size: 1.02rem; max-width: 680px; margin: 0 auto; line-height: 1.6;">
+        Written by licensed clinical audiologists to guide you and your loved ones on your journey toward better hearing.
+      </p>
+    </div>
+
+    <!-- Articles Grid -->
+    <div class="grid-3-col" style="gap: 26px; margin-bottom: 48px;">
+      <% blogPosts.forEach(post => { %>
+        <article class="responsive-card-box" style="display: flex; flex-direction: column; justify-content: space-between; border-top: 4px solid #0077ff;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+              <span style="background: #eef6ff; color: #0077ff; font-weight: 800; font-size: 0.78rem; padding: 4px 12px; border-radius: 50px; border: 1px solid #cbe2ff;">
+                <%= post.category %>
+              </span>
+              <span style="font-size: 0.78rem; color: #64748b; font-weight: 600;">
+                <%= post.readTime %>
+              </span>
+            </div>
+
+            <h3 style="color: #06182f; font-size: 1.25rem; font-weight: 800; margin: 0 0 10px; line-height: 1.4;">
+              <%= post.title %>
+            </h3>
+
+            <p style="color: #52627a; font-size: 0.92rem; line-height: 1.6; margin: 0 0 20px;">
+              <%= post.excerpt %>
+            </p>
+          </div>
+
+          <div style="pt: 14px; border-top: 1px solid #f0f4f9;">
+            <a href="/blog/<%= post.slug %>" style="display: inline-flex; align-items: center; gap: 6px; color: #0077ff; font-weight: 700; font-size: 0.92rem; text-decoration: none;">
+              Read Full Article &rarr;
+            </a>
+          </div>
+        </article>
+      <% }) %>
+    </div>
+
+  <% } %>
+
+  <!-- Bottom CTA Banner -->
+  <div style="background: linear-gradient(135deg, #06182F 0%, #082d5b 100%); border-radius: 24px; padding: 42px 32px; text-align: center; color: #ffffff; box-shadow: 0 18px 45px rgba(6, 24, 47, 0.18);">
+    <span class="hero-badge" style="background: rgba(255,255,255,0.12); margin-bottom: 12px;">HAVE QUESTIONS ABOUT YOUR HEARING?</span>
+    <h3 style="color: #ffffff; font-size: 1.85rem; font-weight: 800; margin: 10px 0 10px;">
+      Speak With an Audiologist in Uttara, Dhaka
+    </h3>
+    <p style="color: #d0e4ff; max-width: 650px; margin: 0 auto 24px; font-size: 1rem; line-height: 1.6;">
+      Get clear, personalized answers regarding your audiogram, device repairs, or ear moulds.
+    </p>
+    <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+      <a href="/contact-us" class="btn" style="background: #0077ff; color: #ffffff; padding: 13px 26px; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 8px 20px rgba(0, 119, 255, 0.35);">
+        Book Clinic Visit
+      </a>
+      <a href="tel:01771237740" class="btn" style="background: #e9102c; color: #ffffff; padding: 13px 26px; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 8px 20px rgba(233, 16, 44, 0.35);">
+        📞 Call 0177 123 77 40
+      </a>
+    </div>
   </div>
+
 </div>
 
 <%- include('../layout/footer') %>

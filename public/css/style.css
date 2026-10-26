@@ -633,6 +633,111 @@ button, input, select, textarea {
   color: var(--color-text-muted);
 }
 
+.hero-badge {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 4px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.grid-4-col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.grid-3-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.grid-2-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 36px;
+}
+
+.responsive-card-box {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  box-shadow: var(--shadow-sm);
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #06182f;
+  margin-bottom: 6px;
+}
+
+.clinic-info-box {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 30px;
+  box-shadow: var(--shadow-sm);
+}
+
+.quiz-opt-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 22px;
+  background: #ffffff;
+  border: 1.5px solid #dce8f8;
+  border-radius: var(--radius-lg);
+  color: #06182f;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--transition-fast);
+}
+
+.quiz-opt-btn:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  transform: translateX(4px);
+  box-shadow: 0 4px 14px rgba(0, 119, 255, 0.12);
+}
+
+@media (max-width: 900px) {
+  .grid-3-col,
+  .grid-2-col,
+  .contact-layout,
+  .form-row-2 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* Stats Cards Grid */
 .stats-grid {
   display: grid;
