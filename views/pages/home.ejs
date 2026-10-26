@@ -48,35 +48,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Continuous Product Slider Carousel (Micro Hearing Style) -->
-    <div class="ahcc-ps" role="region" aria-roledescription="carousel" aria-label="Hearing aids">
-      <button type="button" class="ahcc-ps-btn ahcc-ps-prev" aria-label="Previous products">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M15 19l-7-7 7-7"/>
-        </svg>
-      </button>
-
-      <div class="ahcc-ps-viewport" tabindex="0">
-        <div class="ahcc-ps-track">
-          <% featuredProducts.forEach(prod => { %>
-            <a class="ahcc-ps-card" href="/product/<%= prod.slug %>" title="<%= prod.name %>" draggable="false">
-              <span class="ahcc-ps-img">
-                <img src="<%= prod.image %>" alt="<%= prod.altText || prod.name %>" loading="lazy" decoding="async">
-              </span>
-              <div class="ahcc-ps-title"><%= prod.name %></div>
-            </a>
-          <% }) %>
-        </div>
-      </div>
-
-      <button type="button" class="ahcc-ps-btn ahcc-ps-next" aria-label="Next products">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M9 5l7 7-7 7"/>
-        </svg>
-      </button>
-    </div>
-
   </div>
 </section>
 
@@ -407,22 +378,5 @@
   </div>
 </section>
 
-<!-- Product Carousel Navigation Script -->
-<script>
-  (function() {
-    const track = document.querySelector('.ahcc-ps-viewport');
-    const prev = document.querySelector('.ahcc-ps-prev');
-    const next = document.querySelector('.ahcc-ps-next');
-
-    if (track && prev && next) {
-      prev.addEventListener('click', () => {
-        track.scrollBy({ left: -320, behavior: 'smooth' });
-      });
-      next.addEventListener('click', () => {
-        track.scrollBy({ left: 320, behavior: 'smooth' });
-      });
-    }
-  })();
-</script>
 
 <%- include('../layout/footer') %>
