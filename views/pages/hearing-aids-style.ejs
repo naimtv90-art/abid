@@ -1,0 +1,28 @@
+<%- include('../layout/header', { title: 'Hearing Aids Style &#8211; Abid Hearing Care Centre', currentPath: '/hearing-aids-style', metaDesc: 'Hearing aids come in several physical styles depending on your hearing loss severity, cosmetic preference, and ear canal anatomy.' }) %>
+
+<div class="ct-container" style="padding: 40px 24px 70px;">
+  <div style="font-family: inherit; color: #1e293b; line-height: 1.7; max-width: 960px; margin: 0 auto;">
+    <h1 style="color: #0D529C; font-size: 26px; font-weight: 800; margin-bottom: 16px;">Styles and Form Factors of Hearing Instruments</h1>
+    <p style="font-size: 16px; color: #475569;">
+      Hearing aids come in several physical styles depending on your hearing loss severity, cosmetic preference, ear canal anatomy, and manual dexterity.
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 32px;">
+      <% stylesList.forEach(s => { %>
+        <div style="border: 1px solid #e2e8f0; padding: 24px; border-radius: 16px; background: #ffffff; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 4px 16px rgba(6, 24, 47, 0.04);">
+          <div style="height: 150px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+            <img src="<%= s.image %>" alt="<%= s.title %> Hearing Aid - Abid Hearing Care Centre Uttara Dhaka Bangladesh" title="<%= s.title %> Uttara Dhaka" loading="lazy" decoding="async" style="max-height: 140px; max-width: 100%; object-fit: contain;">
+          </div>
+          <span style="display: inline-block; padding: 3px 10px; background: #E8F1FF; color: #0A6CFF; font-weight: 700; font-size: 0.75rem; border-radius: 99px; text-transform: uppercase; margin-bottom: 8px;">
+            <%= s.code %>
+          </span>
+          <h3 style="color: #0D529C; margin: 0 0 8px; font-size: 19px; font-weight: 800;"><%= s.title %></h3>
+          <div style="font-size: 0.82rem; color: #64748B; font-weight: 600; margin-bottom: 12px;"><%= s.bestFor %></div>
+          <p style="font-size: 14px; color: #475569; line-height: 1.6; margin: 0;"><%= s.desc %></p>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</div>
+
+<%- include('../layout/footer') %>

@@ -1,0 +1,1581 @@
+[
+  {
+    "id": 32,
+    "date": "2026-10-09T02:16:51",
+    "date_gmt": "2026-10-08T20:16:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/contact-us/"
+    },
+    "modified": "2026-10-11T22:24:30",
+    "modified_gmt": "2026-10-11T16:24:30",
+    "slug": "contact-us",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/contact-us/",
+    "title": {
+      "rendered": "Contact Us"
+    },
+    "content": {
+      "rendered": "<p><!-- AHCC contact page (light): 100% inline styles, no style tag. Paste into a Custom HTML block (full-width page template recommended). -->\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&#038;display=swap\">\n<div id=\"ahcc-root\" style=\"font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#0F1B2D;line-height:1.65;width:100vw;max-width:100vw;position:relative;left:50%;transform:translateX(-50%);margin:0;overflow:hidden;background:#fff;box-sizing:border-box;\">\n<section style=\"background:#fff;padding:clamp(40px,6vw,72px) 0 clamp(28px,4vw,48px);margin:0;\">\n<div style=\"width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;\">\n<div style=\"max-width:680px;margin-bottom:clamp(28px,5vw,44px);\"><span style=\"display:inline-block;padding:7px 14px;border-radius:99px;background:#E8F1FF;color:#0A6CFF;font-weight:700;font-size:.85rem;margin-bottom:16px;\">Contact us</span></p>\n<h2 style=\"margin:0;font-size:clamp(1.75rem,4.2vw,2.7rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;color:#06182F;\">Abid Hearing Care Centre</h2>\n<p style=\"margin:14px 0 0;font-size:clamp(1rem,1.6vw,1.1rem);line-height:1.7;color:#52627A;max-width:60ch;\">Hearing means quality of life. Make better living. Find, call or write to our clinic in Uttara, Dhaka.</p>\n</div>\n<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:18px;align-items:stretch;\">\n<div style=\"background:#F3F7FC;border:1px solid #E3EAF3;border-radius:20px;padding:26px;min-width:0;\">\n<div style=\"width:50px;height:50px;border-radius:14px;background:#E8F1FF;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px;\">&#x1f4cd;</div>\n<h3 style=\"margin:0 0 8px;font-size:1.15rem;font-weight:800;color:#06182F;\">Clinic address</h3>\n<p style=\"margin:0;color:#52627A;font-size:.95rem;line-height:1.6;\">Oasis Complex, House-59, Sonargaon Janapath Road (1st Floor), Sector-7, Uttara, Dhaka-1230, Bangladesh.</p>\n</div>\n<div style=\"background:#F3F7FC;border:1px solid #E3EAF3;border-radius:20px;padding:26px;min-width:0;\">\n<div style=\"width:50px;height:50px;border-radius:14px;background:#E8F1FF;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px;\">&#x1f4de;</div>\n<h3 style=\"margin:0 0 8px;font-size:1.15rem;font-weight:800;color:#06182F;\">Phone helplines</h3>\n<p style=\"margin:0;font-size:.95rem;line-height:1.8;\"><a href=\"tel:01771237740\" style=\"color:#D32F2F;font-weight:800;text-decoration:none;display:block;\">0177 123 77 40</a><a href=\"tel:01715190901\" style=\"color:#06182F;font-weight:600;text-decoration:none;display:block;\">0171 51 90901</a><span style=\"color:#52627A;font-size:.88rem;display:block;\">Landline: +8802-48961612</span></p>\n</div>\n<div style=\"background:#F3F7FC;border:1px solid #E3EAF3;border-radius:20px;padding:26px;min-width:0;\">\n<div style=\"width:50px;height:50px;border-radius:14px;background:#E8F1FF;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px;\">&#x2709;&#xfe0f;</div>\n<h3 style=\"margin:0 0 8px;font-size:1.15rem;font-weight:800;color:#06182F;\">Email</h3>\n<p style=\"margin:0;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere;\"><a href=\"mailto:abidhearing@gmail.com\" style=\"color:#0A6CFF;font-weight:600;text-decoration:none;display:block;\">abidhearing@gmail.com</a><a href=\"mailto:info@abidhearing.com\" style=\"color:#0A6CFF;font-weight:600;text-decoration:none;display:block;\">info@abidhearing.com</a></p>\n</div>\n<div style=\"background:#F3F7FC;border:1px solid #E3EAF3;border-radius:20px;padding:26px;min-width:0;\">\n<div style=\"width:50px;height:50px;border-radius:14px;background:#E8F1FF;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px;\">&#x23f0;</div>\n<h3 style=\"margin:0 0 8px;font-size:1.15rem;font-weight:800;color:#06182F;\">Opening hours</h3>\n<p style=\"margin:0;color:#52627A;font-size:.95rem;line-height:1.7;\">Saturday – Thursday<br /><strong style=\"color:#06182F;\">10:00 AM – 8:00 PM</strong></p>\n<p style=\"margin:8px 0 0;color:#D32F2F;font-weight:700;font-size:.88rem;\">Friday: by appointment only</p>\n</div>\n</div>\n</div>\n</section>\n<section style=\"background:#fff;padding:clamp(20px,3vw,32px) 0;margin:0;\">\n<div style=\"width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;\">\n<div style=\"background:linear-gradient(120deg,#EAF2FF,#fff 60%);border:1px solid #E3EAF3;border-radius:28px;padding:clamp(24px,5vw,48px);display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,40px);align-items:center;justify-content:space-between;\">\n<div style=\"flex:1 1 300px;min-width:0;\">\n<h2 style=\"margin:0;font-size:clamp(1.6rem,3.8vw,2.4rem);font-weight:800;line-height:1.2;letter-spacing:-.02em;color:#06182F;\">Book an appointment</h2>\n<p style=\"margin:12px 0 0;color:#52627A;font-size:clamp(1rem,1.6vw,1.1rem);line-height:1.7;max-width:52ch;\">Contact our senior audiologist directly via WhatsApp or phone for fast scheduling.</p>\n</div>\n<div style=\"display:flex;flex-wrap:wrap;gap:12px;flex:0 1 auto;\"><a href=\"https://wa.me/8801771237740?text=Hello%20Abid%20Hearing%20Care%2C%20I%20would%20like%20to%20book%20a%20hearing%20test%20appointment.\" target=\"_blank\" rel=\"noopener\" style=\"display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:15px 24px;border-radius:12px;background:#1FA855;color:#fff;font-weight:700;font-size:.98rem;line-height:1;text-decoration:none;box-shadow:0 8px 22px rgba(31,168,85,.28);box-sizing:border-box;\">&#x1f4ac; Book on WhatsApp</a><a href=\"tel:01771237740\" style=\"display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:15px 24px;border-radius:12px;background:#D32F2F;color:#fff;font-weight:700;font-size:.98rem;line-height:1;text-decoration:none;box-shadow:0 8px 22px rgba(211,47,47,.3);box-sizing:border-box;\">&#x1f4de; Call 0177 123 77 40</a></div>\n</div>\n</div>\n</section>\n<section style=\"background:#fff;padding:clamp(20px,3vw,32px) 0 clamp(52px,8vw,96px);margin:0;\">\n<div style=\"width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;\">\n<div style=\"border-radius:24px;overflow:hidden;border:1px solid #E3EAF3;box-shadow:0 14px 34px rgba(6,24,47,.08);background:#F3F7FC;\"><iframe src=\"https://maps.google.com/maps?q=Abid+Hearing+Care+Center+Sector+7+Uttara+Dhaka&#038;hl=en&#038;z=16&#038;output=embed\" title=\"Abid Hearing Care Centre on Google Maps\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" allowfullscreen style=\"display:block;width:100%;height:clamp(300px,45vw,440px);border:0;\"></iframe></div>\n</div>\n</section>\n</div>\n<p><script>(function(){var r=document.getElementById('ahcc-root'),e=r&&r.parentElement;while(e&&e!==document.body){['padding-top','margin-top','padding-bottom','margin-bottom'].forEach(function(p){e.style.setProperty(p,'0','important')});e=e.parentElement}})();</script></p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Contact us Abid Hearing Care Centre Hearing means quality of life. Make better living. Find, call or write to our clinic in Uttara, Dhaka. &#x1f4cd; Clinic address Oasis Complex, House-59, Sonargaon Janapath Road (1st Floor), Sector-7, Uttara, Dhaka-1230, Bangladesh. &#x1f4de; Phone helplines 0177 123 77 400171 51 90901Landline: +8802-48961612 &#x2709;&#xfe0f; Email abidhearing@gmail.cominfo@abidhearing.com &#x23f0; Opening hours [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-32",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": {
+      "styles_descriptor": {
+        "styles": {
+          "desktop": "",
+          "tablet": "",
+          "mobile": ""
+        },
+        "google_fonts": [],
+        "version": 8
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/32",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=32"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/32/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 195,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/32/revisions/195"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=32"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "date": "2026-10-09T02:16:51",
+    "date_gmt": "2026-10-08T20:16:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/blog/"
+    },
+    "modified": "2026-10-11T21:14:04",
+    "modified_gmt": "2026-10-11T15:14:04",
+    "slug": "blog",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/blog/",
+    "title": {
+      "rendered": "Blog"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-31",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/31",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=31"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/31/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 186,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/31/revisions/186"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=31"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "date": "2026-10-09T02:16:51",
+    "date_gmt": "2026-10-08T20:16:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/affiliation/"
+    },
+    "modified": "2026-10-09T02:16:51",
+    "modified_gmt": "2026-10-08T20:16:51",
+    "slug": "affiliation",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/affiliation/",
+    "title": {
+      "rendered": "Affiliation"
+    },
+    "content": {
+      "rendered": "<div style=\"font-family:inherit;color:#1e293b;line-height:1.7;\">\n<h2 style=\"color:#0D529C;\">Affiliations &#038; Community Partner Network</h2>\n<p style=\"font-size:16px;color:#475569;margin-bottom:28px;\">\n    To ensure accessible hearing healthcare reaches underprivileged and rural communities across Bangladesh, Abid Hearing Care Centre actively collaborates with registered non-governmental development organizations (NGOs) and disability welfare groups.\n  </p>\n<h3 style=\"color:#0D529C;font-size:22px;margin-bottom:16px;\">Our Registered NGO Partners</h3>\n<div style=\"display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:20px;margin-bottom:36px;\">\n<div style=\"background:#f8fafc;border-left:4px solid #0D529C;padding:20px;border-radius:6px;\">\n<h4 style=\"color:#0D529C;margin-top:0;\">SEDAD &bull; Dhaka</h4>\n<p style=\"font-size:14px;color:#475569;margin-bottom:4px;\"><strong>Socio-economic Development Association for Disabled</strong></p>\n<div style=\"font-size:13px;color:#64748b;\">Registered under NGO Affairs Bureau, Government of Bangladesh.</div>\n</p></div>\n<div style=\"background:#f8fafc;border-left:4px solid #0D529C;padding:20px;border-radius:6px;\">\n<h4 style=\"color:#0D529C;margin-top:0;\">DWDO &bull; Dhaka</h4>\n<p style=\"font-size:14px;color:#475569;margin-bottom:4px;\"><strong>Disabled Women Development Organization</strong></p>\n<div style=\"font-size:13px;color:#64748b;\">Registered under NGO Affairs Bureau, Government of Bangladesh.</div>\n</p></div>\n<div style=\"background:#f8fafc;border-left:4px solid #0D529C;padding:20px;border-radius:6px;\">\n<h4 style=\"color:#0D529C;margin-top:0;\">PKS &bull; Jessore</h4>\n<p style=\"font-size:14px;color:#475569;margin-bottom:4px;\"><strong>Protibondhi Kollyan Somiti</strong></p>\n<div style=\"font-size:13px;color:#64748b;\">Registered under Ministry of Social Welfare.</div>\n</p></div>\n<div style=\"background:#f8fafc;border-left:4px solid #0D529C;padding:20px;border-radius:6px;\">\n<h4 style=\"color:#0D529C;margin-top:0;\">DMWDO &bull; Magura</h4>\n<p style=\"font-size:14px;color:#475569;margin-bottom:4px;\"><strong>Magura Women Disabled Organization</strong></p>\n<div style=\"font-size:13px;color:#64748b;\">Registered under Ministry of Social Welfare.</div>\n</p></div>\n<div style=\"background:#f8fafc;border-left:4px solid #0D529C;padding:20px;border-radius:6px;\">\n<h4 style=\"color:#0D529C;margin-top:0;\">UPS &bull; Dinajpur</h4>\n<p style=\"font-size:14px;color:#475569;margin-bottom:4px;\"><strong>Uttaran Protibondhi Songstha</strong></p>\n<div style=\"font-size:13px;color:#64748b;\">Registered with Ministry of Social Welfare.</div>\n</p></div>\n</p></div>\n<div style=\"background:#eff6ff;border:1px solid #bfdbfe;padding:22px;border-radius:8px;\">\n<h3 style=\"color:#1e3a8a;margin-top:0;\">Clinical &#038; Medical Referrals</h3>\n<p style=\"color:#1e40af;margin-bottom:0;\">\n      We work closely in conjunction with leading ENT (Ear, Nose &#038; Throat) surgeons, neurologists, pediatricians, and Speech-Language Pathologists across Dhaka to deliver integrated diagnostic and rehabilitative medical care.\n    </p>\n</p></div>\n</div>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Affiliations &#038; Community Partner Network To ensure accessible hearing healthcare reaches underprivileged and rural communities across Bangladesh, Abid Hearing Care Centre actively collaborates with registered non-governmental development organizations (NGOs) and disability welfare groups. Our Registered NGO Partners SEDAD &bull; Dhaka Socio-economic Development Association for Disabled Registered under NGO Affairs Bureau, Government of Bangladesh. DWDO &bull; [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-30",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": {
+      "styles_descriptor": {
+        "styles": {
+          "desktop": "",
+          "tablet": "",
+          "mobile": ""
+        },
+        "google_fonts": [],
+        "version": 8
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/30",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=30"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/30/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=30"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 29,
+    "date": "2026-10-09T02:16:51",
+    "date_gmt": "2026-10-08T20:16:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/management/"
+    },
+    "modified": "2026-10-09T02:16:51",
+    "modified_gmt": "2026-10-08T20:16:51",
+    "slug": "management",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/management/",
+    "title": {
+      "rendered": "Management"
+    },
+    "content": {
+      "rendered": "<div style=\"font-family:inherit;color:#1e293b;line-height:1.7;\">\n<h2 style=\"color:#0D529C;\">Leadership &#038; Key Clinical Officers</h2>\n<p style=\"font-size:16px;color:#475569;margin-bottom:30px;\">\n    Abid Hearing Care Centre operates with a team of 9 full-time professionals and 12 dedicated support staff overseen by experienced audiology and administrative leadership.\n  </p>\n<div style=\"display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:24px;\">\n<div style=\"border:1px solid #cbd5e1;padding:22px;border-radius:10px;background:#ffffff;box-shadow:0 2px 8px rgba(0,0,0,0.04);\">\n<h3 style=\"color:#0D529C;margin-top:0;font-size:18px;\">Mohammad Haidar Ali</h3>\n<div style=\"color:#E53935;font-weight:700;font-size:14px;margin-bottom:8px;\">Founder &#038; Lead Audiologist</div>\n<p style=\"font-size:14px;color:#64748b;margin-bottom:0;\">Clinical Competence in Audiology, 12+ years experience in diagnostic evaluations and digital programming.</p>\n</p></div>\n<div style=\"border:1px solid #cbd5e1;padding:22px;border-radius:10px;background:#ffffff;box-shadow:0 2px 8px rgba(0,0,0,0.04);\">\n<h3 style=\"color:#0D529C;margin-top:0;font-size:18px;\">Md. Abu Bakar</h3>\n<div style=\"color:#475569;font-weight:700;font-size:14px;margin-bottom:8px;\">Head of Human Resources (HR)</div>\n<p style=\"font-size:14px;color:#64748b;margin-bottom:0;\">Oversees organizational operations, staff development, and patient relations.</p>\n</p></div>\n<div style=\"border:1px solid #cbd5e1;padding:22px;border-radius:10px;background:#ffffff;box-shadow:0 2px 8px rgba(0,0,0,0.04);\">\n<h3 style=\"color:#0D529C;margin-top:0;font-size:18px;\">Md. Abdul Rahim</h3>\n<div style=\"color:#475569;font-weight:700;font-size:14px;margin-bottom:8px;\">HR Manager</div>\n<p style=\"font-size:14px;color:#64748b;margin-bottom:0;\">Manages clinic scheduling, patient care workflows, and clinical protocols.</p>\n</p></div>\n<div style=\"border:1px solid #cbd5e1;padding:22px;border-radius:10px;background:#ffffff;box-shadow:0 2px 8px rgba(0,0,0,0.04);\">\n<h3 style=\"color:#0D529C;margin-top:0;font-size:18px;\">Md. Rukun Uddin</h3>\n<div style=\"color:#475569;font-weight:700;font-size:14px;margin-bottom:8px;\">Head of Finance</div>\n<p style=\"font-size:14px;color:#64748b;margin-bottom:0;\">Directs financial management, inventory procurement, and transparent billing.</p>\n</p></div>\n<div style=\"border:1px solid #cbd5e1;padding:22px;border-radius:10px;background:#ffffff;box-shadow:0 2px 8px rgba(0,0,0,0.04);\">\n<h3 style=\"color:#0D529C;margin-top:0;font-size:18px;\">Md. Jaker Hossin Raju</h3>\n<div style=\"color:#475569;font-weight:700;font-size:14px;margin-bottom:8px;\">Head of Marketing</div>\n<p style=\"font-size:14px;color:#64748b;margin-bottom:0;\">Directs community hearing awareness campaigns, public health outreach, and clinic partnerships.</p>\n</p></div>\n<div style=\"border:1px solid #cbd5e1;padding:22px;border-radius:10px;background:#ffffff;box-shadow:0 2px 8px rgba(0,0,0,0.04);\">\n<h3 style=\"color:#0D529C;margin-top:0;font-size:18px;\">Md. Rezaul Karim</h3>\n<div style=\"color:#475569;font-weight:700;font-size:14px;margin-bottom:8px;\">Marketing Officer</div>\n<p style=\"font-size:14px;color:#64748b;margin-bottom:0;\">Coordinates patient communications, NGO follow-ups, and regional awareness camps.</p>\n</p></div>\n<div style=\"border:1px solid #cbd5e1;padding:22px;border-radius:10px;background:#ffffff;box-shadow:0 2px 8px rgba(0,0,0,0.04);\">\n<h3 style=\"color:#0D529C;margin-top:0;font-size:18px;\">Md. Abul Kalam Azad</h3>\n<div style=\"color:#475569;font-weight:700;font-size:14px;margin-bottom:8px;\">Marketing Officer</div>\n<p style=\"font-size:14px;color:#64748b;margin-bottom:0;\">Specializes in institutional partnerships, doctor referral networks, and patient outreach.</p>\n</p></div>\n</p></div>\n</div>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Leadership &#038; Key Clinical Officers Abid Hearing Care Centre operates with a team of 9 full-time professionals and 12 dedicated support staff overseen by experienced audiology and administrative leadership. Mohammad Haidar Ali Founder &#038; Lead Audiologist Clinical Competence in Audiology, 12+ years experience in diagnostic evaluations and digital programming. Md. Abu Bakar Head of Human [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-29",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": {
+      "styles_descriptor": {
+        "styles": {
+          "desktop": "",
+          "tablet": "",
+          "mobile": ""
+        },
+        "google_fonts": [],
+        "version": 8
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/29",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=29"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/29/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=29"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "date": "2026-10-09T02:16:51",
+    "date_gmt": "2026-10-08T20:16:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/hearing-aid-brand-in-bangladesh/"
+    },
+    "modified": "2026-10-09T02:16:51",
+    "modified_gmt": "2026-10-08T20:16:51",
+    "slug": "hearing-aid-brand-in-bangladesh",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/hearing-aid-brand-in-bangladesh/",
+    "title": {
+      "rendered": "Hearing Aid Brand in Bangladesh"
+    },
+    "content": {
+      "rendered": "<div style=\"font-family:inherit;color:#1e293b;line-height:1.7;\">\n<h2 style=\"color:#0D529C;\">Top Hearing Aid Brands Available in Bangladesh</h2>\n<p>\n    At Abid Hearing Care Centre, we partner with world-renowned hearing aid brands backed by clinical research and international warranty standards.\n  </p>\n<div style=\"display:grid;grid-template-columns:1fr;gap:20px;margin-top:24px;\">\n<div style=\"background:#f8fafc;padding:22px;border-radius:8px;border-left:4px solid #0D529C;\">\n<h3 style=\"color:#0D529C;margin-top:0;\">1. Phonak (Switzerland &#8211; Sonova Group) &bull; Flagship Partner</h3>\n<p style=\"color:#475569;margin-bottom:0;\">\n        World leader in pediatric audiology and high-power hearing aids. Known for groundbreaking AutoSense OS, Roger FM accessories, and the Audéo / Naída lines. AHCC is an authorized direct clinical partner in Dhaka.\n      </p>\n</p></div>\n<div style=\"background:#f8fafc;padding:22px;border-radius:8px;border-left:4px solid #475569;\">\n<h3 style=\"color:#334155;margin-top:0;\">2. Rexton (WS Audiology &#8211; Germany)</h3>\n<p style=\"color:#475569;margin-bottom:0;\">\n        Proven German durability and cost-effective performance. Ideal for rugged everyday use with robust moisture resistance and reliable trimmer/programmable options.\n      </p>\n</p></div>\n<div style=\"background:#f8fafc;padding:22px;border-radius:8px;border-left:4px solid #475569;\">\n<h3 style=\"color:#334155;margin-top:0;\">3. Unitron (Canada) &#038; Signia (Siemens)</h3>\n<p style=\"color:#475569;margin-bottom:0;\">\n        Renowned for conversational speech clarity in noise, comfortable fit, and flexible upgrade platforms.\n      </p>\n</p></div>\n</p></div>\n</div>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Top Hearing Aid Brands Available in Bangladesh At Abid Hearing Care Centre, we partner with world-renowned hearing aid brands backed by clinical research and international warranty standards. 1. Phonak (Switzerland &#8211; Sonova Group) &bull; Flagship Partner World leader in pediatric audiology and high-power hearing aids. Known for groundbreaking AutoSense OS, Roger FM accessories, and the [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-28",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": {
+      "styles_descriptor": {
+        "styles": {
+          "desktop": "",
+          "tablet": "",
+          "mobile": ""
+        },
+        "google_fonts": [],
+        "version": 8
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/28",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=28"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/28/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=28"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "date": "2026-10-09T02:16:51",
+    "date_gmt": "2026-10-08T20:16:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/hearing-aids-style/"
+    },
+    "modified": "2026-10-09T02:16:51",
+    "modified_gmt": "2026-10-08T20:16:51",
+    "slug": "hearing-aids-style",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/hearing-aids-style/",
+    "title": {
+      "rendered": "Hearing Aids Style"
+    },
+    "content": {
+      "rendered": "<div style=\"font-family:inherit;color:#1e293b;line-height:1.7;\">\n<h2 style=\"color:#0D529C;\">Styles and Form Factors of Hearing Instruments</h2>\n<p>\n    Hearing aids come in several physical styles depending on your hearing loss severity, cosmetic preference, ear canal anatomy, and manual dexterity.\n  </p>\n<div style=\"display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:20px;margin-top:24px;\">\n<div style=\"border:1px solid #e2e8f0;padding:20px;border-radius:8px;background:#ffffff;\">\n<h3 style=\"color:#0D529C;margin-top:0;\">BTE (Behind-The-Ear)</h3>\n<p style=\"font-size:15px;color:#475569;\">The electronics sit in a casing comfortably behind the ear, connected to an acoustic tube and custom earmould. Best for severe to profound losses and young children.</p>\n</p></div>\n<div style=\"border:1px solid #e2e8f0;padding:20px;border-radius:8px;background:#ffffff;\">\n<h3 style=\"color:#0D529C;margin-top:0;\">RIC (Receiver-In-Canal)</h3>\n<p style=\"font-size:15px;color:#475569;\">The world’s most popular style. The speaker sits directly inside the ear canal connected by an ultra-thin wire. Barely noticeable and provides very natural sound quality.</p>\n</p></div>\n<div style=\"border:1px solid #e2e8f0;padding:20px;border-radius:8px;background:#ffffff;\">\n<h3 style=\"color:#0D529C;margin-top:0;\">ITE (In-The-Ear)</h3>\n<p style=\"font-size:15px;color:#475569;\">Custom made to fit in the outer ear bowl. Easy to handle with larger controls and longer battery life for elderly patients.</p>\n</p></div>\n<div style=\"border:1px solid #e2e8f0;padding:20px;border-radius:8px;background:#ffffff;\">\n<h3 style=\"color:#0D529C;margin-top:0;\">CIC &#038; IIC (Invisible-In-Canal)</h3>\n<p style=\"font-size:15px;color:#475569;\">Fits deep into the ear canal. Virtually invisible from the outside for maximum cosmetic discretion.</p>\n</p></div>\n</p></div>\n</div>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Styles and Form Factors of Hearing Instruments Hearing aids come in several physical styles depending on your hearing loss severity, cosmetic preference, ear canal anatomy, and manual dexterity. BTE (Behind-The-Ear) The electronics sit in a casing comfortably behind the ear, connected to an acoustic tube and custom earmould. Best for severe to profound losses and [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-27",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": {
+      "styles_descriptor": {
+        "styles": {
+          "desktop": "",
+          "tablet": "",
+          "mobile": ""
+        },
+        "google_fonts": [],
+        "version": 8
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/27",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=27"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/27/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=27"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "date": "2026-10-09T02:16:51",
+    "date_gmt": "2026-10-08T20:16:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/hearing-aid-for-children/"
+    },
+    "modified": "2026-10-09T02:16:51",
+    "modified_gmt": "2026-10-08T20:16:51",
+    "slug": "hearing-aid-for-children",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/hearing-aid-for-children/",
+    "title": {
+      "rendered": "Hearing Aid for Children"
+    },
+    "content": {
+      "rendered": "<div style=\"font-family:inherit;color:#1e293b;line-height:1.7;\">\n<h2 style=\"color:#0D529C;\">Pediatric Hearing Care: Nurturing Speech &#038; Language</h2>\n<p>\n    Hearing is the biological cornerstone of spoken language, social learning, and intellectual development. A child learns speech by listening to their parents and surroundings from the earliest months of infancy.\n  </p>\n<div style=\"background:#fffbeb;border:1px solid #fef3c7;padding:22px;border-radius:8px;margin:24px 0;\">\n<h3 style=\"color:#b45309;margin-top:0;\">Why Early Pediatric Intervention Matters</h3>\n<p style=\"color:#78350f;margin-bottom:0;\">\n      If hearing loss is left undiagnosed in infants, speech milestones are severely delayed. With early diagnosis via newborn OAE/BERA screening and timely fitting of pediatric hearing devices (such as Phonak Sky), children can learn, attend mainstream schools, and communicate with complete confidence.\n    </p>\n</p></div>\n<h3 style=\"color:#0D529C;\">Key Features of Pediatric Hearing Aids</h3>\n<ul style=\"padding-left:20px;color:#334155;\">\n<li><strong>Tamperproof Battery Drawers:</strong> Prevents curious infants and toddlers from opening the battery compartment.</li>\n<li><strong>Robust Water &#038; Dust Resistance:</strong> Rated IP68 to withstand play, sweat, and unpredictable outdoor conditions.</li>\n<li><strong>Visual Indicator Lights:</strong> Reassures parents and teachers that the device is powered and functioning.</li>\n<li><strong>Roger Wireless FM Compatibility:</strong> Direct streaming from the classroom teacher’s wireless microphone straight to the child’s hearing aids.</li>\n</ul>\n</div>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Pediatric Hearing Care: Nurturing Speech &#038; Language Hearing is the biological cornerstone of spoken language, social learning, and intellectual development. A child learns speech by listening to their parents and surroundings from the earliest months of infancy. Why Early Pediatric Intervention Matters If hearing loss is left undiagnosed in infants, speech milestones are severely delayed. [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-26",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": {
+      "styles_descriptor": {
+        "styles": {
+          "desktop": "",
+          "tablet": "",
+          "mobile": ""
+        },
+        "google_fonts": [],
+        "version": 8
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/26",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=26"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/26/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=26"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "date": "2026-10-09T02:16:51",
+    "date_gmt": "2026-10-08T20:16:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/how-do-hearing-aid-work/"
+    },
+    "modified": "2026-10-09T02:16:51",
+    "modified_gmt": "2026-10-08T20:16:51",
+    "slug": "how-do-hearing-aid-work",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/how-do-hearing-aid-work/",
+    "title": {
+      "rendered": "How do Hearing Aid Work"
+    },
+    "content": {
+      "rendered": "<div style=\"font-family:inherit;color:#1e293b;line-height:1.7;\">\n<h2 style=\"color:#0D529C;\">How Do Modern Digital Hearing Aids Work?</h2>\n<p>\n    Unlike old analog amplifiers that simply made all sound louder (including painful background traffic and fan noise), modern digital hearing aids function like high-speed miniature computers inside your ear.\n  </p>\n<h3 style=\"color:#0D529C;\">The 4-Stage Acoustic Process</h3>\n<ol style=\"padding-left:22px;color:#334155;\">\n<li style=\"margin-bottom:12px;\">\n      <strong>Microphone Pickup:</strong> Directional dual microphones capture acoustic sound waves from your surrounding environment and convert them into electrical signals.\n    </li>\n<li style=\"margin-bottom:12px;\">\n      <strong>Digital Signal Processing (DSP):</strong> The central processor analyzes sound hundreds of times per second. It separates human speech from background noise, suppresses wind turbulence, and amplifies only the specific frequencies where you have hearing deficits.\n    </li>\n<li style=\"margin-bottom:12px;\">\n      <strong>Receiver / Speaker Delivery:</strong> The refined digital signal is converted back into acoustic sound waves and delivered precisely into the ear canal.\n    </li>\n<li style=\"margin-bottom:12px;\">\n      <strong>Acoustic Neural Transmission:</strong> Your auditory nerve receives clear sound vibrations and transmits them to the brain for natural cognitive comprehension.\n    </li>\n</ol>\n</div>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>How Do Modern Digital Hearing Aids Work? Unlike old analog amplifiers that simply made all sound louder (including painful background traffic and fan noise), modern digital hearing aids function like high-speed miniature computers inside your ear. The 4-Stage Acoustic Process Microphone Pickup: Directional dual microphones capture acoustic sound waves from your surrounding environment and convert [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-25",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": {
+      "styles_descriptor": {
+        "styles": {
+          "desktop": "",
+          "tablet": "",
+          "mobile": ""
+        },
+        "google_fonts": [],
+        "version": 8
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/25",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=25"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/25/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=25"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "date": "2026-10-09T02:16:51",
+    "date_gmt": "2026-10-08T20:16:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/hearing-aid/"
+    },
+    "modified": "2026-10-09T02:16:51",
+    "modified_gmt": "2026-10-08T20:16:51",
+    "slug": "hearing-aid",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/hearing-aid/",
+    "title": {
+      "rendered": "Hearing Aid"
+    },
+    "content": {
+      "rendered": "<div style=\"font-family:inherit;color:#1e293b;line-height:1.7;\">\n<h2 style=\"color:#0D529C;\">Modern Hearing Aids for a Modern World</h2>\n<p>\n    A hearing aid is a sophisticated miniature medical electronic device designed to amplify sound frequencies selectively so that individuals with sensorineural or conductive hearing loss can listen, communicate, and participate fully in daily life.\n  </p>\n<h3 style=\"color:#0D529C;\">Guidance by Patient Experience</h3>\n<div style=\"display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:20px;margin:24px 0;\">\n<div style=\"background:#f8fafc;border-left:4px solid #0D529C;padding:20px;border-radius:6px;\">\n<h4 style=\"color:#0D529C;margin-top:0;\">I have not worn hearing aids before</h4>\n<p style=\"font-size:15px;color:#475569;\">\n        On average, people wait 7 to 10 years after experiencing hearing difficulties before seeking help. During this time, the brain’s auditory cortex loses familiarity with high-frequency speech consonants. Modern digital devices are lightweight, automatic, and ease you gently into hearing clearly again.\n      </p>\n</p></div>\n<div style=\"background:#f8fafc;border-left:4px solid #E53935;padding:20px;border-radius:6px;\">\n<h4 style=\"color:#E53935;margin-top:0;\">I have worn hearing aids before</h4>\n<p style=\"font-size:15px;color:#475569;\">\n        If your devices are more than 3-5 years old, modern platforms feature artificial intelligence noise cancellation, direct smartphone Bluetooth audio streaming, rechargeable lithium-ion batteries, and effortless speech tracking in crowded Bangladeshi gatherings.\n      </p>\n</p></div>\n</p></div>\n</div>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Modern Hearing Aids for a Modern World A hearing aid is a sophisticated miniature medical electronic device designed to amplify sound frequencies selectively so that individuals with sensorineural or conductive hearing loss can listen, communicate, and participate fully in daily life. Guidance by Patient Experience I have not worn hearing aids before On average, people [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-24",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": {
+      "styles_descriptor": {
+        "styles": {
+          "desktop": "",
+          "tablet": "",
+          "mobile": ""
+        },
+        "google_fonts": [],
+        "version": 8
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/24",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=24"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/24/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=24"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "date": "2026-10-09T02:16:51",
+    "date_gmt": "2026-10-08T20:16:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/products/"
+    },
+    "modified": "2026-10-11T20:37:59",
+    "modified_gmt": "2026-10-11T14:37:59",
+    "slug": "products",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/products/",
+    "title": {
+      "rendered": "Products"
+    },
+    "content": {
+      "rendered": "<div class=\"woocommerce columns-5 \"><ul class=\"products columns-5\" data-products=\"type-1\">\n<li class=\"product type-product post-100 status-publish first instock product_cat-hearing-aid-battery product_tag-hearing-aid-battery has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/hearing-aid-battery/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-300x300.webp\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Battery\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-150x150.webp 150w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Battery</h2>\n</a><a href=\"https://abidhearing.com/product/hearing-aid-battery/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_100\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"100\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Battery&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_100\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-99 status-publish instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/cleaning-and-care/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-300x300.jpg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Cleaning and Care\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-500x500.jpg 500w, https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-150x150.jpg 150w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Cleaning and Care</h2>\n</a><a href=\"https://abidhearing.com/product/cleaning-and-care/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_99\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"99\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Cleaning and Care&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_99\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-112 status-publish instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/naida-b-50-up/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-300x300.png\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"naida B 50 up\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-300x300.png 300w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-100x100.png 100w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-500x500.png 500w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-150x150.png 150w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1.png 600w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">naida B 50 up</h2>\n</a><a href=\"https://abidhearing.com/product/naida-b-50-up/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_112\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"112\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;naida B 50 up&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_112\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-114 status-publish instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/naida-v-70-up/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/1-300x300.jpg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"naida v 70 up\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/1-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/1-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/1-500x500.jpg 500w, https://abidhearing.com/wp-content/uploads/2026/10/1-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/1-768x768.jpg 768w, https://abidhearing.com/wp-content/uploads/2026/10/1.jpg 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">naida v 70 up</h2>\n</a><a href=\"https://abidhearing.com/product/naida-v-70-up/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_114\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"114\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;naida v 70 up&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_114\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-115 status-publish last instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/naida-v90-up/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-300x300.png\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"naida v90 up\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-300x300.png 300w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-100x100.png 100w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-500x500.png 500w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-150x150.png 150w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1.png 600w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">naida v90 up</h2>\n</a><a href=\"https://abidhearing.com/product/naida-v90-up/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_115\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"115\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;naida v90 up&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_115\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-98 status-publish first instock product_cat-hearing-aid-accessories has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/pediatric-care-kit-phonak/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-300x300.png\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Pediatric Care Kit phonak\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-300x300.png 300w, https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-100x100.png 100w, https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-500x500.png 500w, https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-150x150.png 150w, https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-768x768.png 768w, https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit.png 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Pediatric Care Kit phonak</h2>\n</a><a href=\"https://abidhearing.com/product/pediatric-care-kit-phonak/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_98\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"98\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Pediatric Care Kit phonak&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_98\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-95 status-publish instock product_cat-hearing-aid-accessories product_tag-hearing-aid has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-remote-control/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/max-300x300.webp\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Phonak  Remote Control\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/max-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/max-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/max-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/2026/10/max-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/2026/10/max-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/2026/10/max.webp 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak  Remote Control</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-remote-control/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_95\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"95\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak  Remote Control&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_95\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-74 status-publish instock product_cat-hearing-aid product_tag-hearing-aid shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-audeo-marvel/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp\" class=\"woocommerce-placeholder wp-post-image\" alt=\"Placeholder\" srcset=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp 1024w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp 1200w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak Audéo&#x2122; Marvel</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-audeo-marvel/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_74\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"74\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak Audéo&#x2122; Marvel&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_74\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-72 status-publish instock product_cat-hearing-aid product_tag-hearing-aid shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-bolero-marvel/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp\" class=\"woocommerce-placeholder wp-post-image\" alt=\"Placeholder\" srcset=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp 1024w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp 1200w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak Bolero&#x2122; Marvel</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-bolero-marvel/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_72\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"72\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak Bolero&#x2122; Marvel&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_72\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-105 status-publish last instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh product_tag-hearing-aid has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/hearing-aid-phonak-cic-2/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"225\" height=\"225\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/images-34.jpeg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Phonak CIC\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/images-34.jpeg 225w, https://abidhearing.com/wp-content/uploads/2026/10/images-34-100x100.jpeg 100w, https://abidhearing.com/wp-content/uploads/2026/10/images-34-150x150.jpeg 150w\" sizes=\"auto, (max-width: 225px) 100vw, 225px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak CIC</h2>\n</a><a href=\"https://abidhearing.com/product/hearing-aid-phonak-cic-2/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_105\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"105\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak CIC&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_105\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-70 status-publish first instock product_cat-hearing-aid product_tag-hearing-aid shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-cros-paradise/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp\" class=\"woocommerce-placeholder wp-post-image\" alt=\"Placeholder\" srcset=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp 1024w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp 1200w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak CROS Paradise</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-cros-paradise/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_70\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"70\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak CROS Paradise&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_70\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-102 status-publish instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh product_tag-hearing-aid has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-infinio/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"225\" height=\"225\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/images-14.jpeg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Phonak Infinio\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/images-14.jpeg 225w, https://abidhearing.com/wp-content/uploads/2026/10/images-14-100x100.jpeg 100w, https://abidhearing.com/wp-content/uploads/2026/10/images-14-150x150.jpeg 150w\" sizes=\"auto, (max-width: 225px) 100vw, 225px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak Infinio</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-infinio/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_102\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"102\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak Infinio&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_102\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-79 status-publish instock product_cat-hearing-aid-ear-molds-custom-fittings product_cat-hearing-aid product_tag-hearing-aid shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-lyric/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp\" class=\"woocommerce-placeholder wp-post-image\" alt=\"Placeholder\" srcset=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp 1024w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp 1200w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak Lyric</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-lyric/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_79\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"79\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak Lyric&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_79\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-108 status-publish instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-naida-l-30-up-2/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"250\" height=\"250\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-.webp\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"phonak naida L 30 Up\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-.webp 250w, https://abidhearing.com/wp-content/uploads/2026/10/phonak--100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/phonak--150x150.webp 150w\" sizes=\"auto, (max-width: 250px) 100vw, 250px\" /><h2 class=\"woocommerce-loop-product__title\">phonak naida L 30 Up</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-naida-l-30-up-2/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_108\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"108\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;phonak naida L 30 Up&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_108\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-110 status-publish last instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-naida-q-50-up/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-300x300.jpg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"phonak naida Q 70 UP\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-500x500.jpg 500w, https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-768x768.jpg 768w, https://abidhearing.com/wp-content/uploads/2026/10/11-scaled.jpg 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">phonak naida Q 70 UP</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-naida-q-50-up/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_110\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"110\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;phonak naida Q 70 UP&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_110\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-113 status-publish first instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-naida-v-70-sp/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/1-300x300.jpg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"phonak naida v 70 sp\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/1-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/1-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/1-500x500.jpg 500w, https://abidhearing.com/wp-content/uploads/2026/10/1-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/1-768x768.jpg 768w, https://abidhearing.com/wp-content/uploads/2026/10/1.jpg 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">phonak naida v 70 sp</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-naida-v-70-sp/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_113\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"113\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;phonak naida v 70 sp&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_113\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-111 status-publish instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-naida-b50-up/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-300x300.png\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"phonak naida v50 up\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-300x300.png 300w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-100x100.png 100w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-500x500.png 500w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-150x150.png 150w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1.png 600w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">phonak naida v50 up</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-naida-b50-up/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_111\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"111\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;phonak naida v50 up&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_111\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-71 status-publish instock product_cat-hearing-aid product_tag-hearing-aid shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-naida-paradise/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp\" class=\"woocommerce-placeholder wp-post-image\" alt=\"Placeholder\" srcset=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp 1024w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp 1200w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak Naída&#x2122; Paradise</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-naida-paradise/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_71\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"71\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak Naída&#x2122; Paradise&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_71\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-81 status-publish instock product_cat-hearing-aid-accessories shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-partnermic/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp\" class=\"woocommerce-placeholder wp-post-image\" alt=\"Placeholder\" srcset=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp 1024w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp 1200w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak PartnerMic&#x2122;</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-partnermic/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_81\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"81\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak PartnerMic&#x2122;&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_81\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-109 status-publish last instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-sky/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-300x300.webp\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Phonak sky\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_.webp 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak sky</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-sky/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_109\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"109\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak sky&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_109\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-73 status-publish first instock product_cat-hearing-aid product_tag-hearing-aid shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-sky-marvel/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp\" class=\"woocommerce-placeholder wp-post-image\" alt=\"Placeholder\" srcset=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp 1024w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp 1200w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak Sky&#x2122; Marvel</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-sky-marvel/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_73\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"73\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak Sky&#x2122; Marvel&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_73\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-75 status-publish instock product_cat-hearing-aid product_tag-hearing-aid shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-virto-m-titanium/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp\" class=\"woocommerce-placeholder wp-post-image\" alt=\"Placeholder\" srcset=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp 1024w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp 1200w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak Virto&#x2122; M-Titanium</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-virto-m-titanium/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_75\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"75\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak Virto&#x2122; M-Titanium&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_75\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-97 status-publish instock product_cat-hearing-aid product_tag-hearing-aid has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/hearing-aids-phonak-virto-marvel/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel-300x300.jpg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Phonak Virto&#x2122; Marvel\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel.jpg 450w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak Virto&#x2122; Marvel</h2>\n</a><a href=\"https://abidhearing.com/product/hearing-aids-phonak-virto-marvel/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_97\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"97\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak Virto&#x2122; Marvel&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_97\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-78 status-publish instock product_cat-hearing-aid product_tag-hearing-aid shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-vitus-2/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp\" class=\"woocommerce-placeholder wp-post-image\" alt=\"Placeholder\" srcset=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp 1024w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp 1200w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak Vitus</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-vitus-2/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_78\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"78\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak Vitus&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_78\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-77 status-publish last instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh product_tag-hearing-aid shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-vitus/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp\" class=\"woocommerce-placeholder wp-post-image\" alt=\"Placeholder\" srcset=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp 1024w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp 1200w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Phonak Vitus +</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-vitus/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_77\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"77\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Phonak Vitus +&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_77\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-104 status-publish first instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh product_tag-hearing-aid has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/hearing-aid-rexton-cic/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/cic-300x300.jpg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Rexton CIC\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/cic-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/cic-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/cic-500x500.jpg 500w, https://abidhearing.com/wp-content/uploads/2026/10/cic-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/cic-768x768.jpg 768w, https://abidhearing.com/wp-content/uploads/2026/10/cic.jpg 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Rexton CIC</h2>\n</a><a href=\"https://abidhearing.com/product/hearing-aid-rexton-cic/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_104\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"104\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Rexton CIC&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_104\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-106 status-publish instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/rexton-hearing-aid/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-300x300.webp\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Rexton Hearing Aid\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-150x150.webp 150w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Rexton Hearing Aid</h2>\n</a><a href=\"https://abidhearing.com/product/rexton-hearing-aid/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_106\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"106\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Rexton Hearing Aid&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_106\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-69 status-publish instock product_cat-hearing-aid-accessories shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/roger-neckloop/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp\" class=\"woocommerce-placeholder wp-post-image\" alt=\"Placeholder\" srcset=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp 1024w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp 1200w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Roger NeckLoop</h2>\n</a><a href=\"https://abidhearing.com/product/roger-neckloop/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_69\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"69\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Roger NeckLoop&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_69\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-80 status-publish instock product_cat-hearing-aid-accessories product_tag-hearing-aid shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/roger-on/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp\" class=\"woocommerce-placeholder wp-post-image\" alt=\"Placeholder\" srcset=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp 1024w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp 1200w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Roger On&#x2122;</h2>\n</a><a href=\"https://abidhearing.com/product/roger-on/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_80\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"80\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Roger On&#x2122;&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_80\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-68 status-publish last instock product_cat-hearing-aid-accessories product_tag-hearing-aid shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/roger-select/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp\" class=\"woocommerce-placeholder wp-post-image\" alt=\"Placeholder\" srcset=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp 1024w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp 1200w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Roger Select</h2>\n</a><a href=\"https://abidhearing.com/product/roger-select/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_68\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"68\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Roger Select&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_68\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-96 status-publish first instock product_cat-hearing-aid-accessories product_tag-hearing-aid has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/roger-table-mic/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-300x300.jpg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Roger Table Mic\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-500x500.jpg 500w, https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II.jpg 700w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Roger Table Mic</h2>\n</a><a href=\"https://abidhearing.com/product/roger-table-mic/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_96\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"96\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Roger Table Mic&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_96\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-101 status-publish instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/terra-sp/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-300x300.webp\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Terra sp\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2.webp 500w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Terra sp</h2>\n</a><a href=\"https://abidhearing.com/product/terra-sp/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_101\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"101\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Terra sp&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_101\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-103 status-publish instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh product_tag-hearing-aid has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/phonak-terra-up/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-300x300.webp\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Terra UP\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair.webp 750w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Terra UP</h2>\n</a><a href=\"https://abidhearing.com/product/phonak-terra-up/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_103\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"103\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Terra UP&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_103\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n<li class=\"product type-product post-107 status-publish instock product_cat-hearing-aid product_cat-hearing-aid-price-in-bangladesh has-post-thumbnail shipping-taxable product-type-simple\">\n\t<a href=\"https://abidhearing.com/product/hearing-aid-unitron/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/max-300x300.webp\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Unitron hearing aid\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/max-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/max-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/max-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/2026/10/max-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/2026/10/max-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/2026/10/max.webp 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /><h2 class=\"woocommerce-loop-product__title\">Unitron hearing aid</h2>\n</a><a href=\"https://abidhearing.com/product/hearing-aid-unitron/\" aria-describedby=\"woocommerce_loop_add_to_cart_link_describedby_107\" data-quantity=\"1\" class=\"button product_type_simple\" data-product_id=\"107\" data-product_sku=\"\" aria-label=\"Read more about &ldquo;Unitron hearing aid&rdquo;\" rel=\"\" data-success_message=\"\">Read more</a>\t<span id=\"woocommerce_loop_add_to_cart_link_describedby_107\" class=\"screen-reader-text\">\n\t\t\t</span>\n</li>\n</ul>\n</div>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-23",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": {
+      "styles_descriptor": {
+        "styles": {
+          "desktop": "",
+          "tablet": "",
+          "mobile": ""
+        },
+        "google_fonts": [],
+        "version": 8
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/23",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=23"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 5,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/23/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 174,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/23/revisions/174"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=23"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "date": "2026-10-09T02:16:51",
+    "date_gmt": "2026-10-08T20:16:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/services/"
+    },
+    "modified": "2026-10-09T02:16:51",
+    "modified_gmt": "2026-10-08T20:16:51",
+    "slug": "services",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/services/",
+    "title": {
+      "rendered": "Services"
+    },
+    "content": {
+      "rendered": "<div style=\"font-family:inherit;color:#1e293b;line-height:1.7;\">\n<p style=\"font-size:17px;color:#475569;margin-bottom:30px;\">\n    Abid Hearing Care Centre provides a complete spectrum of audiological diagnostic evaluations and technical maintenance services performed with calibrated, state-of-the-art medical instruments.\n  </p>\n<div style=\"display:grid;grid-template-columns:1fr;gap:26px;\">\n    <!-- SERVICE 1 --></p>\n<div style=\"border:1px solid #e2e8f0;border-radius:10px;padding:24px;background:#ffffff;\">\n<h3 style=\"color:#0D529C;margin-top:0;font-size:22px;\">1. Diagnostic Hearing Evaluations</h3>\n<p style=\"color:#475569;\">We perform comprehensive tests to determine the exact type, degree, and configuration of hearing impairment:</p>\n<ul style=\"padding-left:20px;color:#334155;\">\n<li><strong>Pure Tone Audiometry (PTA):</strong> Air and bone conduction testing to evaluate hearing thresholds across standard speech and high frequencies.</li>\n<li><strong>Auditory Brainstem Response (ABR / BERA):</strong> Measures electrical brain activity in response to sound; vital for infants and neuro-audiological diagnosis.</li>\n<li><strong>Auditory Steady-State Response (ASSR):</strong> Provides frequency-specific threshold estimates for infants and severe hearing impairments.</li>\n<li><strong>Otoacoustic Emissions (OAE):</strong> Tests cochlear outer hair cell function for rapid newborn hearing screening.</li>\n<li><strong>Impedance Audiometry &#038; Tympanometry:</strong> Evaluates middle ear function, eardrum mobility, and Eustachian tube dysfunction.</li>\n</ul></div>\n<p>    <!-- SERVICE 2 --></p>\n<div style=\"border:1px solid #e2e8f0;border-radius:10px;padding:24px;background:#ffffff;\">\n<h3 style=\"color:#0D529C;margin-top:0;font-size:22px;\">2. Digital Hearing Aid Selection &#038; Computerized Fitting</h3>\n<p style=\"color:#475569;\">\n        Using digital manufacturer fitting software, our audiologists calibrate hearing devices specifically to match your prescription curve. We ensure optimal speech clarity while protecting residual hearing against loud sounds.\n      </p>\n</p></div>\n<p>    <!-- SERVICE 3 --></p>\n<div style=\"border:1px solid #e2e8f0;border-radius:10px;padding:24px;background:#ffffff;\">\n<h3 style=\"color:#0D529C;margin-top:0;font-size:22px;\">3. Custom Ear Mould &#038; Acoustic Shell Laboratory</h3>\n<p style=\"color:#475569;\">\n        In-house laboratory producing medical-grade ear moulds customized to the unique ear canal anatomy of every patient:\n      </p>\n<ul style=\"padding-left:20px;color:#334155;\">\n<li>Soft silicone moulds for pediatric comfort and feedback-free high-power amplification.</li>\n<li>Hard acrylic moulds for durability and easy insertion for adult patients.</li>\n<li>Custom micro-shells for invisible Completely-in-the-Canal (CIC) and In-the-Canal (ITC) instruments.</li>\n</ul></div>\n<p>    <!-- SERVICE 4 --></p>\n<div style=\"border:1px solid #e2e8f0;border-radius:10px;padding:24px;background:#ffffff;\">\n<h3 style=\"color:#0D529C;margin-top:0;font-size:22px;\">4. Maintenance, Repair &#038; Sonic Cleaning</h3>\n<p style=\"color:#475569;\">\n        Complete servicing center equipped to repair and maintain all major hearing aid models:\n      </p>\n<ul style=\"padding-left:20px;color:#334155;\">\n<li>Speaker/Receiver replacement &#038; sound distortion correction.</li>\n<li>Microphone mesh unclogging and transducer replacement.</li>\n<li>Ultrasonic moisture extraction and wax barrier clearing.</li>\n<li>Battery door replacement and contacts cleaning.</li>\n</ul></div>\n</p></div>\n<div style=\"text-align:center;margin-top:40px;background:#f8fafc;padding:30px;border-radius:10px;\">\n<h3 style=\"margin-top:0;color:#0D529C;\">Need a Hearing Test or Device Repair?</h3>\n<p style=\"color:#64748b;margin-bottom:20px;\">Book your appointment at our Uttara clinic today.</p>\n<p>    <a href=\"tel:01771237740\" style=\"background:#0D529C;color:#ffffff;padding:12px 26px;border-radius:6px;text-decoration:none;font-weight:700;\">Call 0177 123 77 40</a>\n  </div>\n</div>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Abid Hearing Care Centre provides a complete spectrum of audiological diagnostic evaluations and technical maintenance services performed with calibrated, state-of-the-art medical instruments. 1. Diagnostic Hearing Evaluations We perform comprehensive tests to determine the exact type, degree, and configuration of hearing impairment: Pure Tone Audiometry (PTA): Air and bone conduction testing to evaluate hearing thresholds across [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-22",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": {
+      "styles_descriptor": {
+        "styles": {
+          "desktop": "",
+          "tablet": "",
+          "mobile": ""
+        },
+        "google_fonts": [],
+        "version": 8
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/22",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=22"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/22/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=22"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "date": "2026-10-09T02:16:51",
+    "date_gmt": "2026-10-08T20:16:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/about-us/"
+    },
+    "modified": "2026-10-09T02:16:51",
+    "modified_gmt": "2026-10-08T20:16:51",
+    "slug": "about-us",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/about-us/",
+    "title": {
+      "rendered": "About Us"
+    },
+    "content": {
+      "rendered": "<div style=\"font-family:inherit;color:#1e293b;line-height:1.7;\">\n<section style=\"background:#f8fafc;border-left:5px solid #0D529C;padding:28px;border-radius:8px;margin-bottom:32px;\">\n<h2 style=\"color:#0D529C;margin-top:0;font-size:26px;\">About Abid Hearing Care Centre (AHCC)</h2>\n<p style=\"font-size:16px;color:#475569;margin-bottom:0;\">\n      Founded in 2014 by <strong>Mohammad Haidar Ali</strong> (Audiologist with Clinical Competence in Audiology), Abid Hearing Care Centre has grown to become Dhaka’s premier clinical audiology clinic dedicated to patient-centered, ethical hearing rehabilitation.\n    </p>\n</section>\n<h3 style=\"color:#0D529C;font-size:22px;margin-top:30px;\">Our Mission &#038; Clinical Philosophy</h3>\n<p>\n    Hearing loss is not simply a volume problem — it affects brain cognitive health, emotional connection, and quality of life. At AHCC, our philosophy is anchored on three clinical pillars:\n  </p>\n<ul style=\"color:#334155;padding-left:22px;\">\n<li><strong>Precision Diagnosis Before Device:</strong> We never sell hearing devices over the counter. Every client undergoes rigorous audiometric evaluation in an ISO-calibrated soundproof booth.</li>\n<li><strong>Certified Technology:</strong> As an authorized partner of Swiss Sonova (Phonak) and leading German/Danish brands, we guarantee 100% genuine hardware with international warranty support.</li>\n<li><strong>Continuous Rehabilitation:</strong> Hearing adaptation takes time. We provide free follow-up fine-tuning sessions, regular cleaning, and auditory counselling for the lifetime of your device.</li>\n</ul>\n<div style=\"background:#eff6ff;border:1px solid #bfdbfe;padding:24px;border-radius:10px;margin-top:36px;\">\n<h3 style=\"color:#1e40af;margin-top:0;\">Clinic Organization &#038; Team</h3>\n<p style=\"margin-bottom:8px;color:#1e3a8a;\">\n      Our multidisciplinary team comprises <strong>9 full-time audiology and technical specialists</strong> and <strong>12 support staff</strong> operating across clinical audiology, acoustic ear-mould fabrication, and specialized device servicing.\n    </p>\n<p>    <a href=\"/management/\" style=\"display:inline-block;margin-top:10px;background:#0D529C;color:#ffffff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:600;\">Meet Our Management &#038; Staff &rarr;</a>\n  </div>\n</div>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>About Abid Hearing Care Centre (AHCC) Founded in 2014 by Mohammad Haidar Ali (Audiologist with Clinical Competence in Audiology), Abid Hearing Care Centre has grown to become Dhaka’s premier clinical audiology clinic dedicated to patient-centered, ethical hearing rehabilitation. Our Mission &#038; Clinical Philosophy Hearing loss is not simply a volume problem — it affects brain [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-21",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": {
+      "styles_descriptor": {
+        "styles": {
+          "desktop": "",
+          "tablet": "",
+          "mobile": ""
+        },
+        "google_fonts": [],
+        "version": 8
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/21",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=21"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/21/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=21"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "date": "2026-10-09T02:16:51",
+    "date_gmt": "2026-10-08T20:16:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/home/"
+    },
+    "modified": "2026-10-13T20:44:34",
+    "modified_gmt": "2026-10-13T14:44:34",
+    "slug": "home",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/",
+    "title": {
+      "rendered": "Home"
+    },
+    "content": {
+      "rendered": "<p><!-- AHCC homepage: 100% inline styles, no style tag. Paste into a Custom HTML block (full-width page template recommended). -->\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&#038;display=swap\">\n<div id=\"ahcc-root\" style=\"font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#0F1B2D;line-height:1.65;width:100vw;max-width:100vw;position:relative;left:50%;transform:translateX(-50%);margin:0;overflow:hidden;background:#fff;box-sizing:border-box;\">\n<section style=\"background:radial-gradient(900px 500px at 85% 20%,rgba(10,108,255,.45),transparent 65%),linear-gradient(160deg,#06182F 0%,#0B2A52 60%,#0A4BB5 100%);background-color:#0B2A52;padding:clamp(48px,8vw,96px) 0;margin:0;overflow:hidden;color:#fff;\">\n<div style=\"width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;\">\n<div style=\"display:flex;flex-direction:row-reverse;flex-wrap:wrap;align-items:center;gap:clamp(28px,5vw,64px);\">\n<div style=\"flex:.9 1 320px;min-width:0;\">\n<div style=\"position:relative;width:100%;max-width:420px;aspect-ratio:1;margin:0 auto;display:flex;align-items:center;justify-content:center;\">\n<div style=\"position:absolute;inset:6%;border-radius:50%;background:#fff;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.35);\"><img decoding=\"async\" src=\"/wp-content/uploads/2026/10/1.jpg\" alt=\"Hearing aid\" onerror=\"this.style.display='none'\" style=\"display:block;width:100%;height:100%;object-fit:cover;object-position:center;border-radius:50%;\"></div>\n<div style=\"position:absolute;background:#fff;color:#06182F;border-radius:14px;padding:11px 16px;font-size:.85rem;font-weight:700;box-shadow:0 14px 34px rgba(0,0,0,.25);line-height:1.3;left:0;bottom:12%;\">Since 2014</p>\n<div style=\"font-weight:500;color:#52627A;font-size:.76rem;\">Uttara, Dhaka</div>\n</div>\n<div style=\"position:absolute;background:#fff;color:#06182F;border-radius:14px;padding:11px 16px;font-size:.85rem;font-weight:700;box-shadow:0 14px 34px rgba(0,0,0,.25);line-height:1.3;right:0;top:10%;\">All ages</p>\n<div style=\"font-weight:500;color:#52627A;font-size:.76rem;\">Children to seniors</div>\n</div>\n</div>\n</div>\n<div style=\"flex:1.1 1 340px;min-width:0;\">\n<div>\n<span style=\"display:inline-block;padding:7px 14px;border-radius:99px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);font-weight:600;font-size:.88rem;color:#fff;margin-bottom:18px;\">Welcome to Abid Hearing Care Center</span></p>\n<h1 style=\"margin:0 0 18px;font-size:clamp(2.1rem,6vw,3.7rem);font-weight:800;line-height:1.1;letter-spacing:-.02em;color:#fff;\">We provide high quality hearing aids</h1>\n<p style=\"margin:0 0 28px;color:rgba(255,255,255,.85);font-size:clamp(1rem,2vw,1.15rem);line-height:1.7;max-width:54ch;\">All types of hearing aids, tested and fitted by trained audiology specialists. Serving people of all ages in Bangladesh since 2014.</p>\n<div style=\"display:flex;flex-wrap:wrap;gap:12px;\"><a href=\"tel:01771237740\"  style=\"display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:15px 24px;border-radius:12px;background:#D32F2F;color:#fff;font-weight:700;font-size:.98rem;line-height:1;text-decoration:none;box-shadow:0 8px 22px rgba(211,47,47,.3);box-sizing:border-box;\">&#x1f4de; Call 0177 123 77 40</a><a href=\"https://wa.me/8801771237740?text=Hello%20Abid%20Hearing%20Care%2C%20I%20would%20like%20to%20book%20a%20hearing%20test.\" target=\"_blank\" rel=\"noopener\" style=\"display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:15px 24px;border-radius:12px;background:#1FA855;color:#fff;font-weight:700;font-size:.98rem;line-height:1;text-decoration:none;box-shadow:0 8px 22px rgba(31,168,85,.28);box-sizing:border-box;\">&#x1f4ac; Book on WhatsApp</a></div>\n</div>\n</div>\n</div>\n</div>\n</section>\n<section style=\"background:#fff;padding:clamp(52px,8vw,96px) 0 clamp(52px,8vw,96px);margin:0;\">\n<div style=\"width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;\">\n<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(28px,5vw,64px);align-items:center;\">\n<div>\n<h2 style=\"margin:0;font-size:clamp(1.75rem,4.2vw,2.7rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;color:#06182F;\">All types of hearing aids, under one roof</h2>\n<p style=\"margin:14px 0 0;font-size:clamp(1rem,1.6vw,1.1rem);line-height:1.7;color:#52627A;max-width:60ch;\">Abid Hearing Care Centre opened in 2014 with one goal: bring state-of-the-art, comprehensive hearing healthcare to people of all ages.</p>\n<p style=\"margin:14px 0 0;font-size:clamp(1rem,1.6vw,1.1rem);line-height:1.7;color:#52627A;max-width:60ch;\">Our specialists are experienced and trained, with clinical competence in audiology and hearing aid fitting. Today we are a wide-range hearing aid provider and service centre in Bangladesh.</p>\n</div>\n<div style=\"display:grid;grid-template-columns:1fr 1fr;gap:14px;\">\n<div style=\"background:#F3F7FC;border:1px solid #E3EAF3;border-radius:18px;padding:22px;\">\n<div style=\"font-size:2rem;font-weight:800;color:#0A6CFF;line-height:1.1;\">2014</div>\n<div style=\"color:#52627A;font-size:.9rem;margin-top:4px;\">Year we opened</div>\n</div>\n<div style=\"background:#F3F7FC;border:1px solid #E3EAF3;border-radius:18px;padding:22px;\">\n<div style=\"font-size:2rem;font-weight:800;color:#0A6CFF;line-height:1.1;\">6</div>\n<div style=\"color:#52627A;font-size:.9rem;margin-top:4px;\">Hearing care services</div>\n</div>\n<div style=\"background:#F3F7FC;border:1px solid #E3EAF3;border-radius:18px;padding:22px;\">\n<div style=\"font-size:2rem;font-weight:800;color:#0A6CFF;line-height:1.1;\">All</div>\n<div style=\"color:#52627A;font-size:.9rem;margin-top:4px;\">Types of hearing aids</div>\n</div>\n<div style=\"background:#F3F7FC;border:1px solid #E3EAF3;border-radius:18px;padding:22px;\">\n<div style=\"font-size:2rem;font-weight:800;color:#0A6CFF;line-height:1.1;\">All ages</div>\n<div style=\"color:#52627A;font-size:.9rem;margin-top:4px;\">Children to seniors</div>\n</div>\n</div>\n</div>\n</div>\n</section>\n<section style=\"background:#F3F7FC;padding:clamp(52px,8vw,96px) 0 clamp(52px,8vw,96px);margin:0;\">\n<div style=\"width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;\">\n<div style=\"max-width:680px;margin-bottom:clamp(28px,5vw,48px);\">\n<h2 style=\"margin:0;font-size:clamp(1.75rem,4.2vw,2.7rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;color:#06182F;\">Our services</h2>\n<p style=\"margin:14px 0 0;font-size:clamp(1rem,1.6vw,1.1rem);line-height:1.7;color:#52627A;max-width:60ch;\">From the first hearing test to long-term servicing, everything happens at our clinic.</p>\n</div>\n<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:18px;align-items:stretch;\">\n<div style=\"background:#fff;border:1px solid #E3EAF3;border-radius:20px;padding:26px;\">\n<div style=\"width:50px;height:50px;border-radius:14px;background:#E8F1FF;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px;\">&#x1f3a7;</div>\n<h3 style=\"margin:0 0 8px;font-size:1.15rem;font-weight:800;color:#06182F;\">Hearing test</h3>\n<p style=\"margin:0;color:#52627A;font-size:.95rem;line-height:1.6;\">A clear picture of how well you hear, so the right solution is chosen from the start.</p>\n</div>\n<div style=\"background:#fff;border:1px solid #E3EAF3;border-radius:20px;padding:26px;\">\n<div style=\"width:50px;height:50px;border-radius:14px;background:#E8F1FF;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px;\">&#x1f9bb;</div>\n<h3 style=\"margin:0 0 8px;font-size:1.15rem;font-weight:800;color:#06182F;\">Hearing aids</h3>\n<p style=\"margin:0;color:#52627A;font-size:.95rem;line-height:1.6;\">All types of hearing aids, matched to your hearing, lifestyle and budget.</p>\n</div>\n<div style=\"background:#fff;border:1px solid #E3EAF3;border-radius:20px;padding:26px;\">\n<div style=\"width:50px;height:50px;border-radius:14px;background:#E8F1FF;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px;\">&#x1f9ea;</div>\n<h3 style=\"margin:0 0 8px;font-size:1.15rem;font-weight:800;color:#06182F;\">Ear mould &amp; shell making</h3>\n<p style=\"margin:0;color:#52627A;font-size:.95rem;line-height:1.6;\">Custom-made ear moulds and shells for a comfortable, secure fit.</p>\n</div>\n<div style=\"background:#fff;border:1px solid #E3EAF3;border-radius:20px;padding:26px;\">\n<div style=\"width:50px;height:50px;border-radius:14px;background:#E8F1FF;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px;\">&#x1f527;</div>\n<h3 style=\"margin:0 0 8px;font-size:1.15rem;font-weight:800;color:#06182F;\">Repairing &amp; servicing</h3>\n<p style=\"margin:0;color:#52627A;font-size:.95rem;line-height:1.6;\">Repairs and servicing to keep your hearing aids working at their best.</p>\n</div>\n<div style=\"background:#fff;border:1px solid #E3EAF3;border-radius:20px;padding:26px;\">\n<div style=\"width:50px;height:50px;border-radius:14px;background:#E8F1FF;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px;\">&#x1f50b;</div>\n<h3 style=\"margin:0 0 8px;font-size:1.15rem;font-weight:800;color:#06182F;\">Accessories sale</h3>\n<p style=\"margin:0;color:#52627A;font-size:.95rem;line-height:1.6;\">Batteries and accessories for everyday use and care.</p>\n</div>\n<div style=\"background:#fff;border:1px solid #E3EAF3;border-radius:20px;padding:26px;\">\n<div style=\"width:50px;height:50px;border-radius:14px;background:#E8F1FF;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px;\">&#x1f514;</div>\n<h3 style=\"margin:0 0 8px;font-size:1.15rem;font-weight:800;color:#06182F;\">Tinnitus management</h3>\n<p style=\"margin:0;color:#52627A;font-size:.95rem;line-height:1.6;\">Support for ringing and buzzing in the ears.</p>\n</div>\n</div>\n</div>\n</section>\n<section style=\"background:#fff;padding:clamp(52px,8vw,96px) 0 clamp(52px,8vw,96px);margin:0;\">\n<div style=\"width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;\">\n<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(28px,5vw,64px);align-items:center;\">\n<div>\n<h2 style=\"margin:0;font-size:clamp(1.75rem,4.2vw,2.7rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;color:#06182F;\">Hearing means quality of life. Make better living.</h2>\n<p style=\"margin:14px 0 0;font-size:clamp(1rem,1.6vw,1.1rem);line-height:1.7;color:#52627A;max-width:60ch;\">The ability to hear is such a fundamental part of life that most people take it for granted. Hearing is essential for everyday communication. It connects us with family, friends and co-workers.</p>\n<ul style=\"list-style:none;margin:22px 0 0;padding:0;color:#06182F;\">\n<li style=\"display:flex;gap:12px;align-items:flex-start;font-weight:600;margin:0 0 12px;padding:0;\"><span style=\"flex:none;width:26px;height:26px;border-radius:50%;background:#E8F1FF;color:#0A6CFF;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:800;\">✓</span><span>Conversations with family and friends</span></li>\n<li style=\"display:flex;gap:12px;align-items:flex-start;font-weight:600;margin:0 0 12px;padding:0;\"><span style=\"flex:none;width:26px;height:26px;border-radius:50%;background:#E8F1FF;color:#0A6CFF;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:800;\">✓</span><span>Meetings, calls and work</span></li>\n<li style=\"display:flex;gap:12px;align-items:flex-start;font-weight:600;margin:0 0 12px;padding:0;\"><span style=\"flex:none;width:26px;height:26px;border-radius:50%;background:#E8F1FF;color:#0A6CFF;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:800;\">✓</span><span>TV, music and the sounds you love</span></li>\n</ul>\n</div>\n<div style=\"border-radius:24px;padding:clamp(26px,4vw,40px);background:linear-gradient(150deg,#06182F,#0A4BB5);color:#fff;\">\n<div style=\"font-size:clamp(3.2rem,9vw,5.5rem);font-weight:800;line-height:1;letter-spacing:-.04em;\">&#x1f442;</div>\n<p style=\"margin:12px 0 0;color:rgba(255,255,255,.85);font-size:1.05rem;line-height:1.6;\">We rarely think about the role our ears play in our lives, until something changes.</p>\n</div>\n</div>\n</div>\n</section>\n<section style=\"background:#F3F7FC;padding:clamp(52px,8vw,96px) 0 clamp(52px,8vw,96px);margin:0;\">\n<div style=\"width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;\">\n<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(28px,5vw,64px);align-items:center;\">\n<div style=\"border-radius:24px;padding:clamp(26px,4vw,40px);background:linear-gradient(150deg,#06182F,#0A4BB5);color:#fff;\">\n<div style=\"font-size:clamp(3.2rem,9vw,5.5rem);font-weight:800;line-height:1;letter-spacing:-.04em;\">10 years</div>\n<p style=\"margin:12px 0 0;color:rgba(255,255,255,.85);font-size:1.05rem;line-height:1.6;\">the average time people wait before doing something about their hearing loss.</p>\n</div>\n<div>\n<h2 style=\"margin:0;font-size:clamp(1.75rem,4.2vw,2.7rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;color:#06182F;\">Don&#39;t wait too long</h2>\n<p style=\"margin:14px 0 0;font-size:clamp(1rem,1.6vw,1.1rem);line-height:1.7;color:#52627A;max-width:60ch;\">On average, people with hearing loss wait almost 10 years before they act. Only a few make a timely decision to recover their hearing and improve their quality of life.</p>\n</div>\n</div>\n</div>\n</section>\n<section style=\"background:#fff;padding:clamp(52px,8vw,96px) 0 clamp(28px,4vw,48px);margin:0;\">\n<div style=\"width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;\">\n<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(28px,5vw,64px);align-items:center;\">\n<div>\n<h2 style=\"margin:0;font-size:clamp(1.75rem,4.2vw,2.7rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;color:#06182F;\">Understanding hearing loss</h2>\n<p style=\"margin:14px 0 0;font-size:clamp(1rem,1.6vw,1.1rem);line-height:1.7;color:#52627A;max-width:60ch;\">Hearing loss usually begins unnoticed. Even simple conversations can become tiring, and many parts of everyday life get harder. Hearing loss can have many causes, but in most cases it can be addressed successfully.</p>\n</div>\n<div style=\"display:grid;gap:14px;\">\n<div style=\"border-left:4px solid #0A6CFF;background:#fff;border-radius:0 14px 14px 0;padding:14px 18px;box-shadow:0 1px 0 #E3EAF3;\">\n<div style=\"font-weight:800;color:#06182F;\">Conversations with loved ones</div>\n<div style=\"color:#52627A;font-size:.95rem;\">Harder to follow, more tiring.</div>\n</div>\n<div style=\"border-left:4px solid #0A6CFF;background:#fff;border-radius:0 14px 14px 0;padding:14px 18px;box-shadow:0 1px 0 #E3EAF3;\">\n<div style=\"font-weight:800;color:#06182F;\">Meetings and phone calls</div>\n<div style=\"color:#52627A;font-size:.95rem;\">Missed words and repeated questions.</div>\n</div>\n<div style=\"border-left:4px solid #0A6CFF;background:#fff;border-radius:0 14px 14px 0;padding:14px 18px;box-shadow:0 1px 0 #E3EAF3;\">\n<div style=\"font-weight:800;color:#06182F;\">Watching TV</div>\n<div style=\"color:#52627A;font-size:.95rem;\">Turning the volume up and still missing speech.</div>\n</div>\n<div style=\"border-left:4px solid #0A6CFF;background:#fff;border-radius:0 14px 14px 0;padding:14px 18px;box-shadow:0 1px 0 #E3EAF3;\">\n<div style=\"font-weight:800;color:#06182F;\">Social life</div>\n<div style=\"color:#52627A;font-size:.95rem;\">Many people withdraw and become isolated, and quality of life drops.</div>\n</div>\n</div>\n</div>\n</div>\n</section>\n<section style=\"background:#fff;padding:clamp(28px,4vw,48px) 0 clamp(52px,8vw,96px);margin:0;\">\n<div style=\"width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;\">\n<div style=\"background:linear-gradient(120deg,#EAF2FF,#fff 60%);border:1px solid #E3EAF3;border-radius:28px;padding:clamp(24px,5vw,56px);\">\n<div style=\"display:flex;flex-wrap:wrap;align-items:center;margin:calc(-1 * clamp(12px,2.5vw,28px));\">\n<div style=\"flex:1 1 300px;min-width:0;padding:clamp(12px,2.5vw,28px);box-sizing:border-box;\"><img decoding=\"async\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto.jpg\" alt=\"Phonak Audéo Paradise hearing aid\" onerror=\"this.style.display='none'\" style=\"display:block;width:100%;max-width:420px;height:auto;margin:0 auto;border-radius:20px;\"></div>\n<div style=\"flex:1.1 1 340px;min-width:0;padding:clamp(12px,2.5vw,28px);box-sizing:border-box;\">\n<h2 style=\"margin:0;font-size:clamp(1.75rem,4.2vw,2.7rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;color:#06182F;\">There&#39;s nothing like the sound of Paradise</h2>\n<p style=\"margin:14px 0 0;font-size:clamp(1rem,1.6vw,1.1rem);line-height:1.7;color:#52627A;max-width:60ch;\">People expect great sound quality, multifunctionality and control from a hearing aid. Phonak Audéo&#x2122; Paradise delivers sound quality, universal connectivity and personalised digital solutions.</p>\n</div>\n</div>\n</div>\n</div>\n</section>\n<section id=\"ahcc-blog-section\" style=\"background:#F3F7FC;padding:clamp(52px,8vw,96px) 0 clamp(52px,8vw,96px);margin:0;\">\n<div style=\"width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;\">\n<div style=\"max-width:680px;margin-bottom:clamp(28px,5vw,48px);\">\n<h2 style=\"margin:0;font-size:clamp(1.75rem,4.2vw,2.7rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;color:#06182F;\">Blog posts for readers</h2>\n<p style=\"margin:14px 0 0;font-size:clamp(1rem,1.6vw,1.1rem);line-height:1.7;color:#52627A;max-width:60ch;\">Practical reading on hearing, hearing aids and everyday ear care.</p>\n</div>\n\n    <style>\n      .ahcc-blog-grid {\n        display: grid;\n        grid-template-columns: 1fr;\n        gap: 20px;\n        align-items: stretch;\n      }\n      @media (min-width: 768px) {\n        .ahcc-blog-grid {\n          grid-template-columns: repeat(3, 1fr) !important; /* Exactly 3 cards per row on desktop */\n        }\n      }\n    </style>\n    <div class=\"ahcc-blog-grid\"><article style=\"border:1px solid #E3EAF3;border-radius:20px;overflow:hidden;background:#fff;display:flex;flex-direction:column;\"><div style=\"padding:22px;display:flex;flex-direction:column;flex:1;justify-content:space-between;\"><div><h3 style=\"margin:0 0 8px;font-size:1.1rem;font-weight:800;color:#06182F;\"><a href=\"https://abidhearing.com/hello-world/\" style=\"color:inherit;text-decoration:none;\">Hello world!</a></h3><p style=\"margin:0 0 10px;color:#52627A;font-size:.92rem;line-height:1.6;\">Welcome to WordPress. This is your first post. Edit or delete it, then start...</p></div><a href=\"https://abidhearing.com/hello-world/\" style=\"color:#0A6CFF;font-weight:700;font-size:.92rem;text-decoration:none;\">Read more &rarr;</a></div></article></div></div>\n</section>\n<section style=\"background:#fff;padding:clamp(52px,8vw,96px) 0 clamp(52px,8vw,96px);margin:0;\">\n<div style=\"width:100%;max-width:1160px;margin:0 auto;padding:0 clamp(18px,4vw,32px);box-sizing:border-box;\">\n<div style=\"background:linear-gradient(160deg,#06182F,#0B2A52);background-color:#0B2A52;border-radius:28px;padding:clamp(26px,5vw,56px);\">\n<div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,5vw,56px);align-items:stretch;\">\n<div>\n<h2 style=\"margin:0;font-size:clamp(1.75rem,4.2vw,2.7rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;color:#fff;\">Visit our clinic</h2>\n<p style=\"margin:14px 0 0;font-size:clamp(1rem,1.6vw,1.1rem);line-height:1.7;color:rgba(255,255,255,.8);max-width:60ch;\">Find us in Sector-7, Uttara, Dhaka.</p>\n<div style=\"background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:24px;margin-top:24px;font-size:1rem;line-height:1.6;color:#fff;\">\n<div style=\"font-size:.8rem;font-weight:600;color:rgba(255,255,255,.6);margin-bottom:4px;\">Address</div>\n<p>Abid Hearing Care Centre<br />Oasis Complex, House-59, Sonargaon Janapath Road (1st Floor), Sector-7, Uttara, Dhaka-1230</div>\n</div>\n<div style=\"border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.16);min-height:320px;height:100%;background:#0B2A52;\"><iframe src=\"https://maps.google.com/maps?q=Abid+Hearing+Care+Center+Sector+7+Uttara+Dhaka&#038;hl=en&#038;z=16&#038;output=embed\" title=\"Abid Hearing Care Centre on Google Maps\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" allowfullscreen style=\"display:block;width:100%;height:100%;min-height:340px;border:0;\"></iframe></div>\n</div>\n</div>\n</div>\n</section>\n</div>\n<p><script>(function(){var r=document.getElementById('ahcc-root'),e=r&&r.parentElement;while(e&&e!==document.body){['padding-top','margin-top','padding-bottom','margin-bottom'].forEach(function(p){e.style.setProperty(p,'0','important')});e=e.parentElement}})();</script></p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Since 2014 Uttara, Dhaka All ages Children to seniors Welcome to Abid Hearing Care Center We provide high quality hearing aids All types of hearing aids, tested and fitted by trained audiology specialists. Serving people of all ages in Bangladesh since 2014. &#x1f4de; Call 0177 123 77 40&#x1f4ac; Book on WhatsApp All types of hearing [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-20",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": {
+      "styles_descriptor": {
+        "styles": {
+          "desktop": "",
+          "tablet": "",
+          "mobile": ""
+        },
+        "google_fonts": [],
+        "version": 8
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/20",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=20"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 5,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/20/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 199,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/20/revisions/199"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=20"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "date": "2026-10-08T19:25:29",
+    "date_gmt": "2026-10-08T19:25:29",
+    "guid": {
+      "rendered": "https://abidhearing.com/?page_id=7"
+    },
+    "modified": "2026-10-08T19:25:29",
+    "modified_gmt": "2026-10-08T19:25:29",
+    "slug": "shop",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/shop/",
+    "title": {
+      "rendered": "Shop"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-7",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/7",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=7"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/7/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=7"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "date": "2026-10-08T17:20:34",
+    "date_gmt": "2026-10-08T17:20:34",
+    "guid": {
+      "rendered": "https://abidhearing.com/?page_id=2"
+    },
+    "modified": "2026-10-08T17:20:34",
+    "modified_gmt": "2026-10-08T17:20:34",
+    "slug": "sample-page",
+    "status": "publish",
+    "type": "page",
+    "link": "https://abidhearing.com/sample-page/",
+    "title": {
+      "rendered": "Sample Page"
+    },
+    "content": {
+      "rendered": "\n<p class=\"wp-block-paragraph\">This is an example page. It&#8217;s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:</p>\n\n\n\n<blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n\n<p class=\"wp-block-paragraph\">Hi there! I&#8217;m a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin&#8217; caught in the rain.)</p>\n\n</blockquote>\n\n\n\n<p class=\"wp-block-paragraph\">&#8230;or something like this:</p>\n\n\n\n<blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n\n<p class=\"wp-block-paragraph\">The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</p>\n\n</blockquote>\n\n\n\n<p class=\"wp-block-paragraph\">As a new WordPress user, you should go to <a href=\"https://abidhearing.com/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>This is an example page. It&#8217;s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this: Hi there! I&#8217;m a bike messenger [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "template": "",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-2",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "blocksy_meta": {
+      "styles_descriptor": {
+        "styles": {
+          "desktop": "",
+          "tablet": "",
+          "mobile": ""
+        },
+        "google_fonts": [],
+        "version": 8
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/2",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=2"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://abidhearing.com/wp-json/wp/v2/pages/2/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media?parent=2"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

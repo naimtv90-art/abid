@@ -1,0 +1,24 @@
+<%- include('../layout/header', { title: 'Products &#8211; Abid Hearing Care Centre', currentPath: '/products', metaDesc: 'Browse wide range of hearing aids from Phonak, Rexton, Unitron in Bangladesh with international warranty.' }) %>
+
+<div class="ct-container" style="padding-top: 40px; padding-bottom: 60px;">
+  <div style="margin-bottom: 24px;">
+    <h1 style="font-size: 2rem; font-weight: 800; color: #06182F; margin: 0 0 8px 0;">Products</h1>
+    <p style="color: #64748B; font-size: 0.95rem; margin: 0;">Showing all <%= products.length %> results</p>
+  </div>
+
+  <div class="woocommerce columns-5">
+    <ul class="products columns-5" data-products="type-1">
+      <% products.forEach(prod => { %>
+        <li class="product type-product status-publish instock has-post-thumbnail shipping-taxable product-type-simple">
+          <a href="/product/<%= prod.slug %>" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+            <img loading="lazy" decoding="async" width="300" height="300" src="<%= prod.image %>" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="<%= prod.altText || (prod.name + ' - Abid Hearing Care Centre Uttara Dhaka Bangladesh') %>" title="<%= prod.name %> - Abid Hearing Care Centre Uttara Dhaka">
+            <h2 class="woocommerce-loop-product__title"><%= prod.name %></h2>
+          </a>
+          <a href="/product/<%= prod.slug %>" class="button product_type_simple">Read more</a>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+</div>
+
+<%- include('../layout/footer') %>

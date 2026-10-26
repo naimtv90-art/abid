@@ -1,0 +1,5620 @@
+[
+  {
+    "id": 200,
+    "date": "2026-10-13T20:47:38",
+    "date_gmt": "2026-10-13T14:47:38",
+    "guid": {
+      "rendered": "https://abidhearing.com/wp-content/uploads/2026/10/logo.png"
+    },
+    "modified": "2026-10-13T20:47:38",
+    "modified_gmt": "2026-10-13T14:47:38",
+    "slug": "logo",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/logo/",
+    "title": {
+      "rendered": "logo"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-200",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/logo.png'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"58\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/logo-300x58.png\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/logo-300x58.png 300w, https://abidhearing.com/wp-content/uploads/2026/10/logo.png 626w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/png",
+    "media_details": {
+      "width": 626,
+      "height": 122,
+      "file": "2026/10/logo.png",
+      "filesize": 46858,
+      "sizes": {
+        "medium": {
+          "file": "logo-300x58.png",
+          "width": 300,
+          "height": 58,
+          "filesize": 15172,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/logo-300x58.png"
+        },
+        "thumbnail": {
+          "file": "logo-150x122.png",
+          "width": 150,
+          "height": 122,
+          "filesize": 3557,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/logo-150x122.png"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "logo-500x122.png",
+          "width": 500,
+          "height": 122,
+          "filesize": 25723,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/logo-500x122.png"
+        },
+        "woocommerce_thumbnail": {
+          "file": "logo-300x122.png",
+          "width": 300,
+          "height": 122,
+          "filesize": 7018,
+          "uncropped": false,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/logo-300x122.png"
+        },
+        "woocommerce_single": {
+          "file": "logo-300x58.png",
+          "width": 300,
+          "height": 58,
+          "filesize": 15172,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/logo-300x58.png"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "logo-100x100.png",
+          "width": 100,
+          "height": 100,
+          "filesize": 2649,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/logo-100x100.png"
+        },
+        "full": {
+          "file": "logo.png",
+          "width": 626,
+          "height": 122,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/logo.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/logo.png",
+    "filename": "logo.png",
+    "filesize": 46858,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/200",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=200"
+        }
+      ]
+    }
+  },
+  {
+    "id": 121,
+    "date": "2026-10-09T15:27:58",
+    "date_gmt": "2026-10-09T09:27:58",
+    "guid": {
+      "rendered": "https://abidhearing.com/wp-content/uploads/2026/10/max-1.webp"
+    },
+    "modified": "2026-10-09T15:27:58",
+    "modified_gmt": "2026-10-09T09:27:58",
+    "slug": "max-2",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/max-2/",
+    "title": {
+      "rendered": "max"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-121",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/max-1.webp'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/max-1-300x300.webp\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/max-1-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/max-1-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/max-1-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/2026/10/max-1-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/2026/10/max-1-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/2026/10/max-1.webp 963w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/webp",
+    "media_details": {
+      "width": 963,
+      "height": 963,
+      "file": "2026/10/max-1.webp",
+      "filesize": 33818,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "max-1-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 11766,
+          "uncropped": false,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-1-300x300.webp"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "max-1-100x100.webp",
+          "width": 100,
+          "height": 100,
+          "filesize": 3128,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-1-100x100.webp"
+        },
+        "woocommerce_single": {
+          "file": "max-1-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 11766,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-1-300x300.webp"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "max-1-500x500.webp",
+          "width": 500,
+          "height": 500,
+          "filesize": 22622,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-1-500x500.webp"
+        },
+        "medium": {
+          "file": "max-1-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 11766,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-1-300x300.webp"
+        },
+        "thumbnail": {
+          "file": "max-1-150x150.webp",
+          "width": 150,
+          "height": 150,
+          "filesize": 5030,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-1-150x150.webp"
+        },
+        "medium_large": {
+          "file": "max-1-768x768.webp",
+          "width": 768,
+          "height": 768,
+          "filesize": 40722,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-1-768x768.webp"
+        },
+        "full": {
+          "file": "max-1.webp",
+          "width": 963,
+          "height": 963,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-1.webp"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-1.webp",
+    "filename": "max-1.webp",
+    "filesize": 33818,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/121",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=121"
+        }
+      ]
+    }
+  },
+  {
+    "id": 120,
+    "date": "2026-10-09T15:27:28",
+    "date_gmt": "2026-10-09T09:27:28",
+    "guid": {
+      "rendered": "https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1.jpg"
+    },
+    "modified": "2026-10-09T15:27:28",
+    "modified_gmt": "2026-10-09T09:27:28",
+    "slug": "126293-14407249-1",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/126293-14407249-1/",
+    "title": {
+      "rendered": "126293-14407249-1"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-120",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1.jpg'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1-300x300.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1-500x500.jpg 500w, https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1.jpg 699w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 699,
+      "height": 699,
+      "file": "2026/10/126293-14407249-1.jpg",
+      "filesize": 50822,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "126293-14407249-1-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 12576,
+          "uncropped": false,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1-300x300.jpg"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "126293-14407249-1-100x100.jpg",
+          "width": 100,
+          "height": 100,
+          "filesize": 3943,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1-100x100.jpg"
+        },
+        "woocommerce_single": {
+          "file": "126293-14407249-1-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 12576,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1-300x300.jpg"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "126293-14407249-1-500x500.jpg",
+          "width": 500,
+          "height": 500,
+          "filesize": 29378,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1-500x500.jpg"
+        },
+        "medium": {
+          "file": "126293-14407249-1-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 12576,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1-300x300.jpg"
+        },
+        "thumbnail": {
+          "file": "126293-14407249-1-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "filesize": 5557,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1-150x150.jpg"
+        },
+        "full": {
+          "file": "126293-14407249-1.jpg",
+          "width": 699,
+          "height": 699,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/126293-14407249-1.jpg",
+    "filename": "126293-14407249-1.jpg",
+    "filesize": 50822,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/120",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=120"
+        }
+      ]
+    }
+  },
+  {
+    "id": 119,
+    "date": "2026-10-09T15:26:38",
+    "date_gmt": "2026-10-09T09:26:38",
+    "guid": {
+      "rendered": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-1.webp"
+    },
+    "modified": "2026-10-09T15:26:38",
+    "modified_gmt": "2026-10-09T09:26:38",
+    "slug": "rexton_arena_hp_3_",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/rexton_arena_hp_3_/",
+    "title": {
+      "rendered": "Rexton_Arena_HP_3_"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-119",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-1.webp'><img loading=\"lazy\" decoding=\"async\" width=\"294\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-1-294x300.webp\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-1-294x300.webp 294w, https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-1-300x306.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-1.webp 628w\" sizes=\"auto, (max-width: 294px) 100vw, 294px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/webp",
+    "media_details": {
+      "width": 628,
+      "height": 640,
+      "file": "2026/10/Rexton_Arena_HP_3_-1.webp",
+      "filesize": 13186,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "Rexton_Arena_HP_3_-1-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 5228,
+          "uncropped": false,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-1-300x300.webp"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "Rexton_Arena_HP_3_-1-100x100.webp",
+          "width": 100,
+          "height": 100,
+          "filesize": 1346,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-1-100x100.webp"
+        },
+        "woocommerce_single": {
+          "file": "Rexton_Arena_HP_3_-1-300x306.webp",
+          "width": 300,
+          "height": 306,
+          "filesize": 5208,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-1-300x306.webp"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "Rexton_Arena_HP_3_-1-500x500.webp",
+          "width": 500,
+          "height": 500,
+          "filesize": 10786,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-1-500x500.webp"
+        },
+        "medium": {
+          "file": "Rexton_Arena_HP_3_-1-294x300.webp",
+          "width": 294,
+          "height": 300,
+          "filesize": 5020,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-1-294x300.webp"
+        },
+        "thumbnail": {
+          "file": "Rexton_Arena_HP_3_-1-150x150.webp",
+          "width": 150,
+          "height": 150,
+          "filesize": 2190,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-1-150x150.webp"
+        },
+        "full": {
+          "file": "Rexton_Arena_HP_3_-1.webp",
+          "width": 628,
+          "height": 640,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-1.webp"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-1.webp",
+    "filename": "Rexton_Arena_HP_3_-1.webp",
+    "filesize": 13186,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/119",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=119"
+        }
+      ]
+    }
+  },
+  {
+    "id": 118,
+    "date": "2026-10-09T15:25:12",
+    "date_gmt": "2026-10-09T09:25:12",
+    "guid": {
+      "rendered": "https://abidhearing.com/wp-content/uploads/2026/10/AM-STF-XP-BG-1.webp"
+    },
+    "modified": "2026-10-09T15:25:12",
+    "modified_gmt": "2026-10-09T09:25:12",
+    "slug": "am-stf-xp-bg-1",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/am-stf-xp-bg-1/",
+    "title": {
+      "rendered": "AM-STF-XP-BG-1"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-118",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/AM-STF-XP-BG-1.webp'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"215\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/AM-STF-XP-BG-1-300x215.webp\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/AM-STF-XP-BG-1-300x215.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/AM-STF-XP-BG-1.webp 471w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/webp",
+    "media_details": {
+      "width": 471,
+      "height": 338,
+      "file": "2026/10/AM-STF-XP-BG-1.webp",
+      "filesize": 8682,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "AM-STF-XP-BG-1-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 5318,
+          "uncropped": false,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/AM-STF-XP-BG-1-300x300.webp"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "AM-STF-XP-BG-1-100x100.webp",
+          "width": 100,
+          "height": 100,
+          "filesize": 1510,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/AM-STF-XP-BG-1-100x100.webp"
+        },
+        "woocommerce_single": {
+          "file": "AM-STF-XP-BG-1-300x215.webp",
+          "width": 300,
+          "height": 215,
+          "filesize": 4268,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/AM-STF-XP-BG-1-300x215.webp"
+        },
+        "medium": {
+          "file": "AM-STF-XP-BG-1-300x215.webp",
+          "width": 300,
+          "height": 215,
+          "filesize": 4268,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/AM-STF-XP-BG-1-300x215.webp"
+        },
+        "thumbnail": {
+          "file": "AM-STF-XP-BG-1-150x150.webp",
+          "width": 150,
+          "height": 150,
+          "filesize": 2448,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/AM-STF-XP-BG-1-150x150.webp"
+        },
+        "full": {
+          "file": "AM-STF-XP-BG-1.webp",
+          "width": 471,
+          "height": 338,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/AM-STF-XP-BG-1.webp"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/AM-STF-XP-BG-1.webp",
+    "filename": "AM-STF-XP-BG-1.webp",
+    "filesize": 8682,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/118",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=118"
+        }
+      ]
+    }
+  },
+  {
+    "id": 117,
+    "date": "2026-10-09T15:16:44",
+    "date_gmt": "2026-10-09T09:16:44",
+    "guid": {
+      "rendered": "https://abidhearing.com/1/"
+    },
+    "modified": "2026-10-09T15:16:44",
+    "modified_gmt": "2026-10-09T09:16:44",
+    "slug": "1",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/1/",
+    "title": {
+      "rendered": "1"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-117",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/1.jpg'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/1-300x300.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/1-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/1-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/1-500x500.jpg 500w, https://abidhearing.com/wp-content/uploads/2026/10/1-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/1-768x768.jpg 768w, https://abidhearing.com/wp-content/uploads/2026/10/1.jpg 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 800,
+      "height": 800,
+      "file": "2026/10/1.jpg",
+      "filesize": 27698,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "1-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 5278,
+          "uncropped": false,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/1-300x300.jpg"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "1-100x100.jpg",
+          "width": 100,
+          "height": 100,
+          "filesize": 1452,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/1-100x100.jpg"
+        },
+        "woocommerce_single": {
+          "file": "1-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 5278,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/1-300x300.jpg"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "1-500x500.jpg",
+          "width": 500,
+          "height": 500,
+          "filesize": 10359,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/1-500x500.jpg"
+        },
+        "medium": {
+          "file": "1-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 5278,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/1-300x300.jpg"
+        },
+        "thumbnail": {
+          "file": "1-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "filesize": 2259,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/1-150x150.jpg"
+        },
+        "medium_large": {
+          "file": "1-768x768.jpg",
+          "width": 768,
+          "height": 768,
+          "filesize": 18508,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/1-768x768.jpg"
+        },
+        "full": {
+          "file": "1.jpg",
+          "width": 800,
+          "height": 800,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/1.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/1.jpg",
+    "filename": "1.jpg",
+    "filesize": 27698,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/117",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=117"
+        }
+      ]
+    }
+  },
+  {
+    "id": 94,
+    "date": "2026-10-09T14:54:53",
+    "date_gmt": "2026-10-09T08:54:53",
+    "guid": {
+      "rendered": "https://abidhearing.com/naida_v_up-1/"
+    },
+    "modified": "2026-10-09T14:54:53",
+    "modified_gmt": "2026-10-09T08:54:53",
+    "slug": "naida_v_up-1",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/naida_v_up-1/",
+    "title": {
+      "rendered": "Naida_V_UP-1"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-94",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1.png'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-300x300.png\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-300x300.png 300w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-100x100.png 100w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-500x500.png 500w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-150x150.png 150w, https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1.png 600w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/png",
+    "media_details": {
+      "width": 600,
+      "height": 600,
+      "file": "2026/10/Naida_V_UP-1.png",
+      "filesize": 142189,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "Naida_V_UP-1-300x300.png",
+          "width": 300,
+          "height": 300,
+          "filesize": 37968,
+          "uncropped": false,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-300x300.png"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "Naida_V_UP-1-100x100.png",
+          "width": 100,
+          "height": 100,
+          "filesize": 6617,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-100x100.png"
+        },
+        "woocommerce_single": {
+          "file": "Naida_V_UP-1-300x300.png",
+          "width": 300,
+          "height": 300,
+          "filesize": 37968,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-300x300.png"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "Naida_V_UP-1-500x500.png",
+          "width": 500,
+          "height": 500,
+          "filesize": 95244,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-500x500.png"
+        },
+        "medium": {
+          "file": "Naida_V_UP-1-300x300.png",
+          "width": 300,
+          "height": 300,
+          "filesize": 37968,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-300x300.png"
+        },
+        "thumbnail": {
+          "file": "Naida_V_UP-1-150x150.png",
+          "width": 150,
+          "height": 150,
+          "filesize": 12416,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1-150x150.png"
+        },
+        "full": {
+          "file": "Naida_V_UP-1.png",
+          "width": 600,
+          "height": 600,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Naida_V_UP-1.png",
+    "filename": "Naida_V_UP-1.png",
+    "filesize": 142189,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/94",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=94"
+        }
+      ]
+    }
+  },
+  {
+    "id": 93,
+    "date": "2026-10-09T14:54:53",
+    "date_gmt": "2026-10-09T08:54:53",
+    "guid": {
+      "rendered": "https://abidhearing.com/11-scaled/"
+    },
+    "modified": "2026-10-09T14:54:53",
+    "modified_gmt": "2026-10-09T08:54:53",
+    "slug": "11-scaled",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/11-scaled/",
+    "title": {
+      "rendered": "11-scaled"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-93",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/11-scaled.jpg'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-300x300.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-500x500.jpg 500w, https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-768x768.jpg 768w, https://abidhearing.com/wp-content/uploads/2026/10/11-scaled.jpg 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 800,
+      "height": 800,
+      "file": "2026/10/11-scaled.jpg",
+      "filesize": 115187,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "11-scaled-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 15031,
+          "uncropped": false,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-300x300.jpg"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "11-scaled-100x100.jpg",
+          "width": 100,
+          "height": 100,
+          "filesize": 2774,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-100x100.jpg"
+        },
+        "woocommerce_single": {
+          "file": "11-scaled-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 15031,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-300x300.jpg"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "11-scaled-500x500.jpg",
+          "width": 500,
+          "height": 500,
+          "filesize": 35534,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-500x500.jpg"
+        },
+        "medium": {
+          "file": "11-scaled-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 15031,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-300x300.jpg"
+        },
+        "thumbnail": {
+          "file": "11-scaled-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "filesize": 4934,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-150x150.jpg"
+        },
+        "medium_large": {
+          "file": "11-scaled-768x768.jpg",
+          "width": 768,
+          "height": 768,
+          "filesize": 74631,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/11-scaled-768x768.jpg"
+        },
+        "full": {
+          "file": "11-scaled.jpg",
+          "width": 800,
+          "height": 800,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/11-scaled.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/11-scaled.jpg",
+    "filename": "11-scaled.jpg",
+    "filesize": 115187,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/93",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=93"
+        }
+      ]
+    }
+  },
+  {
+    "id": 92,
+    "date": "2026-10-09T14:54:52",
+    "date_gmt": "2026-10-09T08:54:52",
+    "guid": {
+      "rendered": "https://abidhearing.com/phonak-naida-90_sky_v_p/"
+    },
+    "modified": "2026-10-09T14:54:52",
+    "modified_gmt": "2026-10-09T08:54:52",
+    "slug": "phonak-naida-90_sky_v_p",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/phonak-naida-90_sky_v_p/",
+    "title": {
+      "rendered": "phonak-naida-90_sky_v_p"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-92",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_.webp'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-300x300.webp\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_.webp 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/webp",
+    "media_details": {
+      "width": 800,
+      "height": 800,
+      "file": "2026/10/phonak-naida-90_sky_v_p_.webp",
+      "filesize": 14810,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "phonak-naida-90_sky_v_p_-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 4332,
+          "uncropped": false,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-300x300.webp"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "phonak-naida-90_sky_v_p_-100x100.webp",
+          "width": 100,
+          "height": 100,
+          "filesize": 1198,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-100x100.webp"
+        },
+        "woocommerce_single": {
+          "file": "phonak-naida-90_sky_v_p_-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 4332,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-300x300.webp"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "phonak-naida-90_sky_v_p_-500x500.webp",
+          "width": 500,
+          "height": 500,
+          "filesize": 7636,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-500x500.webp"
+        },
+        "medium": {
+          "file": "phonak-naida-90_sky_v_p_-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 4332,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-300x300.webp"
+        },
+        "thumbnail": {
+          "file": "phonak-naida-90_sky_v_p_-150x150.webp",
+          "width": 150,
+          "height": 150,
+          "filesize": 1930,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-150x150.webp"
+        },
+        "medium_large": {
+          "file": "phonak-naida-90_sky_v_p_-768x768.webp",
+          "width": 768,
+          "height": 768,
+          "filesize": 12396,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_-768x768.webp"
+        },
+        "full": {
+          "file": "phonak-naida-90_sky_v_p_.webp",
+          "width": 800,
+          "height": 800,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_.webp"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-90_sky_v_p_.webp",
+    "filename": "phonak-naida-90_sky_v_p_.webp",
+    "filesize": 14810,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/92",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=92"
+        }
+      ]
+    }
+  },
+  {
+    "id": 91,
+    "date": "2026-10-09T14:54:52",
+    "date_gmt": "2026-10-09T08:54:52",
+    "guid": {
+      "rendered": "https://abidhearing.com/phonak/"
+    },
+    "modified": "2026-10-09T14:54:52",
+    "modified_gmt": "2026-10-09T08:54:52",
+    "slug": "phonak",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/phonak/",
+    "title": {
+      "rendered": "phonak"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-91",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/phonak-.webp'><img loading=\"lazy\" decoding=\"async\" width=\"250\" height=\"250\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-.webp\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-.webp 250w, https://abidhearing.com/wp-content/uploads/2026/10/phonak--100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/phonak--150x150.webp 150w\" sizes=\"auto, (max-width: 250px) 100vw, 250px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/webp",
+    "media_details": {
+      "width": 250,
+      "height": 250,
+      "file": "2026/10/phonak-.webp",
+      "filesize": 3064,
+      "sizes": {
+        "woocommerce_gallery_thumbnail": {
+          "file": "phonak--100x100.webp",
+          "width": 100,
+          "height": 100,
+          "filesize": 1040,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak--100x100.webp"
+        },
+        "thumbnail": {
+          "file": "phonak--150x150.webp",
+          "width": 150,
+          "height": 150,
+          "filesize": 1574,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak--150x150.webp"
+        },
+        "full": {
+          "file": "phonak-.webp",
+          "width": 250,
+          "height": 250,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-.webp"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-.webp",
+    "filename": "phonak-.webp",
+    "filesize": 3064,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/91",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=91"
+        }
+      ]
+    }
+  },
+  {
+    "id": 90,
+    "date": "2026-10-09T14:54:51",
+    "date_gmt": "2026-10-09T08:54:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/max/"
+    },
+    "modified": "2026-10-09T14:54:51",
+    "modified_gmt": "2026-10-09T08:54:51",
+    "slug": "max",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/max/",
+    "title": {
+      "rendered": "max"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-90",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/max.webp'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/max-300x300.webp\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/max-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/max-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/max-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/2026/10/max-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/2026/10/max-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/2026/10/max.webp 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/webp",
+    "media_details": {
+      "width": 800,
+      "height": 800,
+      "file": "2026/10/max.webp",
+      "filesize": 42294,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "max-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 11698,
+          "uncropped": false,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-300x300.webp"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "max-100x100.webp",
+          "width": 100,
+          "height": 100,
+          "filesize": 3114,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-100x100.webp"
+        },
+        "woocommerce_single": {
+          "file": "max-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 11698,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-300x300.webp"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "max-500x500.webp",
+          "width": 500,
+          "height": 500,
+          "filesize": 22392,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-500x500.webp"
+        },
+        "medium": {
+          "file": "max-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 11698,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-300x300.webp"
+        },
+        "thumbnail": {
+          "file": "max-150x150.webp",
+          "width": 150,
+          "height": 150,
+          "filesize": 4948,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-150x150.webp"
+        },
+        "medium_large": {
+          "file": "max-768x768.webp",
+          "width": 768,
+          "height": 768,
+          "filesize": 39976,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max-768x768.webp"
+        },
+        "full": {
+          "file": "max.webp",
+          "width": 800,
+          "height": 800,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max.webp"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/max.webp",
+    "filename": "max.webp",
+    "filesize": 42294,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/90",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=90"
+        }
+      ]
+    }
+  },
+  {
+    "id": 89,
+    "date": "2026-10-09T14:54:51",
+    "date_gmt": "2026-10-09T08:54:51",
+    "guid": {
+      "rendered": "https://abidhearing.com/rexton_arena_hp_3/"
+    },
+    "modified": "2026-10-09T14:54:51",
+    "modified_gmt": "2026-10-09T08:54:51",
+    "slug": "rexton_arena_hp_3",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/rexton_arena_hp_3/",
+    "title": {
+      "rendered": "Rexton_Arena_HP_3"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-89",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_.webp'><img loading=\"lazy\" decoding=\"async\" width=\"294\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-294x300.webp\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-294x300.webp 294w, https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-300x306.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_.webp 628w\" sizes=\"auto, (max-width: 294px) 100vw, 294px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/webp",
+    "media_details": {
+      "width": 628,
+      "height": 640,
+      "file": "2026/10/Rexton_Arena_HP_3_.webp",
+      "filesize": 15612,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "Rexton_Arena_HP_3_-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 5126,
+          "uncropped": false,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-300x300.webp"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "Rexton_Arena_HP_3_-100x100.webp",
+          "width": 100,
+          "height": 100,
+          "filesize": 1378,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-100x100.webp"
+        },
+        "woocommerce_single": {
+          "file": "Rexton_Arena_HP_3_-300x306.webp",
+          "width": 300,
+          "height": 306,
+          "filesize": 5150,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-300x306.webp"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "Rexton_Arena_HP_3_-500x500.webp",
+          "width": 500,
+          "height": 500,
+          "filesize": 10748,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-500x500.webp"
+        },
+        "medium": {
+          "file": "Rexton_Arena_HP_3_-294x300.webp",
+          "width": 294,
+          "height": 300,
+          "filesize": 5180,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-294x300.webp"
+        },
+        "thumbnail": {
+          "file": "Rexton_Arena_HP_3_-150x150.webp",
+          "width": 150,
+          "height": 150,
+          "filesize": 2186,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_-150x150.webp"
+        },
+        "full": {
+          "file": "Rexton_Arena_HP_3_.webp",
+          "width": 628,
+          "height": 640,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_.webp"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_Arena_HP_3_.webp",
+    "filename": "Rexton_Arena_HP_3_.webp",
+    "filesize": 15612,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/89",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=89"
+        }
+      ]
+    }
+  },
+  {
+    "id": 88,
+    "date": "2026-10-09T14:54:50",
+    "date_gmt": "2026-10-09T08:54:50",
+    "guid": {
+      "rendered": "https://abidhearing.com/cic/"
+    },
+    "modified": "2026-10-09T14:54:50",
+    "modified_gmt": "2026-10-09T08:54:50",
+    "slug": "cic",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/cic/",
+    "title": {
+      "rendered": "cic"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-88",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/cic.jpg'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/cic-300x300.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/cic-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/cic-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/cic-500x500.jpg 500w, https://abidhearing.com/wp-content/uploads/2026/10/cic-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/cic-768x768.jpg 768w, https://abidhearing.com/wp-content/uploads/2026/10/cic.jpg 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 800,
+      "height": 800,
+      "file": "2026/10/cic.jpg",
+      "filesize": 47439,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "cic-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 8843,
+          "uncropped": false,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/cic-300x300.jpg"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "cic-100x100.jpg",
+          "width": 100,
+          "height": 100,
+          "filesize": 2273,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/cic-100x100.jpg"
+        },
+        "woocommerce_single": {
+          "file": "cic-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 8843,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/cic-300x300.jpg"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "cic-500x500.jpg",
+          "width": 500,
+          "height": 500,
+          "filesize": 18034,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/cic-500x500.jpg"
+        },
+        "medium": {
+          "file": "cic-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 8843,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/cic-300x300.jpg"
+        },
+        "thumbnail": {
+          "file": "cic-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "filesize": 3674,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/cic-150x150.jpg"
+        },
+        "medium_large": {
+          "file": "cic-768x768.jpg",
+          "width": 768,
+          "height": 768,
+          "filesize": 32162,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/cic-768x768.jpg"
+        },
+        "full": {
+          "file": "cic.jpg",
+          "width": 800,
+          "height": 800,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/cic.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/cic.jpg",
+    "filename": "cic.jpg",
+    "filesize": 47439,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/88",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=88"
+        }
+      ]
+    }
+  },
+  {
+    "id": 87,
+    "date": "2026-10-09T14:54:50",
+    "date_gmt": "2026-10-09T08:54:50",
+    "guid": {
+      "rendered": "https://abidhearing.com/phonaknaidalupsandbeigepair/"
+    },
+    "modified": "2026-10-09T14:54:50",
+    "modified_gmt": "2026-10-09T08:54:50",
+    "slug": "phonaknaidalupsandbeigepair",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/phonaknaidalupsandbeigepair/",
+    "title": {
+      "rendered": "PhonakNaidaLUPSandBeigePair"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-87",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair.webp'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-300x300.webp\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair.webp 750w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/webp",
+    "media_details": {
+      "width": 750,
+      "height": 750,
+      "file": "2026/10/PhonakNaidaLUPSandBeigePair.webp",
+      "filesize": 24114,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "PhonakNaidaLUPSandBeigePair-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 5992,
+          "uncropped": false,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-300x300.webp"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "PhonakNaidaLUPSandBeigePair-100x100.webp",
+          "width": 100,
+          "height": 100,
+          "filesize": 1522,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-100x100.webp"
+        },
+        "woocommerce_single": {
+          "file": "PhonakNaidaLUPSandBeigePair-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 5992,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-300x300.webp"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "PhonakNaidaLUPSandBeigePair-500x500.webp",
+          "width": 500,
+          "height": 500,
+          "filesize": 12012,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-500x500.webp"
+        },
+        "medium": {
+          "file": "PhonakNaidaLUPSandBeigePair-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 5992,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-300x300.webp"
+        },
+        "thumbnail": {
+          "file": "PhonakNaidaLUPSandBeigePair-150x150.webp",
+          "width": 150,
+          "height": 150,
+          "filesize": 2408,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair-150x150.webp"
+        },
+        "full": {
+          "file": "PhonakNaidaLUPSandBeigePair.webp",
+          "width": 750,
+          "height": 750,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair.webp"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/PhonakNaidaLUPSandBeigePair.webp",
+    "filename": "PhonakNaidaLUPSandBeigePair.webp",
+    "filesize": 24114,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/87",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=87"
+        }
+      ]
+    }
+  },
+  {
+    "id": 86,
+    "date": "2026-10-09T14:54:50",
+    "date_gmt": "2026-10-09T08:54:50",
+    "guid": {
+      "rendered": "https://abidhearing.com/images-14/"
+    },
+    "modified": "2026-10-09T14:54:50",
+    "modified_gmt": "2026-10-09T08:54:50",
+    "slug": "images-14",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/images-14/",
+    "title": {
+      "rendered": "images-14"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-86",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/images-14.jpeg'><img loading=\"lazy\" decoding=\"async\" width=\"225\" height=\"225\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/images-14.jpeg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/images-14.jpeg 225w, https://abidhearing.com/wp-content/uploads/2026/10/images-14-100x100.jpeg 100w, https://abidhearing.com/wp-content/uploads/2026/10/images-14-150x150.jpeg 150w\" sizes=\"auto, (max-width: 225px) 100vw, 225px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 225,
+      "height": 225,
+      "file": "2026/10/images-14.jpeg",
+      "filesize": 9902,
+      "sizes": {
+        "woocommerce_gallery_thumbnail": {
+          "file": "images-14-100x100.jpeg",
+          "width": 100,
+          "height": 100,
+          "filesize": 2584,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images-14-100x100.jpeg"
+        },
+        "thumbnail": {
+          "file": "images-14-150x150.jpeg",
+          "width": 150,
+          "height": 150,
+          "filesize": 4300,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images-14-150x150.jpeg"
+        },
+        "full": {
+          "file": "images-14.jpeg",
+          "width": 225,
+          "height": 225,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images-14.jpeg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images-14.jpeg",
+    "filename": "images-14.jpeg",
+    "filesize": 9902,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/86",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=86"
+        }
+      ]
+    }
+  },
+  {
+    "id": 85,
+    "date": "2026-10-09T14:54:50",
+    "date_gmt": "2026-10-09T08:54:50",
+    "guid": {
+      "rendered": "https://abidhearing.com/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2/"
+    },
+    "modified": "2026-10-09T14:54:50",
+    "modified_gmt": "2026-10-09T08:54:50",
+    "slug": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2/",
+    "title": {
+      "rendered": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500&#215;500-2"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-85",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2.webp'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-300x300.webp\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2.webp 500w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/webp",
+    "media_details": {
+      "width": 500,
+      "height": 500,
+      "file": "2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2.webp",
+      "filesize": 11812,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 6370,
+          "uncropped": false,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-300x300.webp"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-100x100.webp",
+          "width": 100,
+          "height": 100,
+          "filesize": 1588,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-100x100.webp"
+        },
+        "woocommerce_single": {
+          "file": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 6370,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-300x300.webp"
+        },
+        "medium": {
+          "file": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 6370,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-300x300.webp"
+        },
+        "thumbnail": {
+          "file": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-150x150.webp",
+          "width": 150,
+          "height": 150,
+          "filesize": 2584,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2-150x150.webp"
+        },
+        "full": {
+          "file": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2.webp",
+          "width": 500,
+          "height": 500,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2.webp"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2.webp",
+    "filename": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-2.webp",
+    "filesize": 11812,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/85",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=85"
+        }
+      ]
+    }
+  },
+  {
+    "id": 84,
+    "date": "2026-10-09T14:54:49",
+    "date_gmt": "2026-10-09T08:54:49",
+    "guid": {
+      "rendered": "https://abidhearing.com/rexton_batteries/"
+    },
+    "modified": "2026-10-09T14:54:49",
+    "modified_gmt": "2026-10-09T08:54:49",
+    "slug": "rexton_batteries",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/rexton_batteries/",
+    "title": {
+      "rendered": "Rexton_batteries"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-84",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries.webp'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"200\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-300x200.webp\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-300x200.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-768x513.webp 768w, https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries.webp 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/webp",
+    "media_details": {
+      "width": 800,
+      "height": 534,
+      "file": "2026/10/Rexton_batteries.webp",
+      "filesize": 54496,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "Rexton_batteries-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 18696,
+          "uncropped": false,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-300x300.webp"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "Rexton_batteries-100x100.webp",
+          "width": 100,
+          "height": 100,
+          "filesize": 4368,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-100x100.webp"
+        },
+        "woocommerce_single": {
+          "file": "Rexton_batteries-300x200.webp",
+          "width": 300,
+          "height": 200,
+          "filesize": 13202,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-300x200.webp"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "Rexton_batteries-500x500.webp",
+          "width": 500,
+          "height": 500,
+          "filesize": 34326,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-500x500.webp"
+        },
+        "medium": {
+          "file": "Rexton_batteries-300x200.webp",
+          "width": 300,
+          "height": 200,
+          "filesize": 13202,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-300x200.webp"
+        },
+        "thumbnail": {
+          "file": "Rexton_batteries-150x150.webp",
+          "width": 150,
+          "height": 150,
+          "filesize": 7528,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-150x150.webp"
+        },
+        "medium_large": {
+          "file": "Rexton_batteries-768x513.webp",
+          "width": 768,
+          "height": 513,
+          "filesize": 42722,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-768x513.webp"
+        },
+        "full": {
+          "file": "Rexton_batteries.webp",
+          "width": 800,
+          "height": 534,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries.webp"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries.webp",
+    "filename": "Rexton_batteries.webp",
+    "filesize": 54496,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/84",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=84"
+        }
+      ]
+    }
+  },
+  {
+    "id": 83,
+    "date": "2026-10-09T14:54:49",
+    "date_gmt": "2026-10-09T08:54:49",
+    "guid": {
+      "rendered": "https://abidhearing.com/hearing-repair-service-1/"
+    },
+    "modified": "2026-10-09T14:54:49",
+    "modified_gmt": "2026-10-09T08:54:49",
+    "slug": "hearing-repair-service-1",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/hearing-repair-service-1/",
+    "title": {
+      "rendered": "Hearing-Repair-Service-1"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-83",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1.jpg'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"200\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-300x200.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-300x200.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-768x513.jpg 768w, https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1.jpg 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 800,
+      "height": 534,
+      "file": "2026/10/Hearing-Repair-Service-1.jpg",
+      "filesize": 84660,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "Hearing-Repair-Service-1-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 19116,
+          "uncropped": false,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-300x300.jpg"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "Hearing-Repair-Service-1-100x100.jpg",
+          "width": 100,
+          "height": 100,
+          "filesize": 3556,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-100x100.jpg"
+        },
+        "woocommerce_single": {
+          "file": "Hearing-Repair-Service-1-300x200.jpg",
+          "width": 300,
+          "height": 200,
+          "filesize": 13791,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-300x200.jpg"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "Hearing-Repair-Service-1-500x500.jpg",
+          "width": 500,
+          "height": 500,
+          "filesize": 42499,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-500x500.jpg"
+        },
+        "medium": {
+          "file": "Hearing-Repair-Service-1-300x200.jpg",
+          "width": 300,
+          "height": 200,
+          "filesize": 13791,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-300x200.jpg"
+        },
+        "thumbnail": {
+          "file": "Hearing-Repair-Service-1-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "filesize": 6406,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-150x150.jpg"
+        },
+        "medium_large": {
+          "file": "Hearing-Repair-Service-1-768x513.jpg",
+          "width": 768,
+          "height": 513,
+          "filesize": 61242,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1-768x513.jpg"
+        },
+        "full": {
+          "file": "Hearing-Repair-Service-1.jpg",
+          "width": 800,
+          "height": 534,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Hearing-Repair-Service-1.jpg",
+    "filename": "Hearing-Repair-Service-1.jpg",
+    "filesize": 84660,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/83",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=83"
+        }
+      ]
+    }
+  },
+  {
+    "id": 82,
+    "date": "2026-10-09T14:54:44",
+    "date_gmt": "2026-10-09T08:54:44",
+    "guid": {
+      "rendered": "https://abidhearing.com/pediatric-care-kit/"
+    },
+    "modified": "2026-10-09T14:54:44",
+    "modified_gmt": "2026-10-09T08:54:44",
+    "slug": "pediatric-care-kit",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/pediatric-care-kit/",
+    "title": {
+      "rendered": "Pediatric-Care-Kit"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-82",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit.png'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-300x300.png\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-300x300.png 300w, https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-100x100.png 100w, https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-500x500.png 500w, https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-150x150.png 150w, https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-768x768.png 768w, https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit.png 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/png",
+    "media_details": {
+      "width": 800,
+      "height": 800,
+      "file": "2026/10/Pediatric-Care-Kit.png",
+      "filesize": 618842,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "Pediatric-Care-Kit-300x300.png",
+          "width": 300,
+          "height": 300,
+          "filesize": 98039,
+          "uncropped": false,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-300x300.png"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "Pediatric-Care-Kit-100x100.png",
+          "width": 100,
+          "height": 100,
+          "filesize": 14168,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-100x100.png"
+        },
+        "woocommerce_single": {
+          "file": "Pediatric-Care-Kit-300x300.png",
+          "width": 300,
+          "height": 300,
+          "filesize": 98039,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-300x300.png"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "Pediatric-Care-Kit-500x500.png",
+          "width": 500,
+          "height": 500,
+          "filesize": 246933,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-500x500.png"
+        },
+        "medium": {
+          "file": "Pediatric-Care-Kit-300x300.png",
+          "width": 300,
+          "height": 300,
+          "filesize": 98039,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-300x300.png"
+        },
+        "thumbnail": {
+          "file": "Pediatric-Care-Kit-150x150.png",
+          "width": 150,
+          "height": 150,
+          "filesize": 28739,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-150x150.png"
+        },
+        "medium_large": {
+          "file": "Pediatric-Care-Kit-768x768.png",
+          "width": 768,
+          "height": 768,
+          "filesize": 530543,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit-768x768.png"
+        },
+        "full": {
+          "file": "Pediatric-Care-Kit.png",
+          "width": 800,
+          "height": 800,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Pediatric-Care-Kit.png",
+    "filename": "Pediatric-Care-Kit.png",
+    "filesize": 618842,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/82",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=82"
+        }
+      ]
+    }
+  },
+  {
+    "id": 76,
+    "date": "2026-10-09T14:54:42",
+    "date_gmt": "2026-10-09T08:54:42",
+    "guid": {
+      "rendered": "https://abidhearing.com/phonak-virto-marvel/"
+    },
+    "modified": "2026-10-09T14:54:42",
+    "modified_gmt": "2026-10-09T08:54:42",
+    "slug": "phonak-virto-marvel",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/phonak-virto-marvel/",
+    "title": {
+      "rendered": "Phonak-Virto-Marvel"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-76",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel.jpg'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel-300x300.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel.jpg 450w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 450,
+      "height": 450,
+      "file": "2026/10/Phonak-Virto-Marvel.jpg",
+      "filesize": 13540,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "Phonak-Virto-Marvel-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 4823,
+          "uncropped": false,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel-300x300.jpg"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "Phonak-Virto-Marvel-100x100.jpg",
+          "width": 100,
+          "height": 100,
+          "filesize": 1290,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel-100x100.jpg"
+        },
+        "woocommerce_single": {
+          "file": "Phonak-Virto-Marvel-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 4823,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel-300x300.jpg"
+        },
+        "medium": {
+          "file": "Phonak-Virto-Marvel-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 4823,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel-300x300.jpg"
+        },
+        "thumbnail": {
+          "file": "Phonak-Virto-Marvel-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "filesize": 2012,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel-150x150.jpg"
+        },
+        "full": {
+          "file": "Phonak-Virto-Marvel.jpg",
+          "width": 450,
+          "height": 450,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Virto-Marvel.jpg",
+    "filename": "Phonak-Virto-Marvel.jpg",
+    "filesize": 13540,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/76",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=76"
+        }
+      ]
+    }
+  },
+  {
+    "id": 67,
+    "date": "2026-10-09T14:54:35",
+    "date_gmt": "2026-10-09T08:54:35",
+    "guid": {
+      "rendered": "https://abidhearing.com/roger-table-mic-ii/"
+    },
+    "modified": "2026-10-09T14:54:35",
+    "modified_gmt": "2026-10-09T08:54:35",
+    "slug": "roger-table-mic-ii",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/roger-table-mic-ii/",
+    "title": {
+      "rendered": "Roger-Table-Mic-II"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-67",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II.jpg'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-300x300.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-500x500.jpg 500w, https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II.jpg 700w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 700,
+      "height": 700,
+      "file": "2026/10/Roger-Table-Mic-II.jpg",
+      "filesize": 38953,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "Roger-Table-Mic-II-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 6483,
+          "uncropped": false,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-300x300.jpg"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "Roger-Table-Mic-II-100x100.jpg",
+          "width": 100,
+          "height": 100,
+          "filesize": 1594,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-100x100.jpg"
+        },
+        "woocommerce_single": {
+          "file": "Roger-Table-Mic-II-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 6483,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-300x300.jpg"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "Roger-Table-Mic-II-500x500.jpg",
+          "width": 500,
+          "height": 500,
+          "filesize": 13847,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-500x500.jpg"
+        },
+        "medium": {
+          "file": "Roger-Table-Mic-II-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 6483,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-300x300.jpg"
+        },
+        "thumbnail": {
+          "file": "Roger-Table-Mic-II-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "filesize": 2625,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II-150x150.jpg"
+        },
+        "full": {
+          "file": "Roger-Table-Mic-II.jpg",
+          "width": 700,
+          "height": 700,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Roger-Table-Mic-II.jpg",
+    "filename": "Roger-Table-Mic-II.jpg",
+    "filesize": 38953,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/67",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=67"
+        }
+      ]
+    }
+  },
+  {
+    "id": 66,
+    "date": "2026-10-09T14:54:35",
+    "date_gmt": "2026-10-09T08:54:35",
+    "guid": {
+      "rendered": "https://abidhearing.com/phonak-remotecontrol/"
+    },
+    "modified": "2026-10-09T14:54:35",
+    "modified_gmt": "2026-10-09T08:54:35",
+    "slug": "phonak-remotecontrol",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/phonak-remotecontrol/",
+    "title": {
+      "rendered": "Phonak-RemoteControl"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-66",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/Phonak-RemoteControl.jpg'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Phonak-RemoteControl-300x300.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Phonak-RemoteControl-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/Phonak-RemoteControl-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/Phonak-RemoteControl-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/Phonak-RemoteControl.jpg 323w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 323,
+      "height": 323,
+      "file": "2026/10/Phonak-RemoteControl.jpg",
+      "filesize": 12473,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "Phonak-RemoteControl-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 7891,
+          "uncropped": false,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-RemoteControl-300x300.jpg"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "Phonak-RemoteControl-100x100.jpg",
+          "width": 100,
+          "height": 100,
+          "filesize": 1855,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-RemoteControl-100x100.jpg"
+        },
+        "woocommerce_single": {
+          "file": "Phonak-RemoteControl-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 7891,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-RemoteControl-300x300.jpg"
+        },
+        "medium": {
+          "file": "Phonak-RemoteControl-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 7891,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-RemoteControl-300x300.jpg"
+        },
+        "thumbnail": {
+          "file": "Phonak-RemoteControl-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "filesize": 3044,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-RemoteControl-150x150.jpg"
+        },
+        "full": {
+          "file": "Phonak-RemoteControl.jpg",
+          "width": 323,
+          "height": 323,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-RemoteControl.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-RemoteControl.jpg",
+    "filename": "Phonak-RemoteControl.jpg",
+    "filesize": 12473,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/66",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=66"
+        }
+      ]
+    }
+  },
+  {
+    "id": 65,
+    "date": "2026-10-09T14:54:34",
+    "date_gmt": "2026-10-09T08:54:34",
+    "guid": {
+      "rendered": "https://abidhearing.com/image-2/"
+    },
+    "modified": "2026-10-09T14:54:34",
+    "modified_gmt": "2026-10-09T08:54:34",
+    "slug": "image-2",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/image-2/",
+    "title": {
+      "rendered": "image-2"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-65",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/image-2.jpg'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"225\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/image-2-300x225.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/image-2-300x225.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/image-2-768x576.jpg 768w, https://abidhearing.com/wp-content/uploads/2026/10/image-2.jpg 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 800,
+      "height": 600,
+      "file": "2026/10/image-2.jpg",
+      "filesize": 64722,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "image-2-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 13493,
+          "uncropped": false,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/image-2-300x300.jpg"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "image-2-100x100.jpg",
+          "width": 100,
+          "height": 100,
+          "filesize": 2943,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/image-2-100x100.jpg"
+        },
+        "woocommerce_single": {
+          "file": "image-2-300x225.jpg",
+          "width": 300,
+          "height": 225,
+          "filesize": 11185,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/image-2-300x225.jpg"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "image-2-500x500.jpg",
+          "width": 500,
+          "height": 500,
+          "filesize": 29244,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/image-2-500x500.jpg"
+        },
+        "medium": {
+          "file": "image-2-300x225.jpg",
+          "width": 300,
+          "height": 225,
+          "filesize": 11185,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/image-2-300x225.jpg"
+        },
+        "thumbnail": {
+          "file": "image-2-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "filesize": 5086,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/image-2-150x150.jpg"
+        },
+        "medium_large": {
+          "file": "image-2-768x576.jpg",
+          "width": 768,
+          "height": 576,
+          "filesize": 44819,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/image-2-768x576.jpg"
+        },
+        "full": {
+          "file": "image-2.jpg",
+          "width": 800,
+          "height": 600,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/image-2.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/image-2.jpg",
+    "filename": "image-2.jpg",
+    "filesize": 64722,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/65",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=65"
+        }
+      ]
+    }
+  },
+  {
+    "id": 64,
+    "date": "2026-10-09T14:54:34",
+    "date_gmt": "2026-10-09T08:54:34",
+    "guid": {
+      "rendered": "https://abidhearing.com/phonak-one/"
+    },
+    "modified": "2026-10-09T14:54:34",
+    "modified_gmt": "2026-10-09T08:54:34",
+    "slug": "phonak-one",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/phonak-one/",
+    "title": {
+      "rendered": "phonak-one"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-64",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/phonak-one.jpg'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"211\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-one-300x211.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-one-300x211.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-one-768x540.jpg 768w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-one.jpg 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 800,
+      "height": 563,
+      "file": "2026/10/phonak-one.jpg",
+      "filesize": 27634,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "phonak-one-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 7705,
+          "uncropped": false,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-one-300x300.jpg"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "phonak-one-100x100.jpg",
+          "width": 100,
+          "height": 100,
+          "filesize": 1790,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-one-100x100.jpg"
+        },
+        "woocommerce_single": {
+          "file": "phonak-one-300x211.jpg",
+          "width": 300,
+          "height": 211,
+          "filesize": 4996,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-one-300x211.jpg"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "phonak-one-500x500.jpg",
+          "width": 500,
+          "height": 500,
+          "filesize": 15982,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-one-500x500.jpg"
+        },
+        "medium": {
+          "file": "phonak-one-300x211.jpg",
+          "width": 300,
+          "height": 211,
+          "filesize": 4996,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-one-300x211.jpg"
+        },
+        "thumbnail": {
+          "file": "phonak-one-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "filesize": 3007,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-one-150x150.jpg"
+        },
+        "medium_large": {
+          "file": "phonak-one-768x540.jpg",
+          "width": 768,
+          "height": 540,
+          "filesize": 18862,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-one-768x540.jpg"
+        },
+        "full": {
+          "file": "phonak-one.jpg",
+          "width": 800,
+          "height": 563,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-one.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-one.jpg",
+    "filename": "phonak-one.jpg",
+    "filesize": 27634,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/64",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=64"
+        }
+      ]
+    }
+  },
+  {
+    "id": 63,
+    "date": "2026-10-09T14:54:34",
+    "date_gmt": "2026-10-09T08:54:34",
+    "guid": {
+      "rendered": "https://abidhearing.com/download/"
+    },
+    "modified": "2026-10-09T14:54:34",
+    "modified_gmt": "2026-10-09T08:54:34",
+    "slug": "download",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/download/",
+    "title": {
+      "rendered": "download"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-63",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/download.jpeg'><img loading=\"lazy\" decoding=\"async\" width=\"275\" height=\"183\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/download.jpeg\" class=\"attachment-medium size-medium\" alt=\"\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 275,
+      "height": 183,
+      "file": "2026/10/download.jpeg",
+      "filesize": 7144,
+      "sizes": {
+        "woocommerce_gallery_thumbnail": {
+          "file": "download-100x100.jpeg",
+          "width": 100,
+          "height": 100,
+          "filesize": 2316,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/download-100x100.jpeg"
+        },
+        "thumbnail": {
+          "file": "download-150x150.jpeg",
+          "width": 150,
+          "height": 150,
+          "filesize": 3881,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/download-150x150.jpeg"
+        },
+        "full": {
+          "file": "download.jpeg",
+          "width": 275,
+          "height": 183,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/download.jpeg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/download.jpeg",
+    "filename": "download.jpeg",
+    "filesize": 7144,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/63",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=63"
+        }
+      ]
+    }
+  },
+  {
+    "id": 62,
+    "date": "2026-10-09T14:54:34",
+    "date_gmt": "2026-10-09T08:54:34",
+    "guid": {
+      "rendered": "https://abidhearing.com/images-34/"
+    },
+    "modified": "2026-10-09T14:54:34",
+    "modified_gmt": "2026-10-09T08:54:34",
+    "slug": "images-34",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/images-34/",
+    "title": {
+      "rendered": "images-34"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-62",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/images-34.jpeg'><img loading=\"lazy\" decoding=\"async\" width=\"225\" height=\"225\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/images-34.jpeg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/images-34.jpeg 225w, https://abidhearing.com/wp-content/uploads/2026/10/images-34-100x100.jpeg 100w, https://abidhearing.com/wp-content/uploads/2026/10/images-34-150x150.jpeg 150w\" sizes=\"auto, (max-width: 225px) 100vw, 225px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 225,
+      "height": 225,
+      "file": "2026/10/images-34.jpeg",
+      "filesize": 7790,
+      "sizes": {
+        "woocommerce_gallery_thumbnail": {
+          "file": "images-34-100x100.jpeg",
+          "width": 100,
+          "height": 100,
+          "filesize": 2066,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images-34-100x100.jpeg"
+        },
+        "thumbnail": {
+          "file": "images-34-150x150.jpeg",
+          "width": 150,
+          "height": 150,
+          "filesize": 3368,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images-34-150x150.jpeg"
+        },
+        "full": {
+          "file": "images-34.jpeg",
+          "width": 225,
+          "height": 225,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images-34.jpeg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images-34.jpeg",
+    "filename": "images-34.jpeg",
+    "filesize": 7790,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/62",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 61,
+    "date": "2026-10-09T14:54:33",
+    "date_gmt": "2026-10-09T08:54:33",
+    "guid": {
+      "rendered": "https://abidhearing.com/hearing-center/"
+    },
+    "modified": "2026-10-09T14:54:33",
+    "modified_gmt": "2026-10-09T08:54:33",
+    "slug": "hearing-center",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/hearing-center/",
+    "title": {
+      "rendered": "hearing-center"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-61",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/hearing-center.webp'><img loading=\"lazy\" decoding=\"async\" width=\"225\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/hearing-center-225x300.webp\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/hearing-center-225x300.webp 225w, https://abidhearing.com/wp-content/uploads/2026/10/hearing-center-300x401.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/hearing-center.webp 382w\" sizes=\"auto, (max-width: 225px) 100vw, 225px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/webp",
+    "media_details": {
+      "width": 382,
+      "height": 510,
+      "file": "2026/10/hearing-center.webp",
+      "filesize": 31772,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "hearing-center-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 15512,
+          "uncropped": false,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-center-300x300.webp"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "hearing-center-100x100.webp",
+          "width": 100,
+          "height": 100,
+          "filesize": 3140,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-center-100x100.webp"
+        },
+        "woocommerce_single": {
+          "file": "hearing-center-300x401.webp",
+          "width": 300,
+          "height": 401,
+          "filesize": 17924,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-center-300x401.webp"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "hearing-center-382x500.webp",
+          "width": 382,
+          "height": 500,
+          "filesize": 30044,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-center-382x500.webp"
+        },
+        "medium": {
+          "file": "hearing-center-225x300.webp",
+          "width": 225,
+          "height": 300,
+          "filesize": 11466,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-center-225x300.webp"
+        },
+        "thumbnail": {
+          "file": "hearing-center-150x150.webp",
+          "width": 150,
+          "height": 150,
+          "filesize": 5686,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-center-150x150.webp"
+        },
+        "full": {
+          "file": "hearing-center.webp",
+          "width": 382,
+          "height": 510,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-center.webp"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-center.webp",
+    "filename": "hearing-center.webp",
+    "filesize": 31772,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/61",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=61"
+        }
+      ]
+    }
+  },
+  {
+    "id": 60,
+    "date": "2026-10-09T14:54:33",
+    "date_gmt": "2026-10-09T08:54:33",
+    "guid": {
+      "rendered": "https://abidhearing.com/phonak-vitus-150x150-1/"
+    },
+    "modified": "2026-10-09T14:54:33",
+    "modified_gmt": "2026-10-09T08:54:33",
+    "slug": "phonak-vitus-150x150-1",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/phonak-vitus-150x150-1/",
+    "title": {
+      "rendered": "Phonak-Vitus-150&#215;150-1"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-60",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Vitus-150x150-1.png'><img loading=\"lazy\" decoding=\"async\" width=\"150\" height=\"150\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Vitus-150x150-1.png\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Vitus-150x150-1.png 150w, https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Vitus-150x150-1-100x100.png 100w\" sizes=\"auto, (max-width: 150px) 100vw, 150px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/png",
+    "media_details": {
+      "width": 150,
+      "height": 150,
+      "file": "2026/10/Phonak-Vitus-150x150-1.png",
+      "filesize": 21688,
+      "sizes": {
+        "woocommerce_gallery_thumbnail": {
+          "file": "Phonak-Vitus-150x150-1-100x100.png",
+          "width": 100,
+          "height": 100,
+          "filesize": 12279,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Vitus-150x150-1-100x100.png"
+        },
+        "full": {
+          "file": "Phonak-Vitus-150x150-1.png",
+          "width": 150,
+          "height": 150,
+          "mime_type": "image/png",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Vitus-150x150-1.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Phonak-Vitus-150x150-1.png",
+    "filename": "Phonak-Vitus-150x150-1.png",
+    "filesize": 21688,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/60",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=60"
+        }
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "date": "2026-10-09T14:54:33",
+    "date_gmt": "2026-10-09T08:54:33",
+    "guid": {
+      "rendered": "https://abidhearing.com/phonak-virto/"
+    },
+    "modified": "2026-10-09T14:54:33",
+    "modified_gmt": "2026-10-09T08:54:33",
+    "slug": "phonak-virto",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/phonak-virto/",
+    "title": {
+      "rendered": "phonak-virto"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-59",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto.jpg'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto-300x300.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto-500x500.jpg 500w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto.jpg 600w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 600,
+      "height": 600,
+      "file": "2026/10/phonak-virto.jpg",
+      "filesize": 20288,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "phonak-virto-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 5319,
+          "uncropped": false,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto-300x300.jpg"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "phonak-virto-100x100.jpg",
+          "width": 100,
+          "height": 100,
+          "filesize": 1454,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto-100x100.jpg"
+        },
+        "woocommerce_single": {
+          "file": "phonak-virto-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 5319,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto-300x300.jpg"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "phonak-virto-500x500.jpg",
+          "width": 500,
+          "height": 500,
+          "filesize": 10751,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto-500x500.jpg"
+        },
+        "medium": {
+          "file": "phonak-virto-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 5319,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto-300x300.jpg"
+        },
+        "thumbnail": {
+          "file": "phonak-virto-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "filesize": 2279,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto-150x150.jpg"
+        },
+        "full": {
+          "file": "phonak-virto.jpg",
+          "width": 600,
+          "height": 600,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-virto.jpg",
+    "filename": "phonak-virto.jpg",
+    "filesize": 20288,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/59",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=59"
+        }
+      ]
+    }
+  },
+  {
+    "id": 58,
+    "date": "2026-10-09T14:54:33",
+    "date_gmt": "2026-10-09T08:54:33",
+    "guid": {
+      "rendered": "https://abidhearing.com/images-31/"
+    },
+    "modified": "2026-10-09T14:54:33",
+    "modified_gmt": "2026-10-09T08:54:33",
+    "slug": "images-31",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/images-31/",
+    "title": {
+      "rendered": "images-31"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-58",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/images-31.jpeg'><img loading=\"lazy\" decoding=\"async\" width=\"225\" height=\"225\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/images-31.jpeg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/images-31.jpeg 225w, https://abidhearing.com/wp-content/uploads/2026/10/images-31-100x100.jpeg 100w, https://abidhearing.com/wp-content/uploads/2026/10/images-31-150x150.jpeg 150w\" sizes=\"auto, (max-width: 225px) 100vw, 225px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 225,
+      "height": 225,
+      "file": "2026/10/images-31.jpeg",
+      "filesize": 10961,
+      "sizes": {
+        "woocommerce_gallery_thumbnail": {
+          "file": "images-31-100x100.jpeg",
+          "width": 100,
+          "height": 100,
+          "filesize": 2614,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images-31-100x100.jpeg"
+        },
+        "thumbnail": {
+          "file": "images-31-150x150.jpeg",
+          "width": 150,
+          "height": 150,
+          "filesize": 4585,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images-31-150x150.jpeg"
+        },
+        "full": {
+          "file": "images-31.jpeg",
+          "width": 225,
+          "height": 225,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images-31.jpeg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images-31.jpeg",
+    "filename": "images-31.jpeg",
+    "filesize": 10961,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/58",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=58"
+        }
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "date": "2026-10-09T14:54:33",
+    "date_gmt": "2026-10-09T08:54:33",
+    "guid": {
+      "rendered": "https://abidhearing.com/hearing-aid-clining-tools/"
+    },
+    "modified": "2026-10-09T14:54:33",
+    "modified_gmt": "2026-10-09T08:54:33",
+    "slug": "hearing-aid-clining-tools",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/hearing-aid-clining-tools/",
+    "title": {
+      "rendered": "hearing-aid-clining-tools"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-57",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/hearing-aid-clining-tools.jpg'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/hearing-aid-clining-tools-300x300.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/hearing-aid-clining-tools-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/hearing-aid-clining-tools-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/hearing-aid-clining-tools-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/hearing-aid-clining-tools.jpg 466w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 466,
+      "height": 466,
+      "file": "2026/10/hearing-aid-clining-tools.jpg",
+      "filesize": 34565,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "hearing-aid-clining-tools-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 13662,
+          "uncropped": false,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-aid-clining-tools-300x300.jpg"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "hearing-aid-clining-tools-100x100.jpg",
+          "width": 100,
+          "height": 100,
+          "filesize": 2619,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-aid-clining-tools-100x100.jpg"
+        },
+        "woocommerce_single": {
+          "file": "hearing-aid-clining-tools-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 13662,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-aid-clining-tools-300x300.jpg"
+        },
+        "medium": {
+          "file": "hearing-aid-clining-tools-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 13662,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-aid-clining-tools-300x300.jpg"
+        },
+        "thumbnail": {
+          "file": "hearing-aid-clining-tools-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "filesize": 4877,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-aid-clining-tools-150x150.jpg"
+        },
+        "full": {
+          "file": "hearing-aid-clining-tools.jpg",
+          "width": 466,
+          "height": 466,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-aid-clining-tools.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/hearing-aid-clining-tools.jpg",
+    "filename": "hearing-aid-clining-tools.jpg",
+    "filesize": 34565,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/57",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=57"
+        }
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "date": "2026-10-09T14:54:32",
+    "date_gmt": "2026-10-09T08:54:32",
+    "guid": {
+      "rendered": "https://abidhearing.com/rexton_batteries-range_1600x1067/"
+    },
+    "modified": "2026-10-09T14:54:32",
+    "modified_gmt": "2026-10-09T08:54:32",
+    "slug": "rexton_batteries-range_1600x1067",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/rexton_batteries-range_1600x1067/",
+    "title": {
+      "rendered": "Rexton_batteries-range_1600x1067"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-56",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-range_1600x1067.jpg'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"200\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-range_1600x1067-300x200.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-range_1600x1067-300x200.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-range_1600x1067-768x513.jpg 768w, https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-range_1600x1067.jpg 800w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 800,
+      "height": 534,
+      "file": "2026/10/Rexton_batteries-range_1600x1067.jpg",
+      "filesize": 95911,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "Rexton_batteries-range_1600x1067-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 24124,
+          "uncropped": false,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-range_1600x1067-300x300.jpg"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "Rexton_batteries-range_1600x1067-100x100.jpg",
+          "width": 100,
+          "height": 100,
+          "filesize": 4686,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-range_1600x1067-100x100.jpg"
+        },
+        "woocommerce_single": {
+          "file": "Rexton_batteries-range_1600x1067-300x200.jpg",
+          "width": 300,
+          "height": 200,
+          "filesize": 17547,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-range_1600x1067-300x200.jpg"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "Rexton_batteries-range_1600x1067-500x500.jpg",
+          "width": 500,
+          "height": 500,
+          "filesize": 49730,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-range_1600x1067-500x500.jpg"
+        },
+        "medium": {
+          "file": "Rexton_batteries-range_1600x1067-300x200.jpg",
+          "width": 300,
+          "height": 200,
+          "filesize": 17547,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-range_1600x1067-300x200.jpg"
+        },
+        "thumbnail": {
+          "file": "Rexton_batteries-range_1600x1067-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "filesize": 8950,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-range_1600x1067-150x150.jpg"
+        },
+        "medium_large": {
+          "file": "Rexton_batteries-range_1600x1067-768x513.jpg",
+          "width": 768,
+          "height": 513,
+          "filesize": 65509,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-range_1600x1067-768x513.jpg"
+        },
+        "full": {
+          "file": "Rexton_batteries-range_1600x1067.jpg",
+          "width": 800,
+          "height": 534,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-range_1600x1067.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/Rexton_batteries-range_1600x1067.jpg",
+    "filename": "Rexton_batteries-range_1600x1067.jpg",
+    "filesize": 95911,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/56",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=56"
+        }
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "date": "2026-10-09T14:54:32",
+    "date_gmt": "2026-10-09T08:54:32",
+    "guid": {
+      "rendered": "https://abidhearing.com/images/"
+    },
+    "modified": "2026-10-09T14:54:32",
+    "modified_gmt": "2026-10-09T08:54:32",
+    "slug": "images",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/images/",
+    "title": {
+      "rendered": "images"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-55",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/images.jpeg'><img loading=\"lazy\" decoding=\"async\" width=\"222\" height=\"227\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/images.jpeg\" class=\"attachment-medium size-medium\" alt=\"\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 222,
+      "height": 227,
+      "file": "2026/10/images.jpeg",
+      "filesize": 20400,
+      "sizes": {
+        "woocommerce_gallery_thumbnail": {
+          "file": "images-100x100.jpeg",
+          "width": 100,
+          "height": 100,
+          "filesize": 2899,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images-100x100.jpeg"
+        },
+        "thumbnail": {
+          "file": "images-150x150.jpeg",
+          "width": 150,
+          "height": 150,
+          "filesize": 6380,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images-150x150.jpeg"
+        },
+        "full": {
+          "file": "images.jpeg",
+          "width": 222,
+          "height": 227,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images.jpeg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/images.jpeg",
+    "filename": "images.jpeg",
+    "filesize": 20400,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/55",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=55"
+        }
+      ]
+    }
+  },
+  {
+    "id": 54,
+    "date": "2026-10-09T14:54:32",
+    "date_gmt": "2026-10-09T08:54:32",
+    "guid": {
+      "rendered": "https://abidhearing.com/phonak-new-release-family/"
+    },
+    "modified": "2026-10-09T14:54:32",
+    "modified_gmt": "2026-10-09T08:54:32",
+    "slug": "phonak-new-release-family",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/phonak-new-release-family/",
+    "title": {
+      "rendered": "phonak-new-release-family"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-54",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/phonak-new-release-family.jpg'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-new-release-family-300x300.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-new-release-family-300x300.jpg 300w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-new-release-family-100x100.jpg 100w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-new-release-family-150x150.jpg 150w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-new-release-family.jpg 470w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 470,
+      "height": 470,
+      "file": "2026/10/phonak-new-release-family.jpg",
+      "filesize": 24680,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "phonak-new-release-family-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 9672,
+          "uncropped": false,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-new-release-family-300x300.jpg"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "phonak-new-release-family-100x100.jpg",
+          "width": 100,
+          "height": 100,
+          "filesize": 2278,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-new-release-family-100x100.jpg"
+        },
+        "woocommerce_single": {
+          "file": "phonak-new-release-family-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 9672,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-new-release-family-300x300.jpg"
+        },
+        "medium": {
+          "file": "phonak-new-release-family-300x300.jpg",
+          "width": 300,
+          "height": 300,
+          "filesize": 9672,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-new-release-family-300x300.jpg"
+        },
+        "thumbnail": {
+          "file": "phonak-new-release-family-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "filesize": 3942,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-new-release-family-150x150.jpg"
+        },
+        "full": {
+          "file": "phonak-new-release-family.jpg",
+          "width": 470,
+          "height": 470,
+          "mime_type": "image/jpeg",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-new-release-family.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-new-release-family.jpg",
+    "filename": "phonak-new-release-family.jpg",
+    "filesize": 24680,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/54",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=54"
+        }
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "date": "2026-10-09T14:54:32",
+    "date_gmt": "2026-10-09T08:54:32",
+    "guid": {
+      "rendered": "https://abidhearing.com/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1/"
+    },
+    "modified": "2026-10-09T14:54:32",
+    "modified_gmt": "2026-10-09T08:54:32",
+    "slug": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1/",
+    "title": {
+      "rendered": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500&#215;500-1"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-53",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1.webp'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1-300x300.webp\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1.webp 500w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/webp",
+    "media_details": {
+      "width": 500,
+      "height": 500,
+      "file": "2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1.webp",
+      "filesize": 11812,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 6370,
+          "uncropped": false,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1-300x300.webp"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1-100x100.webp",
+          "width": 100,
+          "height": 100,
+          "filesize": 1588,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1-100x100.webp"
+        },
+        "woocommerce_single": {
+          "file": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 6370,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1-300x300.webp"
+        },
+        "medium": {
+          "file": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 6370,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1-300x300.webp"
+        },
+        "thumbnail": {
+          "file": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1-150x150.webp",
+          "width": 150,
+          "height": 150,
+          "filesize": 2584,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1-150x150.webp"
+        },
+        "full": {
+          "file": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1.webp",
+          "width": 500,
+          "height": 500,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1.webp"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1.webp",
+    "filename": "digital-phonak-naida-l30-pr-bte-recharable-behind-the-ear-hearing-aid-500x500-1.webp",
+    "filesize": 11812,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/53",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=53"
+        }
+      ]
+    }
+  },
+  {
+    "id": 52,
+    "date": "2026-10-09T14:54:32",
+    "date_gmt": "2026-10-09T08:54:32",
+    "guid": {
+      "rendered": "https://abidhearing.com/phonak-naida-l-1/"
+    },
+    "modified": "2026-10-09T14:54:32",
+    "modified_gmt": "2026-10-09T08:54:32",
+    "slug": "phonak-naida-l-1",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/phonak-naida-l-1/",
+    "title": {
+      "rendered": "phonak-naida-l-1"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-52",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-l-1.webp'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-l-1-300x300.webp\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-l-1-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-l-1-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-l-1-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-l-1.webp 500w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/webp",
+    "media_details": {
+      "width": 500,
+      "height": 500,
+      "file": "2026/10/phonak-naida-l-1.webp",
+      "filesize": 12116,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "phonak-naida-l-1-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 5476,
+          "uncropped": false,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-l-1-300x300.webp"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "phonak-naida-l-1-100x100.webp",
+          "width": 100,
+          "height": 100,
+          "filesize": 1288,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-l-1-100x100.webp"
+        },
+        "woocommerce_single": {
+          "file": "phonak-naida-l-1-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 5476,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-l-1-300x300.webp"
+        },
+        "medium": {
+          "file": "phonak-naida-l-1-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 5476,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-l-1-300x300.webp"
+        },
+        "thumbnail": {
+          "file": "phonak-naida-l-1-150x150.webp",
+          "width": 150,
+          "height": 150,
+          "filesize": 2146,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-l-1-150x150.webp"
+        },
+        "full": {
+          "file": "phonak-naida-l-1.webp",
+          "width": 500,
+          "height": 500,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-l-1.webp"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/2026/10/phonak-naida-l-1.webp",
+    "filename": "phonak-naida-l-1.webp",
+    "filesize": 12116,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/52",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=52"
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "date": "2026-10-08T19:25:28",
+    "date_gmt": "2026-10-08T19:25:28",
+    "guid": {
+      "rendered": "https://abidhearing.com/wp-content/uploads/2026/10/woocommerce-placeholder.webp"
+    },
+    "modified": "2026-10-08T19:25:28",
+    "modified_gmt": "2026-10-08T19:25:28",
+    "slug": "woocommerce-placeholder",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://abidhearing.com/woocommerce-placeholder/",
+    "title": {
+      "rendered": "woocommerce-placeholder"
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "class_list": [
+      "post-6",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "has_video": false,
+    "description": {
+      "rendered": "<p class=\"attachment\"><a href='https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp 300w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp 100w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp 500w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp 1024w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp 150w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp 768w, https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp 1200w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+    },
+    "caption": {
+      "rendered": ""
+    },
+    "alt_text": "",
+    "media_type": "image",
+    "mime_type": "image/webp",
+    "media_details": {
+      "width": 1200,
+      "height": 1200,
+      "file": "woocommerce-placeholder.webp",
+      "filesize": 9892,
+      "sizes": {
+        "woocommerce_thumbnail": {
+          "file": "woocommerce-placeholder-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 1746,
+          "uncropped": false,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp"
+        },
+        "woocommerce_gallery_thumbnail": {
+          "file": "woocommerce-placeholder-100x100.webp",
+          "width": 100,
+          "height": 100,
+          "filesize": 862,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-100x100.webp"
+        },
+        "woocommerce_single": {
+          "file": "woocommerce-placeholder-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 1746,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp"
+        },
+        "woocommerce_archive_thumbnail": {
+          "file": "woocommerce-placeholder-500x500.webp",
+          "width": 500,
+          "height": 500,
+          "filesize": 2728,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-500x500.webp"
+        },
+        "medium": {
+          "file": "woocommerce-placeholder-300x300.webp",
+          "width": 300,
+          "height": 300,
+          "filesize": 1746,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-300x300.webp"
+        },
+        "large": {
+          "file": "woocommerce-placeholder-1024x1024.webp",
+          "width": 1024,
+          "height": 1024,
+          "filesize": 6322,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-1024x1024.webp"
+        },
+        "thumbnail": {
+          "file": "woocommerce-placeholder-150x150.webp",
+          "width": 150,
+          "height": 150,
+          "filesize": 1078,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-150x150.webp"
+        },
+        "medium_large": {
+          "file": "woocommerce-placeholder-768x768.webp",
+          "width": 768,
+          "height": 768,
+          "filesize": 4432,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/woocommerce-placeholder-768x768.webp"
+        },
+        "full": {
+          "file": "woocommerce-placeholder.webp",
+          "width": 1200,
+          "height": 1200,
+          "mime_type": "image/webp",
+          "source_url": "https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://abidhearing.com/wp-content/uploads/woocommerce-placeholder.webp",
+    "filename": "woocommerce-placeholder.webp",
+    "filesize": 9892,
+    "_links": {
+      "self": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media/6",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://abidhearing.com/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://abidhearing.com/wp-json/wp/v2/comments?post=6"
+        }
+      ]
+    }
+  }
+]

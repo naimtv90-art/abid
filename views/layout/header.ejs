@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title><%= typeof title !== 'undefined' ? title : 'Abid Hearing Care Centre – Hearing means quality of life – Make better living' %></title>
+  
+  <meta name="description" content="<%= typeof metaDesc !== 'undefined' ? metaDesc : 'Abid Hearing Care Centre (AHCC) Bangladesh - Leading diagnostic audiology testing, digital hearing aid fitting, custom earmoulds and repair services in Uttara, Dhaka since 2014.' %>">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://abidhearing.com<%= typeof currentPath !== 'undefined' ? currentPath : '' %>">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="<%= typeof title !== 'undefined' ? title : 'Abid Hearing Care Centre – Hearing means quality of life' %>">
+  <meta property="og:description" content="<%= typeof metaDesc !== 'undefined' ? metaDesc : 'Leading audiology testing and digital hearing aid fitting centre in Uttara, Dhaka Bangladesh since 2014.' %>">
+  <meta property="og:url" content="https://abidhearing.com<%= typeof currentPath !== 'undefined' ? currentPath : '' %>">
+  <meta property="og:site_name" content="Abid Hearing Care Centre">
+  <meta property="og:image" content="/images/abid-hearing-care-centre-logo-uttara-dhaka.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/abid-hearing-care-centre-logo-uttara-dhaka.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css?v=7">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Abid Hearing Care Centre",
+    "alternateName": "AHCC Bangladesh",
+    "url": "https://abidhearing.com",
+    "logo": "https://abidhearing.com/images/abid-hearing-care-centre-logo-uttara-dhaka.png",
+    "description": "Leading hearing care and digital hearing aid fitting centre in Sector-7, Uttara, Dhaka Bangladesh serving patients since 2014.",
+    "telephone": "+8801771237740",
+    "email": "info@abidhearing.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Oasis Complex, House-59, Sonargaon Janapath Road (1st Floor), Sector-7, Uttara",
+      "addressLocality": "Dhaka",
+      "postalCode": "1230",
+      "addressCountry": "BD"
+    },
+    "openingHours": "Sa,Su,Mo,Tu,We,Th 10:00-20:00"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Hotline Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="badge-247">24/7 Helpline</span>
+        <a href="tel:01771237740" class="top-bar-item">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <strong>0177 123 77 40</strong>
+        </a>
+        <a href="mailto:info@abidhearing.com" class="top-bar-item" style="opacity: 0.9;">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          info@abidhearing.com
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <span>⏰ 10:00 AM – 8:00 PM (Sat–Thu)</span>
+        <span style="opacity: 0.5;">|</span>
+        <span>Clinic: Sector-7, Uttara, Dhaka</span>
+        <a href="https://wa.me/8801771237740?text=Hello%20Abid%20Hearing%20Care%20Centre,%20I%20would%20like%20to%20inquire%20about%20hearing%20aids" target="_blank" class="top-bar-item" style="color: #25D366; font-weight: 600;">
+          💬 WhatsApp Chat
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Logo -->
+      <a href="/" class="brand-logo" aria-label="Abid Hearing Care Centre">
+        <img src="/images/abid-hearing-care-centre-logo-uttara-dhaka.png" alt="Abid Hearing Care Centre – Authorized Hearing Aid Fitting Centre Uttara Dhaka Bangladesh" width="220" height="48" fetchpriority="high">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item <%= typeof currentPath !== 'undefined' && currentPath === '/' ? 'active' : '' %>">
+            <a href="/" class="nav-link">
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li class="nav-item <%= typeof currentPath !== 'undefined' && currentPath.startsWith('/hearing') ? 'active' : '' %>">
+            <a href="/hearing-aid" class="nav-link">
+              <span>Hearing Aids</span>
+              <svg class="nav-arrow" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/hearing-aid" class="dropdown-link">Hearing Aids Overview</a></li>
+              <li><a href="/hearing-aids-style" class="dropdown-link">Hearing Aids Style</a></li>
+              <li><a href="/how-do-hearing-aid-work" class="dropdown-link">How do Hearing Aids Work</a></li>
+              <li><a href="/hearing-aid-for-children" class="dropdown-link">Hearing Aids for Children</a></li>
+              <li><a href="/hearing-aid-brand-in-bangladesh" class="dropdown-link">Hearing Aid Brands in Bangladesh</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item <%= typeof currentPath !== 'undefined' && currentPath === '/products' ? 'active' : '' %>">
+            <a href="/products" class="nav-link">
+              <span>Products</span>
+            </a>
+          </li>
+
+          <li class="nav-item <%= typeof currentPath !== 'undefined' && currentPath === '/services' ? 'active' : '' %>">
+            <a href="/services" class="nav-link">
+              <span>Services</span>
+            </a>
+          </li>
+
+          <li class="nav-item <%= typeof currentPath !== 'undefined' && currentPath === '/hearing-test' ? 'active' : '' %>">
+            <a href="/hearing-test" class="nav-link">
+              <span>Hearing Test</span>
+            </a>
+          </li>
+
+          <li class="nav-item <%= typeof currentPath !== 'undefined' && (currentPath === '/management' || currentPath === '/affiliation' || currentPath === '/about-us') ? 'active' : '' %>">
+            <a href="/about-us" class="nav-link">
+              <span>Others</span>
+              <svg class="nav-arrow" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/about-us" class="dropdown-link">About Us</a></li>
+              <li><a href="/management" class="dropdown-link">Management &amp; Team</a></li>
+              <li><a href="/affiliation" class="dropdown-link">NGO Affiliations</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item <%= typeof currentPath !== 'undefined' && currentPath === '/blog' ? 'active' : '' %>">
+            <a href="/blog" class="nav-link">
+              <span>Blog</span>
+            </a>
+          </li>
+
+          <li class="nav-item <%= typeof currentPath !== 'undefined' && currentPath === '/contact-us' ? 'active' : '' %>">
+            <a href="/contact-us" class="nav-link">
+              <span>Contact Us</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <button class="btn btn-primary btn-sm" data-open-appointment="uttara" style="border-radius: var(--radius-pill); white-space: nowrap;">
+          Book Appointment
+        </button>
+        <a href="tel:01771237740" class="btn-header-call" style="white-space: nowrap;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink: 0;"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <span style="white-space: nowrap;">0177 123 77 40</span>
+        </a>
+        <!-- Mobile Toggle -->
+        <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Open Navigation Menu">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileDrawerOverlay"></div>
+  <div id="mobileDrawer">
+    <div style="padding: 20px; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: space-between;">
+      <img src="/images/abid-hearing-care-centre-logo-uttara-dhaka.png" alt="Abid Hearing Care Centre Bangladesh" style="height: 38px;">
+      <button id="closeMobileDrawer" style="background: none; border: none; font-size: 28px; cursor: pointer; color: #475569; line-height: 1;">&times;</button>
+    </div>
+    <div style="padding: 20px; flex-grow: 1;">
+      <ul style="list-style: none; display: flex; flex-direction: column; gap: 6px;">
+        <li style="border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
+          <a href="/" style="display: flex; justify-content: space-between; align-items: center; font-weight: 700; color: #1e293b; padding: 8px 0;">Home</a>
+        </li>
+        <li class="drawer-has-sub" style="border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
+          <a href="/hearing-aid" class="mobile-submenu-toggle" style="display: flex; justify-content: space-between; align-items: center; font-weight: 700; color: #1e293b; padding: 8px 0;">
+            Hearing Aids <span>▾</span>
+          </a>
+          <ul class="drawer-sub-menu" style="list-style: none; padding-left: 14px; margin-top: 6px; display: none; flex-direction: column; gap: 6px;">
+            <li><a href="/hearing-aid" style="font-size: 0.9rem; color: #64748b; display: block; padding: 4px 0;">Hearing Aids Overview</a></li>
+            <li><a href="/hearing-aids-style" style="font-size: 0.9rem; color: #64748b; display: block; padding: 4px 0;">Hearing Aids Style</a></li>
+            <li><a href="/how-do-hearing-aid-work" style="font-size: 0.9rem; color: #64748b; display: block; padding: 4px 0;">How do Hearing Aids Work</a></li>
+            <li><a href="/hearing-aid-for-children" style="font-size: 0.9rem; color: #64748b; display: block; padding: 4px 0;">Hearing Aids for Children</a></li>
+            <li><a href="/hearing-aid-brand-in-bangladesh" style="font-size: 0.9rem; color: #64748b; display: block; padding: 4px 0;">Hearing Aid Brands in Bangladesh</a></li>
+          </ul>
+        </li>
+        <li style="border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
+          <a href="/products" style="display: flex; justify-content: space-between; align-items: center; font-weight: 700; color: #1e293b; padding: 8px 0;">Products</a>
+        </li>
+        <li style="border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
+          <a href="/services" style="display: flex; justify-content: space-between; align-items: center; font-weight: 700; color: #1e293b; padding: 8px 0;">Services</a>
+        </li>
+        <li style="border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
+          <a href="/hearing-test" style="display: flex; justify-content: space-between; align-items: center; font-weight: 700; color: #1e293b; padding: 8px 0;">Hearing Test</a>
+        </li>
+        <li class="drawer-has-sub" style="border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
+          <a href="/about-us" class="mobile-submenu-toggle" style="display: flex; justify-content: space-between; align-items: center; font-weight: 700; color: #1e293b; padding: 8px 0;">
+            Others <span>▾</span>
+          </a>
+          <ul class="drawer-sub-menu" style="list-style: none; padding-left: 14px; margin-top: 6px; display: none; flex-direction: column; gap: 6px;">
+            <li><a href="/about-us" style="font-size: 0.9rem; color: #64748b; display: block; padding: 4px 0;">About Us</a></li>
+            <li><a href="/management" style="font-size: 0.9rem; color: #64748b; display: block; padding: 4px 0;">Management &amp; Team</a></li>
+            <li><a href="/affiliation" style="font-size: 0.9rem; color: #64748b; display: block; padding: 4px 0;">NGO Affiliations</a></li>
+          </ul>
+        </li>
+        <li style="border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
+          <a href="/blog" style="display: flex; justify-content: space-between; align-items: center; font-weight: 700; color: #1e293b; padding: 8px 0;">Blog</a>
+        </li>
+        <li style="border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
+          <a href="/contact-us" style="display: flex; justify-content: space-between; align-items: center; font-weight: 700; color: #1e293b; padding: 8px 0;">Contact Us</a>
+        </li>
+      </ul>
+      <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 10px;">
+        <button class="btn btn-primary" data-open-appointment="uttara" style="width: 100%;">Book Appointment</button>
+        <a href="tel:01771237740" class="btn btn-red" style="width: 100%;">Call Helpline</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
