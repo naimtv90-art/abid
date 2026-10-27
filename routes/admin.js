@@ -17,10 +17,17 @@ const ADMIN_PASS = process.env.ADMIN_PASS || 'abid2026!';
 const SESSION_SECRET = process.env.ADMIN_SESSION_SECRET || 'ahcc_secret_session_key_uttara_2026';
 const COOKIE_NAME = 'ahcc_admin_token';
 
-// Ensure upload directory exists
-const UPLOAD_DIR = path.join(__dirname, '..', 'public', 'images', 'cms');
-if (!fs.existsSync(UPLOAD_DIR)) {
-  fs.mkdirSync(UPLOAD_DIR, { recursive: true });
+// Base path resolution for local and Vercel serverless
+const basePath = fs.existsSync(path.join(process.cwd(), 'public')) ? process.cwd() : path.join(__dirname, '..');
+const UPLOAD_DIR = path.join(basePath, 'public', 'images', 'cms');
+
+// Ensure upload directory exists (safely catch read-only filesystem errors on Vercel)
+try {
+  if (!fs.existsSync(UPLOAD_DIR)) {
+    fs.mkdirSync(UPLOAD_DIR, { recursive: true });
+  }
+} catch (e) {
+  // Ignored in read-only serverless environments
 }
 
 // Multer Storage Configuration

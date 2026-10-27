@@ -22,6 +22,9 @@ import {
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Robust base directory resolution for both local run and Vercel serverless
+const basePath = fs.existsSync(path.join(process.cwd(), 'views')) ? process.cwd() : __dirname;
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -37,7 +40,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // Serve static assets with aggressive HTTP caching
-app.use(express.static(path.join(__dirname, 'public'), {
+app.use(express.static(path.join(basePath, 'public'), {
   maxAge: '7d',
   etag: true,
   lastModified: true
@@ -46,12 +49,12 @@ app.use(express.static(path.join(__dirname, 'public'), {
 // Route fallback for original WordPress upload paths
 app.use('/wp-content/uploads', (req, res, next) => {
   const filename = path.basename(req.path);
-  const localFile = path.join(__dirname, 'public', 'images', filename);
+  const localFile = path.join(basePath, 'public', 'images', filename);
   if (fs.existsSync(localFile)) {
     return res.sendFile(localFile);
   }
   const stripped = filename.replace(/-\d+x\d+(\.\w+)$/, '$1');
-  const localStripped = path.join(__dirname, 'public', 'images', stripped);
+  const localStripped = path.join(basePath, 'public', 'images', stripped);
   if (fs.existsSync(localStripped)) {
     return res.sendFile(localStripped);
   }
@@ -60,7 +63,7 @@ app.use('/wp-content/uploads', (req, res, next) => {
 
 // Set up EJS view engine
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(basePath, 'views'));
 
 // Pre-normalize services with unified description accessors
 const services = rawServices.map(srv => ({
@@ -92,10 +95,14 @@ app.use((req, res, next) => {
 // Mount Admin CMS Router
 app.use('/admin', adminRouter);
 
-// Ensure appointments storage directory exists
-const appointmentsFile = path.join(__dirname, 'data', 'appointments.json');
-if (!fs.existsSync(appointmentsFile)) {
-  fs.writeFileSync(appointmentsFile, JSON.stringify([], null, 2));
+// Ensure appointments storage directory exists (safe for serverless read-only filesystems)
+const appointmentsFile = path.join(basePath, 'data', 'appointments.json');
+try {
+  if (!fs.existsSync(appointmentsFile)) {
+    fs.writeFileSync(appointmentsFile, JSON.stringify([], null, 2));
+  }
+} catch (e) {
+  // Ignored in read-only serverless environments
 }
 
 // -------------------------------------------------------------
@@ -526,4 +533,10 @@ function startServer(portToTry) {
   });
 }
 
-startServer(PORT);
+// Export default app for Vercel Serverless Function
+export default app;
+
+// Only start the HTTP listener when run directly (not in Vercel serverless)
+if (!process.env.VERCEL) {
+  startServer(PORT);
+}

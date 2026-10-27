@@ -7,23 +7,38 @@ import { blogPosts as defaultBlogPosts } from './siteData.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const PRODUCTS_FILE = path.join(__dirname, 'products.json');
-const BLOGS_FILE = path.join(__dirname, 'blogs.json');
-const APPOINTMENTS_FILE = path.join(__dirname, 'appointments.json');
+// Robust base directory resolution for both local and Vercel serverless
+const basePath = fs.existsSync(path.join(process.cwd(), 'data')) ? process.cwd() : path.join(__dirname, '..');
 
-// Initialize products.json if it doesn't exist
-if (!fs.existsSync(PRODUCTS_FILE)) {
-  fs.writeFileSync(PRODUCTS_FILE, JSON.stringify(defaultProducts, null, 2), 'utf8');
+const PRODUCTS_FILE = path.join(basePath, 'data', 'products.json');
+const BLOGS_FILE = path.join(basePath, 'data', 'blogs.json');
+const APPOINTMENTS_FILE = path.join(basePath, 'data', 'appointments.json');
+
+// Initialize products.json if it doesn't exist (safe for read-only Vercel filesystem)
+try {
+  if (!fs.existsSync(PRODUCTS_FILE)) {
+    fs.writeFileSync(PRODUCTS_FILE, JSON.stringify(defaultProducts, null, 2), 'utf8');
+  }
+} catch (e) {
+  // Read-only serverless environment
 }
 
-// Initialize blogs.json if it doesn't exist
-if (!fs.existsSync(BLOGS_FILE)) {
-  fs.writeFileSync(BLOGS_FILE, JSON.stringify(defaultBlogPosts, null, 2), 'utf8');
+// Initialize blogs.json if it doesn't exist (safe for read-only Vercel filesystem)
+try {
+  if (!fs.existsSync(BLOGS_FILE)) {
+    fs.writeFileSync(BLOGS_FILE, JSON.stringify(defaultBlogPosts, null, 2), 'utf8');
+  }
+} catch (e) {
+  // Read-only serverless environment
 }
 
-// Ensure appointments.json exists
-if (!fs.existsSync(APPOINTMENTS_FILE)) {
-  fs.writeFileSync(APPOINTMENTS_FILE, JSON.stringify([], null, 2), 'utf8');
+// Ensure appointments.json exists (safe for read-only Vercel filesystem)
+try {
+  if (!fs.existsSync(APPOINTMENTS_FILE)) {
+    fs.writeFileSync(APPOINTMENTS_FILE, JSON.stringify([], null, 2), 'utf8');
+  }
+} catch (e) {
+  // Read-only serverless environment
 }
 
 // In-memory cache
@@ -47,7 +62,8 @@ function writeJsonFile(filePath, data) {
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
     return true;
   } catch (err) {
-    console.error(`[ContentStore] Error writing ${filePath}:`, err);
+    // Graceful fallback for serverless read-only filesystems (Vercel)
+    console.warn(`[ContentStore] Note: ${filePath} cannot be written to disk in serverless environment:`, err.message);
     return false;
   }
 }
