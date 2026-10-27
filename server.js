@@ -3,8 +3,10 @@ import compression from 'compression';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
+import cookieParser from 'cookie-parser';
 
-import { products } from './data/products.js';
+import { contentStore } from './data/contentStore.js';
+import adminRouter from './routes/admin.js';
 import { 
   clinicInfo, 
   navItems, 
@@ -13,7 +15,6 @@ import {
   affiliations, 
   brands, 
   stylesList, 
-  blogPosts, 
   hearingQuizQuestions,
   galleryItems
 } from './data/siteData.js';
@@ -30,9 +31,10 @@ app.use(compression({
   level: 6
 }));
 
-// Body parsers
+// Body & Cookie parsers
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 // Serve static assets with aggressive HTTP caching
 app.use(express.static(path.join(__dirname, 'public'), {
@@ -69,16 +71,26 @@ const services = rawServices.map(srv => ({
 // Global template variables for high rendering efficiency
 app.locals.clinicInfo = clinicInfo;
 app.locals.navItems = navItems;
-app.locals.totalProducts = products.length;
-app.locals.featuredProducts = products.slice(0, 6);
 app.locals.brands = brands;
 app.locals.stylesList = stylesList;
 app.locals.services = services;
 app.locals.leadership = leadership;
 app.locals.affiliations = affiliations;
-app.locals.blogPosts = blogPosts;
 app.locals.hearingQuizQuestions = hearingQuizQuestions;
 app.locals.galleryItems = galleryItems;
+
+// Dynamic request middleware ensuring newly created products & blogs immediately update SSR
+app.use((req, res, next) => {
+  const allProds = contentStore.getProducts();
+  const allBlogs = contentStore.getBlogPosts();
+  res.locals.totalProducts = allProds.length;
+  res.locals.featuredProducts = allProds.slice(0, 6);
+  res.locals.blogPosts = allBlogs;
+  next();
+});
+
+// Mount Admin CMS Router
+app.use('/admin', adminRouter);
 
 // Ensure appointments storage directory exists
 const appointmentsFile = path.join(__dirname, 'data', 'appointments.json');
@@ -156,16 +168,17 @@ app.get('/hearing-aid-brand-in-bangladesh', (req, res) => {
 // 8. Products Catalog
 app.get('/products', (req, res) => {
   const brandQuery = req.query.brand;
-  let filtered = products;
+  const allProducts = contentStore.getProducts();
+  let filtered = allProducts;
 
   if (brandQuery && brandQuery.toLowerCase() !== 'all') {
-    filtered = products.filter(p => p.brand.toLowerCase() === brandQuery.toLowerCase());
+    filtered = allProducts.filter(p => p.brand.toLowerCase() === brandQuery.toLowerCase());
   }
 
   res.render('pages/products', {
-    title: 'Digital Hearing Aids & Accessories Catalog (' + products.length + ' Models)',
+    title: 'Digital Hearing Aids & Accessories Catalog (' + allProducts.length + ' Models)',
     currentPath: '/products',
-    metaDesc: 'Browse ' + products.length + '+ digital hearing aids from Phonak, Rexton, Unitron in Bangladesh with warranty and computer-assisted fitting.',
+    metaDesc: 'Browse ' + allProducts.length + '+ digital hearing aids from Phonak, Rexton, Unitron in Bangladesh with warranty and computer-assisted fitting.',
     products: filtered,
     selectedBrand: brandQuery || 'all'
   });
@@ -179,7 +192,7 @@ app.get('/shop', (req, res) => {
 // 9. Individual Product Detail Page
 app.get('/product/:slug', (req, res) => {
   const slug = req.params.slug;
-  const product = products.find(p => p.slug === slug);
+  const product = contentStore.getProductBySlug(slug);
 
   if (!product) {
     return res.status(404).render('pages/404', {
@@ -189,7 +202,8 @@ app.get('/product/:slug', (req, res) => {
   }
 
   // Find related products in same brand or category
-  const relatedProducts = products
+  const allProducts = contentStore.getProducts();
+  const relatedProducts = allProducts
     .filter(p => p.slug !== slug && (p.brand === product.brand || p.category === product.category))
     .slice(0, 3);
 
@@ -268,25 +282,59 @@ app.get('/contact', (req, res) => {
   res.redirect(301, '/contact-us');
 });
 
-// 15. Audiology Blog
+// 15. Audiology Blog (Micro Style)
 app.get('/blog', (req, res) => {
+  const { category, search } = req.query;
+  const allBlogs = contentStore.getBlogPosts();
+
+  let filtered = allBlogs;
+  if (category && category !== 'All') {
+    filtered = filtered.filter(b => b.category && b.category.toLowerCase() === category.toLowerCase());
+  }
+  if (search) {
+    const q = search.toLowerCase().trim();
+    filtered = filtered.filter(b =>
+      (b.title && b.title.toLowerCase().includes(q)) ||
+      (b.category && b.category.toLowerCase().includes(q)) ||
+      (b.excerpt && b.excerpt.toLowerCase().includes(q)) ||
+      (b.content && b.content.toLowerCase().includes(q))
+    );
+  }
+
+  const categories = ['All', ...new Set(allBlogs.map(b => b.category).filter(Boolean))];
+
   res.render('pages/blog', {
-    title: 'Audiology Blog & Hearing Health Articles | Abid Hearing Care',
+    title: 'Audiology Blog & Ear Care Insights | Abid Hearing Care Centre',
     currentPath: '/blog',
-    metaDesc: 'Helpful audiology guides, hearing care advice, pediatric speech development, and device maintenance tips from clinical audiologists at Abid Hearing Care Centre.'
+    metaDesc: 'Practical audiology reading, digital hearing aid maintenance guides, and everyday ear care advice from clinical audiologists at Abid Hearing Care Centre Dhaka.',
+    blogs: filtered,
+    categories,
+    selectedCategory: category || 'All',
+    searchQuery: search || ''
   });
 });
 
 app.get('/blog/:slug', (req, res) => {
-  const post = blogPosts.find(p => p.slug === req.params.slug);
+  const post = contentStore.getBlogPostBySlug(req.params.slug);
   if (!post) {
-    return res.redirect('/blog');
+    return res.status(404).render('pages/404', {
+      title: 'Article Not Found | Abid Hearing Care Centre',
+      currentPath: '/blog'
+    });
   }
-  res.render('pages/blog', {
+
+  const allBlogs = contentStore.getBlogPosts();
+  const relatedBlogs = allBlogs
+    .filter(b => b.slug !== post.slug)
+    .sort((a, b) => (b.category === post.category ? 1 : 0) - (a.category === post.category ? 1 : 0))
+    .slice(0, 3);
+
+  res.render('pages/blog-detail', {
     title: `${post.title} | Abid Hearing Care Centre`,
-    currentPath: '/blog',
+    currentPath: '/blog/' + post.slug,
     metaDesc: post.excerpt,
-    featuredPost: post
+    blog: post,
+    relatedBlogs
   });
 });
 
@@ -324,11 +372,21 @@ app.get('/sitemap.xml', (req, res) => {
     xml += '  </url>\n';
   });
 
-  products.forEach(prod => {
+  const prods = contentStore.getProducts();
+  prods.forEach(prod => {
     xml += '  <url>\n';
     xml += `    <loc>${baseUrl}/product/${prod.slug}</loc>\n`;
     xml += '    <changefreq>monthly</changefreq>\n';
-    xml += '    <priority>0.7</priority>\n';
+    xml += `    <priority>0.7</priority>\n`;
+    xml += '  </url>\n';
+  });
+
+  const posts = contentStore.getBlogPosts();
+  posts.forEach(post => {
+    xml += '  <url>\n';
+    xml += `    <loc>${baseUrl}/blog/${post.slug}</loc>\n`;
+    xml += '    <changefreq>monthly</changefreq>\n';
+    xml += `    <priority>0.7</priority>\n`;
     xml += '  </url>\n';
   });
 
@@ -398,19 +456,23 @@ app.post('/api/appointment', (req, res) => {
 
 // Products API endpoint
 app.get('/api/products', (req, res) => {
+  const prods = contentStore.getProducts();
   res.json({
-    total: products.length,
-    products
+    total: prods.length,
+    products: prods
   });
 });
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
+  const prods = contentStore.getProducts();
+  const blogs = contentStore.getBlogPosts();
   res.json({
     status: 'healthy',
     timestamp: new Date().toISOString(),
     uptime: Math.round(process.uptime()) + 's',
-    productsCount: products.length
+    productsCount: prods.length,
+    blogsCount: blogs.length
   });
 });
 
@@ -437,14 +499,31 @@ app.use((err, req, res, next) => {
 });
 
 // -------------------------------------------------------------
-// Start Server
+// Start Server with Graceful Port Fallback
 // -------------------------------------------------------------
 
-app.listen(PORT, () => {
-  console.log(`=======================================================`);
-  console.log(`🚀 Abid Hearing Care Centre - Super-Fast Node.js Server`);
-  console.log(`📍 Clinic: Sector-7, Uttara, Dhaka-1230, Bangladesh`);
-  console.log(`🌐 Server running at: http://localhost:${PORT}`);
-  console.log(`📦 Loaded ${products.length} products with EJS SSR & Gzip compression`);
-  console.log(`=======================================================`);
-});
+function startServer(portToTry) {
+  const server = app.listen(portToTry, () => {
+    const prods = contentStore.getProducts();
+    const blogs = contentStore.getBlogPosts();
+    console.log(`=======================================================`);
+    console.log(`🚀 Abid Hearing Care Centre - Super-Fast Node.js Server`);
+    console.log(`📍 Clinic: Sector-7, Uttara, Dhaka-1230, Bangladesh`);
+    console.log(`🌐 Server running at: http://localhost:${portToTry}`);
+    console.log(`🔐 Admin CMS Portal: http://localhost:${portToTry}/admin`);
+    console.log(`📦 Loaded ${prods.length} products & ${blogs.length} blog posts with Live CMS`);
+    console.log(`=======================================================`);
+  });
+
+  server.on('error', (err) => {
+    if (err.code === 'EADDRINUSE') {
+      const nextPort = Number(portToTry) + 1;
+      console.log(`⚠️ Port ${portToTry} is in use (e.g. by Micro). Falling back to http://localhost:${nextPort}...`);
+      startServer(nextPort);
+    } else {
+      console.error('[Server Error]', err);
+    }
+  });
+}
+
+startServer(PORT);

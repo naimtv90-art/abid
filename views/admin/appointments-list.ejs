@@ -1,0 +1,108 @@
+<%- include('./layout-header', { title, currentSection }) %>
+
+<!-- Header and Controls -->
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+  <div>
+    <h1 style="font-size: 1.75rem; font-weight: 800; color: #06182f; letter-spacing: -0.02em; margin-bottom: 4px;">
+      Patient Consultation Leads &amp; Bookings
+    </h1>
+    <p style="color: #64748b; font-size: 0.92rem;">
+      Real-time appointment requests submitted by patients visiting abidhearing.com.
+    </p>
+  </div>
+  <a href="/contact-us" target="_blank" class="btn-secondary">
+    <span>🌐</span> Test Booking Form &nearr;
+  </a>
+</div>
+
+<!-- Appointments Card -->
+<div class="admin-card" style="padding: 0; overflow: hidden;">
+  <div style="padding: 16px 24px; background: #f8fafc; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: 700; color: #334155; font-size: 0.92rem;">
+      Total Inquiries: <span style="color: #0077ff;"><%= appointments.length %></span>
+    </div>
+    <div style="font-size: 0.8rem; color: #64748b;">
+      Click phone to call or WhatsApp to message patient directly
+    </div>
+  </div>
+
+  <% if (appointments.length === 0) { %>
+    <div style="text-align: center; padding: 60px 20px;">
+      <div style="font-size: 3rem; margin-bottom: 12px;">🩺</div>
+      <h3 style="font-size: 1.2rem; color: #06182f; font-weight: 800; margin-bottom: 6px;">No appointment inquiries yet</h3>
+      <p style="color: #64748b; font-size: 0.9rem;">Patient consultation bookings submitted through the website will appear here in real time.</p>
+    </div>
+  <% } else { %>
+    <div style="overflow-x: auto;">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Patient Name</th>
+            <th>Phone Contact</th>
+            <th>Service Requested</th>
+            <th>Preferred Date</th>
+            <th>Notes / Symptoms</th>
+            <th>Submitted</th>
+            <th style="text-align: right; width: 100px;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% appointments.forEach(apt => { %>
+            <% 
+              // Sanitize phone for WhatsApp
+              const cleanPhone = (apt.phone || '').replace(/[^0-9]/g, '');
+              const waNumber = cleanPhone.startsWith('88') ? cleanPhone : ('88' + cleanPhone);
+            %>
+            <tr>
+              <td>
+                <div style="font-weight: 800; color: #06182f; font-size: 0.95rem;">
+                  <%= apt.name || 'Anonymous Client' %>
+                </div>
+              </td>
+              <td>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <a href="tel:<%= apt.phone %>" style="color: #0077ff; font-weight: 700; text-decoration: none; font-family: monospace;">
+                    <%= apt.phone %>
+                  </a>
+                  <% if (cleanPhone) { %>
+                    <a 
+                      href="https://wa.me/<%= waNumber %>?text=Hello%20<%= encodeURIComponent(apt.name || 'Sir/Madam') %>,%20this%20is%20Abid%20Hearing%20Care%20Centre%20regarding%20your%20consultation%20booking." 
+                      target="_blank" 
+                      title="Chat on WhatsApp"
+                      style="display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; background: #25d366; color: #fff; font-size: 0.78rem; text-decoration: none;"
+                    >
+                      💬
+                    </a>
+                  <% } %>
+                </div>
+              </td>
+              <td>
+                <span class="badge badge-primary">
+                  <%= apt.service || 'Audiology Consultation' %>
+                </span>
+              </td>
+              <td style="font-weight: 600; color: #334155;">
+                <%= apt.preferredDate || 'Flexible' %>
+              </td>
+              <td style="font-size: 0.85rem; color: #64748b; max-width: 250px;">
+                <%= apt.notes || '—' %>
+              </td>
+              <td style="font-size: 0.78rem; color: #94a3b8;">
+                <%= apt.submittedAt ? new Date(apt.submittedAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : 'Recent' %>
+              </td>
+              <td style="text-align: right;">
+                <form method="POST" action="/admin/appointments/delete/<%= apt.id %>" onsubmit="return confirm('Remove this patient inquiry?');" style="display: inline;">
+                  <button type="submit" title="Remove Inquiry" class="btn-danger">
+                    🗑️
+                  </button>
+                </form>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  <% } %>
+</div>
+
+<%- include('./layout-footer') %>

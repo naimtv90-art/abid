@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= typeof title !== 'undefined' ? title : 'Admin CMS | Abid Hearing Care Centre' %></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    :root {
+      --admin-sidebar-w: 260px;
+      --admin-sidebar-bg: #06182f;
+      --admin-sidebar-hover: #0b2a52;
+      --admin-sidebar-border: #133866;
+      --admin-header-h: 70px;
+      --admin-bg: #f4f7fb;
+      --admin-card-bg: #ffffff;
+      --admin-card-border: #e2e8f0;
+      --admin-accent: #0077ff;
+      --admin-accent-dark: #0056cc;
+    }
+
+    body {
+      background: var(--admin-bg);
+      color: #0f172a;
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .admin-sidebar {
+      width: var(--admin-sidebar-w);
+      background: var(--admin-sidebar-bg);
+      color: #ffffff;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      z-index: 100;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-right: 1px solid var(--admin-sidebar-border);
+      overflow-y: auto;
+    }
+
+    .sidebar-brand {
+      padding: 22px 20px;
+      border-bottom: 1px solid var(--admin-sidebar-border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .sidebar-brand img {
+      max-height: 38px;
+      background: #ffffff;
+      padding: 4px 8px;
+      border-radius: 8px;
+    }
+
+    .sidebar-brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar-brand-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    .sidebar-brand-subtitle {
+      font-size: 0.72rem;
+      color: #93c5fd;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .sidebar-nav {
+      padding: 20px 14px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .nav-section-title {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #64748b;
+      padding: 12px 10px 4px;
+    }
+
+    .sidebar-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-link:hover {
+      background: var(--admin-sidebar-hover);
+      color: #ffffff;
+    }
+
+    .sidebar-link.active {
+      background: var(--admin-accent);
+      color: #ffffff;
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(0, 119, 255, 0.35);
+    }
+
+    .sidebar-link .icon {
+      font-size: 1.1rem;
+      width: 22px;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sidebar-footer {
+      padding: 16px;
+      border-top: 1px solid var(--admin-sidebar-border);
+      background: rgba(0, 0, 0, 0.15);
+    }
+
+    .user-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #cbd5e1;
+      font-size: 0.84rem;
+    }
+
+    .user-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--admin-accent);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.8rem;
+    }
+
+    /* Main Container */
+    .admin-main {
+      flex: 1;
+      margin-left: var(--admin-sidebar-w);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - var(--admin-sidebar-w));
+    }
+
+    /* Top Header */
+    .admin-topbar {
+      height: var(--admin-header-h);
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #334155;
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .breadcrumbs {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #64748b;
+    }
+
+    .breadcrumbs span {
+      color: #0f172a;
+      font-weight: 700;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn-site-preview {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #eef6ff;
+      color: var(--admin-accent);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid #cbe2ff;
+      transition: all 0.2s;
+    }
+
+    .btn-site-preview:hover {
+      background: #dbeafe;
+    }
+
+    .btn-logout {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #fef2f2;
+      color: #dc2626;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid #fee2e2;
+      transition: all 0.2s;
+    }
+
+    .btn-logout:hover {
+      background: #fee2e2;
+    }
+
+    /* Content Area */
+    .admin-content {
+      padding: 32px;
+      flex: 1;
+    }
+
+    /* Utility Cards */
+    .admin-card {
+      background: var(--admin-card-bg);
+      border: 1px solid var(--admin-card-border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(6, 24, 47, 0.04);
+      margin-bottom: 24px;
+    }
+
+    .admin-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .admin-card-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #06182f;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      background: var(--admin-accent);
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 2px 6px rgba(0, 119, 255, 0.25);
+      transition: all 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: var(--admin-accent-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0, 119, 255, 0.35);
+    }
+
+    .btn-secondary {
+      background: #f1f5f9;
+      color: #334155;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid #cbd5e1;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: #e2e8f0;
+    }
+
+    .btn-danger {
+      background: #ef4444;
+      color: #ffffff;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-danger:hover {
+      background: #dc2626;
+    }
+
+    /* Badges & Tables */
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 0.76rem;
+      font-weight: 700;
+    }
+    .badge-primary { background: #eef6ff; color: #0077ff; border: 1px solid #cbe2ff; }
+    .badge-success { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
+    .badge-warning { background: #fffbeb; color: #d97706; border: 1px solid #fef3c7; }
+    .badge-danger  { background: #fef2f2; color: #dc2626; border: 1px solid #fee2e2; }
+
+    .admin-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .admin-table th {
+      background: #f8fafc;
+      color: #475569;
+      font-weight: 700;
+      padding: 12px 16px;
+      border-bottom: 2px solid #e2e8f0;
+      text-transform: uppercase;
+      font-size: 0.74rem;
+      letter-spacing: 0.05em;
+    }
+
+    .admin-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #f1f5f9;
+      vertical-align: middle;
+      color: #1e293b;
+    }
+
+    .admin-table tr:hover td {
+      background: #f8fbff;
+    }
+
+    /* Toast notifications */
+    .toast-msg {
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      animation: fadeIn 0.3s ease;
+    }
+    .toast-success { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }
+    .toast-danger { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .admin-sidebar {
+        transform: translateX(-100%);
+      }
+      .admin-sidebar.open {
+        transform: translateX(0);
+      }
+      .admin-main {
+        margin-left: 0;
+        width: 100%;
+      }
+      .mobile-menu-btn {
+        display: block;
+      }
+      .admin-content {
+        padding: 20px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar Overlay for mobile -->
+  <div id="sidebarOverlay" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 95;" onclick="toggleSidebar()"></div>
+
+  <!-- Sidebar -->
+  <aside class="admin-sidebar" id="adminSidebar">
+    <a href="/admin/dashboard" class="sidebar-brand">
+      <img src="/images/abid-hearing-care-centre-logo-uttara-dhaka.png" alt="AHCC">
+      <div class="sidebar-brand-text">
+        <span class="sidebar-brand-title">Abid CMS</span>
+        <span class="sidebar-brand-subtitle">Clinical Portal</span>
+      </div>
+    </a>
+
+    <nav class="sidebar-nav">
+      <div class="nav-section-title">Core Management</div>
+      <a href="/admin/dashboard" class="sidebar-link <%= typeof currentSection !== 'undefined' && currentSection === 'dashboard' ? 'active' : '' %>">
+        <span class="icon">📊</span> Dashboard
+      </a>
+
+      <div class="nav-section-title">Products Catalog</div>
+      <a href="/admin/products" class="sidebar-link <%= typeof currentSection !== 'undefined' && currentSection === 'products' ? 'active' : '' %>">
+        <span class="icon">🦻</span> All Products
+      </a>
+      <a href="/admin/products/new" class="sidebar-link <%= typeof currentSection !== 'undefined' && currentSection === 'products-new' ? 'active' : '' %>">
+        <span class="icon">➕</span> Add New Product
+      </a>
+
+      <div class="nav-section-title">Clinical Journal &amp; Blog</div>
+      <a href="/admin/blogs" class="sidebar-link <%= typeof currentSection !== 'undefined' && currentSection === 'blogs' ? 'active' : '' %>">
+        <span class="icon">📝</span> All Blog Posts
+      </a>
+      <a href="/admin/blogs/new" class="sidebar-link <%= typeof currentSection !== 'undefined' && currentSection === 'blogs-new' ? 'active' : '' %>">
+        <span class="icon">✍️</span> Write Blog Post
+      </a>
+
+      <div class="nav-section-title">Patient Consultations</div>
+      <a href="/admin/appointments" class="sidebar-link <%= typeof currentSection !== 'undefined' && currentSection === 'appointments' ? 'active' : '' %>">
+        <span class="icon">📅</span> Patient Bookings
+      </a>
+
+      <div class="nav-section-title">Website</div>
+      <a href="/" target="_blank" class="sidebar-link">
+        <span class="icon">🌐</span> View Public Site &nearr;
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-pill">
+        <div class="user-avatar">A</div>
+        <div style="flex: 1; overflow: hidden;">
+          <div style="font-weight: 700; color: #ffffff; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;">Clinical Admin</div>
+          <div style="font-size: 0.72rem; color: #93c5fd;">admin@abidhearing</div>
+        </div>
+        <a href="/admin/logout" title="Log Out" style="color: #f87171; text-decoration: none; font-size: 1.1rem;">
+          🚪
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Wrapper -->
+  <div class="admin-main">
+    <!-- Topbar -->
+    <header class="admin-topbar">
+      <div class="topbar-left">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+        <div class="breadcrumbs">
+          Portal / <span><%= typeof currentSection !== 'undefined' ? currentSection.replace('-', ' ').toUpperCase() : 'ADMIN' %></span>
+        </div>
+      </div>
+
+      <div class="topbar-right">
+        <a href="/" target="_blank" class="btn-site-preview">
+          <span>🌐</span> View Live Website
+        </a>
+        <a href="/admin/logout" class="btn-logout">
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="admin-content">
+      <% if (typeof msg !== 'undefined' && msg) { %>
+        <% if (msg === 'created') { %>
+          <div class="toast-msg toast-success">
+            <span>🎉 Item was successfully created and published live on the website!</span>
+            <button onclick="this.parentElement.remove()" style="background:none;border:none;cursor:pointer;font-weight:700;">✕</button>
+          </div>
+        <% } else if (msg === 'updated') { %>
+          <div class="toast-msg toast-success">
+            <span>✓ Changes saved successfully and synchronized with the live website!</span>
+            <button onclick="this.parentElement.remove()" style="background:none;border:none;cursor:pointer;font-weight:700;">✕</button>
+          </div>
+        <% } else if (msg === 'deleted') { %>
+          <div class="toast-msg toast-danger">
+            <span>🗑️ Item was successfully deleted from the catalog.</span>
+            <button onclick="this.parentElement.remove()" style="background:none;border:none;cursor:pointer;font-weight:700;">✕</button>
+          </div>
+        <% } %>
+      <% } %>

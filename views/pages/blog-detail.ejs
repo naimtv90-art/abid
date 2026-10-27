@@ -1,0 +1,166 @@
+<%- include('../layout/header', { 
+  title: blog.title + ' | Abid Hearing Care Centre', 
+  currentPath: '/blog', 
+  metaDesc: blog.excerpt || ('Read clinical advice on ' + blog.title + ' from certified audiologists at Abid Hearing Care Centre, Sector-7, Uttara, Dhaka.')
+}) %>
+
+<section class="section" style="padding-top: 36px; padding-bottom: 70px; background: #ffffff;">
+  <div class="container" style="max-width: 860px;">
+    
+    <!-- Breadcrumbs -->
+    <div style="font-size: 0.9rem; color: #64748b; margin-bottom: 24px;">
+      <a href="/" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Home</a> &nbsp;/&nbsp; 
+      <a href="/blog" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Blog</a> &nbsp;/&nbsp; 
+      <span style="color: #06182f; font-weight: 700;"><%= blog.title %></span>
+    </div>
+
+    <!-- Article Header -->
+    <header style="margin-bottom: 32px;">
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
+        <span style="background: var(--color-primary-soft); color: var(--color-primary); font-size: 0.82rem; font-weight: 800; padding: 4px 14px; border-radius: var(--radius-pill); text-transform: uppercase; border: 1px solid #d0e4ff;">
+          <%= blog.category %>
+        </span>
+        <span style="font-size: 0.85rem; color: #64748b; font-weight: 600;">
+          ⏱️ <%= blog.readTime %>
+        </span>
+        <span style="font-size: 0.85rem; color: #cbd5e1;">&bull;</span>
+        <span style="font-size: 0.85rem; color: #64748b; font-weight: 600;">
+          📅 <%= blog.date %>
+        </span>
+      </div>
+
+      <h1 style="font-size: clamp(2rem, 3.2vw, 2.75rem); font-weight: 800; color: #06182f; line-height: 1.25; margin-bottom: 20px; letter-spacing: -0.02em;">
+        <%= blog.title %>
+      </h1>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 24px; border-bottom: 1px solid var(--color-border); flex-wrap: wrap; gap: 16px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 46px; height: 46px; border-radius: 50%; background: var(--color-primary); color: #ffffff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(0, 119, 255, 0.3);">
+            AH
+          </div>
+          <div>
+            <strong style="color: #06182f; display: block; font-size: 0.98rem;"><%= blog.author || 'Mohammad Haidar Ali' %></strong>
+            <span style="font-size: 0.82rem; color: #64748b;">Clinical Audiologist, Abid Hearing Care Centre, Uttara Dhaka</span>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 8px;">
+          <a href="https://wa.me/?text=<%= encodeURIComponent(blog.title + ' - https://abidhearing.com/blog/' + blog.slug) %>" target="_blank" class="btn btn-whatsapp btn-sm" style="border-radius: 9999px; padding: 8px 16px;">
+            Share on WhatsApp
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Featured Hero Image -->
+    <div style="border-radius: var(--radius-xl); overflow: hidden; margin-bottom: 40px; box-shadow: var(--shadow-md); max-height: 440px; background: #eef6ff; border: 1px solid #dce8f8;">
+      <img 
+        src="<%= blog.image || '/images/abid-hearing-care-centre-clinic-dhaka-bangladesh.webp' %>" 
+        alt="<%= blog.title %> – Abid Hearing Care Centre" 
+        style="width: 100%; height: 100%; object-fit: cover; display: block;"
+        onerror="this.src='/images/abid-hearing-care-centre-clinic-dhaka-bangladesh.webp'"
+      >
+    </div>
+
+    <!-- Article Body -->
+    <article class="article-content" style="font-size: 1.12rem; line-height: 1.85; color: #334155;">
+      <%- blog.content %>
+    </article>
+
+    <!-- Clinic Key Takeaways Box (Abid Brand Inclusions) -->
+    <div style="margin: 48px 0; background: #f0f6ff; border: 1.5px solid #bfdbfe; border-radius: var(--radius-lg); padding: 30px 34px;">
+      <h3 style="font-size: 1.25rem; font-weight: 800; color: #0056cc; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+        <span>🛡️</span> Need Audiological Care in Dhaka?
+      </h3>
+      <p style="color: #1e3a8a; font-size: 1rem; line-height: 1.65; margin-bottom: 20px;">
+        Abid Hearing Care Centre (AHCC) provides comprehensive clinical audiology evaluations, digital hearing aid trials, custom ear mould laboratory services, and 5 years routine servicing at Sector-7, Uttara, Dhaka.
+      </p>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <button class="btn btn-primary" data-open-appointment="true" style="border-radius: 9999px;">
+          Book Consultation
+        </button>
+        <a href="tel:01771237740" class="btn btn-secondary" style="border-radius: 9999px; background: #ffffff; border-color: #bfdbfe; color: #0056cc; font-weight: 700;">
+          📞 Call 0177 123 77 40
+        </a>
+        <a href="https://wa.me/8801771237740?text=Hello%20Abid%20Hearing%20Care%20Centre,%20I%20would%20like%20to%20consult%20an%20audiologist" target="_blank" class="btn btn-whatsapp" style="border-radius: 9999px;">
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+
+    <!-- Related Articles -->
+    <% if (typeof relatedBlogs !== 'undefined' && relatedBlogs && relatedBlogs.length > 0) { %>
+      <div style="margin-top: 60px; padding-top: 40px; border-top: 1.5px solid var(--color-border);">
+        <h3 style="font-size: 1.5rem; font-weight: 800; color: #06182f; margin-bottom: 24px;">
+          More Audiology Reading
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+          <% relatedBlogs.forEach(rel => { %>
+            <div style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: var(--radius-lg); padding: 22px; display: flex; flex-direction: column;">
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-primary); text-transform: uppercase; margin-bottom: 8px;">
+                <%= rel.category %>
+              </span>
+              <h4 style="font-size: 1.05rem; font-weight: 800; color: #06182f; margin-bottom: 8px; line-height: 1.4;">
+                <a href="/blog/<%= rel.slug %>" style="color: inherit; text-decoration: none;">
+                  <%= rel.title %>
+                </a>
+              </h4>
+              <p style="color: #64748b; font-size: 0.88rem; line-height: 1.5; margin-bottom: 14px; flex-grow: 1;">
+                <%= (rel.excerpt || '').substring(0, 110) %>...
+              </p>
+              <a href="/blog/<%= rel.slug %>" style="color: var(--color-primary); font-weight: 700; font-size: 0.88rem; text-decoration: none;">
+                Read Article &rarr;
+              </a>
+            </div>
+          <% }); %>
+        </div>
+      </div>
+    <% } %>
+
+    <div style="margin-top: 40px; text-align: center;">
+      <a href="/blog" class="btn btn-outline" style="border-radius: 9999px; padding: 10px 24px;">
+        &larr; Back to All Blog Articles
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .article-content h2 {
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: #06182f;
+    margin: 36px 0 16px;
+    line-height: 1.3;
+  }
+  .article-content h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #06182f;
+    margin: 28px 0 12px;
+  }
+  .article-content p {
+    margin-bottom: 20px;
+  }
+  .article-content ul, .article-content ol {
+    margin: 0 0 24px 28px;
+  }
+  .article-content li {
+    margin-bottom: 10px;
+  }
+  .article-content strong {
+    color: #06182f;
+  }
+  .article-content blockquote {
+    border-left: 4px solid var(--color-primary);
+    padding: 14px 20px;
+    background: #f8fafc;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    font-style: italic;
+    color: #475569;
+    margin: 24px 0;
+  }
+</style>
+
+<%- include('../layout/footer') %>

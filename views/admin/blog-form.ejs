@@ -1,0 +1,397 @@
+<%- include('./layout-header', { title, currentSection }) %>
+
+<!-- Breadcrumb & Top Bar -->
+<div style="margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;">
+  <div>
+    <div style="margin-bottom: 6px;">
+      <a href="/admin/blogs" style="color: #0077ff; font-size: 0.86rem; font-weight: 700; text-decoration: none;">
+        &larr; Back to All Articles
+      </a>
+    </div>
+    <h1 style="font-size: 1.75rem; font-weight: 800; color: #06182f; letter-spacing: -0.02em;">
+      <%= isEdit ? 'Edit Article: ' + post.title : 'Write New Clinical Blog Post' %>
+    </h1>
+  </div>
+  <% if (isEdit && post.slug) { %>
+    <a href="/blog/<%= post.slug %>" target="_blank" class="btn-secondary" style="font-size: 0.86rem;">
+      <span>🌐</span> View Published Article &nearr;
+    </a>
+  <% } %>
+</div>
+
+<% if (error) { %>
+  <div class="toast-msg toast-danger">
+    <span>⚠️ An error occurred while saving the article. Please check required fields.</span>
+  </div>
+<% } %>
+
+<!-- Main Blog Form -->
+<form 
+  method="POST" 
+  action="<%= isEdit ? '/admin/blogs/edit/' + post.slug : '/admin/blogs/new' %>" 
+  enctype="multipart/form-data" 
+  style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: start;"
+>
+
+  <!-- Left Column: Article Writing & Content -->
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+
+    <!-- Title & Slug Card -->
+    <div class="admin-card">
+      <div class="admin-card-header">
+        <div class="admin-card-title">
+          <span>✍️</span> Article Headline &amp; URL
+        </div>
+      </div>
+
+      <!-- Title Input -->
+      <div style="margin-bottom: 18px;">
+        <label style="display: block; font-weight: 700; font-size: 0.86rem; color: #334155; margin-bottom: 6px;" for="blogTitle">
+          Article Headline / Title <span style="color: #ef4444;">*</span>
+        </label>
+        <input 
+          type="text" 
+          id="blogTitle" 
+          name="title" 
+          value="<%= post.title %>" 
+          required 
+          placeholder="e.g. How to Protect Your Hearing Aids in Bangladesh's Monsoon Season" 
+          style="width: 100%; height: 46px; padding: 0 16px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-family: inherit; font-size: 0.95rem; outline: none;"
+          oninput="handleBlogTitleInput(this.value)"
+        >
+      </div>
+
+      <!-- Slug -->
+      <div style="margin-bottom: 18px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+          <label style="font-weight: 700; font-size: 0.86rem; color: #334155;" for="blogSlug">
+            URL Slug <span style="color: #ef4444;">*</span>
+          </label>
+          <button 
+            type="button" 
+            onclick="generateSlugFromTitle()" 
+            style="background: none; border: none; color: #0077ff; font-size: 0.78rem; font-weight: 700; cursor: pointer; text-decoration: underline;"
+          >
+            Auto-generate from headline
+          </button>
+        </div>
+        <div style="display: flex; align-items: center; border: 1.5px solid #e2e8f0; border-radius: 10px; background: #f8fafc; overflow: hidden;">
+          <span style="padding: 0 12px; color: #64748b; font-size: 0.85rem; font-family: monospace; border-right: 1px solid #e2e8f0; background: #f1f5f9; height: 46px; display: flex; align-items: center;">
+            /blog/
+          </span>
+          <input 
+            type="text" 
+            id="blogSlug" 
+            name="slug" 
+            value="<%= post.slug %>" 
+            required 
+            placeholder="how-to-protect-hearing-aids-in-monsoon" 
+            style="flex: 1; height: 46px; padding: 0 14px; border: none; font-family: monospace; font-size: 0.9rem; outline: none; background: #ffffff;"
+          >
+        </div>
+      </div>
+
+      <!-- Excerpt -->
+      <div>
+        <label style="display: block; font-weight: 700; font-size: 0.86rem; color: #334155; margin-bottom: 6px;" for="excerpt">
+          Article Summary / Excerpt (Used in Search Previews &amp; SEO Meta)
+        </label>
+        <textarea 
+          id="excerpt" 
+          name="excerpt" 
+          rows="3" 
+          style="width: 100%; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-family: inherit; font-size: 0.88rem; outline: none; resize: vertical; line-height: 1.5;"
+          placeholder="Brief 2-3 sentence overview that entices patients to read the full article..."
+        ><%= post.excerpt || '' %></textarea>
+      </div>
+
+    </div>
+
+    <!-- Article Body Editor -->
+    <div class="admin-card">
+      <div class="admin-card-header">
+        <div class="admin-card-title">
+          <span>📖</span> Full Article Body
+        </div>
+        <!-- Editor Tabs: Write / Preview -->
+        <div style="display: flex; gap: 6px;">
+          <button type="button" id="tabWriteBtn" class="btn-primary" style="padding: 4px 12px; font-size: 0.78rem;" onclick="switchEditorTab('write')">
+            ✏️ Editor
+          </button>
+          <button type="button" id="tabPreviewBtn" class="btn-secondary" style="padding: 4px 12px; font-size: 0.78rem;" onclick="switchEditorTab('preview')">
+            👁️ Preview
+          </button>
+        </div>
+      </div>
+
+      <!-- Formatting Toolbar -->
+      <div id="formattingToolbar" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 8px; margin-bottom: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem; font-weight: 800;" onclick="insertTag('<h3>', '</h3>')">H3 Section</button>
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem; font-weight: 800;" onclick="insertTag('<h4>', '</h4>')">H4 Subtitle</button>
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem; font-weight: 800;" onclick="insertTag('<strong>', '</strong>')"><b>Bold</b></button>
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem; font-style: italic;" onclick="insertTag('<em>', '</em>')"><i>Italic</i></button>
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem;" onclick="insertTag('<ul>\n  <li>', '</li>\n  <li>Key point</li>\n</ul>')">Bullets List</button>
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem;" onclick="insertTag('<ol>\n  <li>Step 1: ', '</li>\n  <li>Step 2: </li>\n</ol>')">Numbered List</button>
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem;" onclick="insertTag('<p>', '</p>')">Paragraph</button>
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem;" onclick="insertTag('<blockquote style=\'border-left:4px solid #0077ff; padding-left:14px; margin:16px 0; font-style:italic;\'>', '</blockquote>')">Quote</button>
+      </div>
+
+      <!-- Editor Textarea -->
+      <div id="editorWriteContainer">
+        <textarea 
+          id="blogContentTextarea" 
+          name="content" 
+          rows="18" 
+          style="width: 100%; padding: 16px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-family: 'Inter', monospace; font-size: 0.88rem; line-height: 1.7; outline: none; resize: vertical;"
+          placeholder="Write clinical content, advice, questions and answers here..."
+          oninput="autoCalculateReadTime(this.value)"
+        ><%= post.content || '' %></textarea>
+      </div>
+
+      <!-- Live Preview Container -->
+      <div id="editorPreviewContainer" style="display: none; padding: 24px; background: #ffffff; border: 1.5px dashed #cbd5e1; border-radius: 10px; min-height: 300px; font-size: 1rem; line-height: 1.8; color: #334155;" class="blog-content">
+        <div id="previewContentOutput"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Right Column: Publishing, Category, Timing & Image -->
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+
+    <!-- Publish Card -->
+    <div class="admin-card" style="border-top: 4px solid #10b981;">
+      <div class="admin-card-header" style="margin-bottom: 16px;">
+        <div class="admin-card-title">
+          <span>🚀</span> Publish Settings
+        </div>
+      </div>
+
+      <!-- Date -->
+      <div style="margin-bottom: 16px;">
+        <label style="display: block; font-weight: 700; font-size: 0.86rem; color: #334155; margin-bottom: 6px;" for="dateInput">
+          Display Date
+        </label>
+        <input 
+          type="text" 
+          id="dateInput" 
+          name="date" 
+          value="<%= post.date %>" 
+          placeholder="e.g. October 2026" 
+          style="width: 100%; height: 42px; padding: 0 12px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-family: inherit; font-size: 0.88rem; outline: none;"
+        >
+      </div>
+
+      <!-- Read Time with auto calculation -->
+      <div style="margin-bottom: 20px;">
+        <label style="display: block; font-weight: 700; font-size: 0.86rem; color: #334155; margin-bottom: 6px;" for="readTimeInput">
+          Estimated Read Time
+        </label>
+        <input 
+          type="text" 
+          id="readTimeInput" 
+          name="readTime" 
+          value="<%= post.readTime %>" 
+          placeholder="e.g. 4 min read" 
+          style="width: 100%; height: 42px; padding: 0 12px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-family: inherit; font-size: 0.88rem; outline: none;"
+        >
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn-primary" style="width: 100%; height: 48px; justify-content: center; font-size: 1rem; background: #10b981;">
+        <span>💾</span> <%= isEdit ? 'Update & Publish Article' : 'Publish Blog Post Now' %>
+      </button>
+
+      <% if (isEdit) { %>
+        <div style="margin-top: 14px; text-align: center;">
+          <a href="/admin/blogs" style="color: #64748b; font-size: 0.84rem; text-decoration: none;">Cancel and Go Back</a>
+        </div>
+      <% } %>
+    </div>
+
+    <!-- Category Card -->
+    <div class="admin-card">
+      <div class="admin-card-header">
+        <div class="admin-card-title">
+          <span>🏷️</span> Article Category
+        </div>
+      </div>
+
+      <div style="margin-bottom: 12px;">
+        <select 
+          name="category" 
+          id="categorySelect" 
+          onchange="handleCategoryChange(this.value)" 
+          style="width: 100%; height: 44px; padding: 0 12px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-family: inherit; font-size: 0.9rem; outline: none; background: #ffffff;"
+        >
+          <% allCategories.forEach(cat => { %>
+            <option value="<%= cat %>" <%= (post.category || 'Hearing Health').toLowerCase() === cat.toLowerCase() ? 'selected' : '' %>><%= cat %></option>
+          <% }) %>
+          <option value="__custom__">+ Add Custom Category</option>
+        </select>
+
+        <input 
+          type="text" 
+          id="categoryCustomInput" 
+          name="categoryCustom" 
+          placeholder="Type new category" 
+          style="display: none; width: 100%; height: 40px; margin-top: 8px; padding: 0 12px; border: 1.5px solid #0077ff; border-radius: 8px; font-family: inherit; font-size: 0.88rem; outline: none;"
+        >
+      </div>
+    </div>
+
+    <!-- Featured Header Image Card -->
+    <div class="admin-card">
+      <div class="admin-card-header">
+        <div class="admin-card-title">
+          <span>🖼️</span> Featured Banner Image
+        </div>
+      </div>
+
+      <!-- Image Preview Box -->
+      <div style="background: #f8fafc; border: 1.5px dashed #cbd5e1; border-radius: 12px; padding: 14px; text-align: center; margin-bottom: 14px;">
+        <img 
+          id="blogImagePreview" 
+          src="<%= post.image || '/images/abid-hearing-care-centre-clinic-dhaka-bangladesh.webp' %>" 
+          alt="Article Banner Preview" 
+          style="max-height: 140px; max-width: 100%; object-fit: cover; border-radius: 8px; margin-bottom: 8px;"
+          onerror="this.src='/images/abid-hearing-care-centre-clinic-dhaka-bangladesh.webp'"
+        >
+        <div id="blogImageHint" style="font-size: 0.74rem; color: #64748b;">
+          <%= post.image ? 'Cover image loaded' : 'Upload or set header image' %>
+        </div>
+      </div>
+
+      <!-- File Upload -->
+      <div style="margin-bottom: 14px;">
+        <label style="display: block; font-weight: 700; font-size: 0.82rem; color: #334155; margin-bottom: 6px;">
+          Upload New Image
+        </label>
+        <input 
+          type="file" 
+          name="blogImageFile" 
+          accept="image/*" 
+          onchange="previewBlogImage(this)"
+          style="width: 100%; font-size: 0.84rem; padding: 6px; border: 1.5px solid #e2e8f0; border-radius: 8px; background: #f8fafc; cursor: pointer;"
+        >
+      </div>
+
+      <!-- Direct URL Input -->
+      <div>
+        <label style="display: block; font-weight: 700; font-size: 0.82rem; color: #334155; margin-bottom: 6px;" for="imageUrlInput">
+          Or Image URL Path
+        </label>
+        <input 
+          type="text" 
+          id="imageUrlInput" 
+          name="image" 
+          value="<%= post.image || '' %>" 
+          placeholder="/images/..." 
+          oninput="document.getElementById('blogImagePreview').src = this.value"
+          style="width: 100%; height: 38px; padding: 0 10px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-family: monospace; font-size: 0.8rem; outline: none;"
+        >
+      </div>
+
+    </div>
+
+  </div>
+
+</form>
+
+<script>
+  function slugifyText(text) {
+    return text.toString().toLowerCase().trim()
+      .replace(/\s+/g, '-')
+      .replace(/[^\w\-]+/g, '')
+      .replace(/\-\-+/g, '-')
+      .replace(/^-+/, '')
+      .replace(/-+$/, '');
+  }
+
+  function handleBlogTitleInput(val) {
+    <% if (!isEdit) { %>
+      const slugInput = document.getElementById('blogSlug');
+      if (slugInput) slugInput.value = slugifyText(val);
+    <% } %>
+  }
+
+  function generateSlugFromTitle() {
+    const titleVal = document.getElementById('blogTitle').value;
+    const slugInput = document.getElementById('blogSlug');
+    if (titleVal && slugInput) {
+      slugInput.value = slugifyText(titleVal);
+    }
+  }
+
+  function autoCalculateReadTime(content) {
+    const stripped = content.replace(/<[^>]*>?/gm, ' ');
+    const words = stripped.split(/\s+/).filter(Boolean).length;
+    const mins = Math.max(1, Math.ceil(words / 200));
+    const readInput = document.getElementById('readTimeInput');
+    if (readInput) {
+      readInput.value = mins + ' min read';
+    }
+  }
+
+  function previewBlogImage(input) {
+    if (input.files && input.files[0]) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        document.getElementById('blogImagePreview').src = e.target.result;
+        document.getElementById('blogImageHint').innerText = 'Selected file: ' + input.files[0].name;
+      };
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  function handleCategoryChange(val) {
+    const custom = document.getElementById('categoryCustomInput');
+    if (custom) {
+      custom.style.display = val === '__custom__' ? 'block' : 'none';
+      if (val === '__custom__') custom.focus();
+    }
+  }
+
+  function insertTag(openTag, closeTag) {
+    const textarea = document.getElementById('blogContentTextarea');
+    if (!textarea) return;
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    const text = textarea.value;
+    const selected = text.substring(start, end);
+    const replacement = openTag + selected + closeTag;
+    textarea.value = text.substring(0, start) + replacement + text.substring(end);
+    textarea.focus();
+    textarea.selectionStart = start + openTag.length;
+    textarea.selectionEnd = start + openTag.length + selected.length;
+    autoCalculateReadTime(textarea.value);
+  }
+
+  function switchEditorTab(tab) {
+    const writeContainer = document.getElementById('editorWriteContainer');
+    const previewContainer = document.getElementById('editorPreviewContainer');
+    const formattingToolbar = document.getElementById('formattingToolbar');
+    const tabWriteBtn = document.getElementById('tabWriteBtn');
+    const tabPreviewBtn = document.getElementById('tabPreviewBtn');
+    const textarea = document.getElementById('blogContentTextarea');
+    const previewOutput = document.getElementById('previewContentOutput');
+
+    if (tab === 'preview') {
+      previewOutput.innerHTML = textarea.value || '<p style="color:#94a3b8; font-style:italic;">No article content written yet.</p>';
+      writeContainer.style.display = 'none';
+      formattingToolbar.style.display = 'none';
+      previewContainer.style.display = 'block';
+      tabPreviewBtn.className = 'btn-primary';
+      tabWriteBtn.className = 'btn-secondary';
+    } else {
+      writeContainer.style.display = 'block';
+      formattingToolbar.style.display = 'flex';
+      previewContainer.style.display = 'none';
+      tabWriteBtn.className = 'btn-primary';
+      tabPreviewBtn.className = 'btn-secondary';
+    }
+  }
+</script>
+
+<%- include('./layout-footer') %>

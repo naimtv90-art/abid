@@ -1,0 +1,25 @@
+    </main>
+
+    <!-- Admin Footer -->
+    <footer style="padding: 20px 32px; background: #ffffff; border-top: 1px solid #e2e8f0; font-size: 0.82rem; color: #64748b; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap: 10px;">
+      <div>
+        <strong>Abid Hearing Care Centre CMS</strong> &bull; Sector-7, Uttara, Dhaka-1230 &bull; Licensed Clinical Audiology Administration
+      </div>
+      <div>
+        Engineered with Express SSR &bull; Fast Node.js
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('adminSidebar');
+      const overlay = document.getElementById('sidebarOverlay');
+      if (sidebar && overlay) {
+        sidebar.classList.toggle('open');
+        overlay.style.display = sidebar.classList.contains('open') ? 'block' : 'none';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      background: linear-gradient(135deg, #06182f 0%, #0b2a52 50%, #004b99 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      color: #0f172a;
+    }
+    .login-container {
+      width: 100%;
+      max-width: 440px;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.1);
+      padding: 44px 36px;
+      position: relative;
+      overflow: hidden;
+    }
+    .login-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, #0077ff, #e9102c, #0077ff);
+    }
+    .brand-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .brand-header img {
+      max-height: 52px;
+      width: auto;
+      margin-bottom: 16px;
+    }
+    .brand-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: #eef6ff;
+      color: #0077ff;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      border: 1px solid #cbe2ff;
+      margin-bottom: 8px;
+    }
+    .brand-header h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #06182f;
+      letter-spacing: -0.02em;
+    }
+    .brand-header p {
+      font-size: 0.88rem;
+      color: #64748b;
+      margin-top: 4px;
+    }
+    .alert {
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .alert-danger {
+      background: #fef2f2;
+      color: #dc2626;
+      border: 1px solid #fee2e2;
+    }
+    .alert-success {
+      background: #f0fdf4;
+      color: #16a34a;
+      border: 1px solid #dcfce7;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: #334155;
+      margin-bottom: 8px;
+    }
+    .input-wrapper {
+      position: relative;
+    }
+    .form-control {
+      width: 100%;
+      height: 48px;
+      padding: 0 16px;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: #0f172a;
+      transition: all 0.2s ease;
+      background: #f8fafc;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: #0077ff;
+      background: #ffffff;
+      box-shadow: 0 0 0 4px rgba(0, 119, 255, 0.15);
+    }
+    .btn-submit {
+      width: 100%;
+      height: 50px;
+      background: #0077ff;
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(0, 119, 255, 0.35);
+      transition: all 0.2s ease;
+      margin-top: 26px;
+    }
+    .btn-submit:hover {
+      background: #0056cc;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(0, 119, 255, 0.45);
+    }
+    .btn-submit:active {
+      transform: translateY(0);
+    }
+    .login-footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #64748b;
+      padding-top: 20px;
+      border-top: 1px solid #f1f5f9;
+    }
+    .login-footer a {
+      color: #0077ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .login-footer a:hover {
+      text-decoration: underline;
+    }
+    .quick-hint {
+      margin-top: 14px;
+      background: #f8fafc;
+      border: 1px dashed #cbd5e1;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 0.78rem;
+      color: #64748b;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="brand-header">
+      <img src="/images/abid-hearing-care-centre-logo-uttara-dhaka.png" alt="Abid Hearing Care Centre">
+      <div>
+        <span class="brand-badge">CONTROL PANEL</span>
+      </div>
+      <h1>Clinical CMS Login</h1>
+      <p>Secure Portal for Content &amp; Product Management</p>
+    </div>
+
+    <% if (error) { %>
+      <div class="alert alert-danger">
+        <span>⚠️</span> Invalid credentials. Please try again.
+      </div>
+    <% } %>
+
+    <% if (msg === 'logged_out') { %>
+      <div class="alert alert-success">
+        <span>✓</span> You have been securely logged out.
+      </div>
+    <% } %>
+
+    <form method="POST" action="/admin/login">
+      <input type="hidden" name="next" value="<%= next %>">
+
+      <div class="form-group">
+        <label class="form-label" for="username">Username</label>
+        <div class="input-wrapper">
+          <input 
+            type="text" 
+            id="username" 
+            name="username" 
+            class="form-control" 
+            placeholder="Enter admin username" 
+            required 
+            autofocus 
+            value="admin"
+          >
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="password">Password</label>
+        <div class="input-wrapper">
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            class="form-control" 
+            placeholder="Enter password" 
+            required
+            value="abid2026!"
+          >
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit">
+        <span>Log In to Dashboard</span>
+        <span>&rarr;</span>
+      </button>
+
+      <div class="quick-hint">
+        🔐 Default Access: <strong>admin</strong> / <strong>abid2026!</strong>
+      </div>
+    </form>
+
+    <div class="login-footer">
+      <a href="/">&larr; Return to Public Website</a>
+    </div>
+  </div>
+
+</body>
+</html>

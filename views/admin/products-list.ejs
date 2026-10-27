@@ -1,0 +1,189 @@
+<%- include('./layout-header', { title, currentSection }) %>
+
+<!-- Header and Controls -->
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+  <div>
+    <h1 style="font-size: 1.75rem; font-weight: 800; color: #06182f; letter-spacing: -0.02em; margin-bottom: 4px;">
+      Digital Hearing Aids Catalog
+    </h1>
+    <p style="color: #64748b; font-size: 0.92rem;">
+      Manage product inventory, pricing notes, descriptions, and media assets.
+    </p>
+  </div>
+  <a href="/admin/products/new" class="btn-primary">
+    <span>➕</span> Add New Product
+  </a>
+</div>
+
+<!-- Filters & Search Toolbar -->
+<div class="admin-card" style="padding: 16px 20px; margin-bottom: 24px;">
+  <form method="GET" action="/admin/products" style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center;">
+    
+    <!-- Search Input -->
+    <div style="flex: 1; min-width: 240px; position: relative;">
+      <input 
+        type="text" 
+        id="tableSearchInput"
+        name="search" 
+        value="<%= querySearch %>" 
+        placeholder="Search by product name, brand, or model..." 
+        style="width: 100%; height: 42px; padding: 0 14px 0 38px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-family: inherit; font-size: 0.88rem; outline: none;"
+      >
+      <span style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #94a3b8; font-size: 0.95rem;">🔍</span>
+    </div>
+
+    <!-- Brand Filter -->
+    <div style="min-width: 160px;">
+      <select 
+        name="brand" 
+        onchange="this.form.submit()" 
+        style="width: 100%; height: 42px; padding: 0 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-family: inherit; font-size: 0.88rem; outline: none; background: #ffffff;"
+      >
+        <option value="all" <%= queryBrand === 'all' ? 'selected' : '' %>>All Brands (<%= allBrands.length %>)</option>
+        <% allBrands.forEach(b => { %>
+          <option value="<%= b %>" <%= queryBrand.toLowerCase() === b.toLowerCase() ? 'selected' : '' %>><%= b %></option>
+        <% }) %>
+      </select>
+    </div>
+
+    <!-- Category Filter -->
+    <div style="min-width: 160px;">
+      <select 
+        name="category" 
+        onchange="this.form.submit()" 
+        style="width: 100%; height: 42px; padding: 0 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-family: inherit; font-size: 0.88rem; outline: none; background: #ffffff;"
+      >
+        <option value="all" <%= queryCategory === 'all' ? 'selected' : '' %>>All Categories</option>
+        <% allCategories.forEach(c => { %>
+          <option value="<%= c %>" <%= queryCategory.toLowerCase() === c.toLowerCase() ? 'selected' : '' %>><%= c %></option>
+        <% }) %>
+      </select>
+    </div>
+
+    <!-- Submit Filter Button -->
+    <button type="submit" class="btn-secondary" style="height: 42px; padding: 0 16px;">
+      Filter
+    </button>
+
+    <% if (querySearch || queryBrand !== 'all' || queryCategory !== 'all') { %>
+      <a href="/admin/products" class="btn-secondary" style="height: 42px; display: inline-flex; align-items: center; color: #ef4444; border-color: #fecaca; background: #fef2f2;">
+        Reset Filters
+      </a>
+    <% } %>
+
+  </form>
+</div>
+
+<!-- Products Table Card -->
+<div class="admin-card" style="padding: 0; overflow: hidden;">
+  <div style="padding: 16px 24px; background: #f8fafc; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-weight: 700; color: #334155; font-size: 0.92rem;">
+      Showing <span style="color: #0077ff;"><%= products.length %></span> Products
+    </div>
+    <div style="font-size: 0.8rem; color: #64748b;">
+      Click any row or edit button to update details
+    </div>
+  </div>
+
+  <% if (products.length === 0) { %>
+    <div style="text-align: center; padding: 60px 20px;">
+      <div style="font-size: 3rem; margin-bottom: 12px;">📭</div>
+      <h3 style="font-size: 1.2rem; color: #06182f; font-weight: 800; margin-bottom: 6px;">No products match your criteria</h3>
+      <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 20px;">Try adjusting your search terms or add a new hearing aid model.</p>
+      <a href="/admin/products/new" class="btn-primary">Add New Product</a>
+    </div>
+  <% } else { %>
+    <div style="overflow-x: auto;">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th style="width: 70px; text-align: center;">Thumbnail</th>
+            <th>Model &amp; Slug</th>
+            <th>Brand</th>
+            <th>Category</th>
+            <th>Price / Contact</th>
+            <th>Stock</th>
+            <th style="text-align: right; width: 150px;">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="productsTableBody">
+          <% products.forEach(prod => { %>
+            <tr data-name="<%= prod.name.toLowerCase() %>" data-brand="<%= (prod.brand || '').toLowerCase() %>">
+              <td style="text-align: center;">
+                <img 
+                  src="<%= prod.image %>" 
+                  alt="<%= prod.name %>" 
+                  style="width: 48px; height: 48px; object-fit: contain; border-radius: 8px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 2px;"
+                  onerror="this.src='/images/abid-hearing-care-product-placeholder-dhaka.webp'"
+                >
+              </td>
+              <td>
+                <div style="font-weight: 800; color: #06182f; text-transform: capitalize; font-size: 0.95rem;">
+                  <%= prod.name %>
+                </div>
+                <div style="font-size: 0.76rem; color: #64748b; font-family: monospace;">
+                  /product/<%= prod.slug %>
+                </div>
+              </td>
+              <td>
+                <span class="badge badge-primary"><%= prod.brand %></span>
+              </td>
+              <td style="font-size: 0.84rem; color: #475569;">
+                <%= prod.category || 'Hearing Aids' %>
+              </td>
+              <td style="font-size: 0.84rem; font-weight: 600; color: #06182f;">
+                <%= prod.priceText || 'Call for Price' %>
+              </td>
+              <td>
+                <% if (prod.inStock) { %>
+                  <span class="badge badge-success">● In Stock</span>
+                <% } else { %>
+                  <span class="badge badge-danger">○ Out of Stock</span>
+                <% } %>
+              </td>
+              <td style="text-align: right;">
+                <div style="display: inline-flex; gap: 6px; align-items: center;">
+                  <a href="/product/<%= prod.slug %>" target="_blank" title="Preview on Website" style="padding: 6px 10px; background: #eef6ff; color: #0077ff; border-radius: 6px; text-decoration: none; font-size: 0.8rem; font-weight: 700;">
+                    👁️
+                  </a>
+                  <a href="/admin/products/edit/<%= prod.id %>" title="Edit Product" style="padding: 6px 12px; background: #f1f5f9; color: #0f172a; border-radius: 6px; text-decoration: none; font-size: 0.8rem; font-weight: 700;">
+                    ✏️ Edit
+                  </a>
+                  <form method="POST" action="/admin/products/delete/<%= prod.id %>" onsubmit="return confirm('Are you sure you want to permanently delete \'<%= prod.name.replace(/'/g, '') %>\'?');" style="display: inline;">
+                    <button type="submit" title="Delete Product" class="btn-danger">
+                      🗑️
+                    </button>
+                  </form>
+                </div>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  <% } %>
+</div>
+
+<!-- Instant client-side search enhancer -->
+<script>
+  const searchInput = document.getElementById('tableSearchInput');
+  const tbody = document.getElementById('productsTableBody');
+  if (searchInput && tbody) {
+    searchInput.addEventListener('keyup', function(e) {
+      const q = e.target.value.toLowerCase().trim();
+      const rows = tbody.getElementsByTagName('tr');
+      for (let i = 0; i < rows.length; i++) {
+        const row = rows[i];
+        const name = row.getAttribute('data-name') || '';
+        const brand = row.getAttribute('data-brand') || '';
+        if (!q || name.includes(q) || brand.includes(q)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      }
+    });
+  }
+</script>
+
+<%- include('./layout-footer') %>

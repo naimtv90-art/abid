@@ -1,0 +1,465 @@
+<%- include('./layout-header', { title, currentSection }) %>
+
+<!-- Breadcrumb & Top Bar -->
+<div style="margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;">
+  <div>
+    <div style="margin-bottom: 6px;">
+      <a href="/admin/products" style="color: #0077ff; font-size: 0.86rem; font-weight: 700; text-decoration: none;">
+        &larr; Back to All Products
+      </a>
+    </div>
+    <h1 style="font-size: 1.75rem; font-weight: 800; color: #06182f; letter-spacing: -0.02em;">
+      <%= isEdit ? 'Edit Product: ' + product.name : 'Add New Hearing Aid or Accessory' %>
+    </h1>
+  </div>
+  <% if (isEdit && product.slug) { %>
+    <a href="/product/<%= product.slug %>" target="_blank" class="btn-secondary" style="font-size: 0.86rem;">
+      <span>🌐</span> View Public Page &nearr;
+    </a>
+  <% } %>
+</div>
+
+<% if (error) { %>
+  <div class="toast-msg toast-danger">
+    <span>⚠️ An error occurred while saving the product. Please verify fields and try again.</span>
+  </div>
+<% } %>
+
+<!-- Main Product Form -->
+<form 
+  method="POST" 
+  action="<%= isEdit ? '/admin/products/edit/' + product.id : '/admin/products/new' %>" 
+  enctype="multipart/form-data" 
+  style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: start;"
+>
+
+  <!-- Left Column: Primary Content & Descriptions -->
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    
+    <!-- Basic Information Card -->
+    <div class="admin-card">
+      <div class="admin-card-header">
+        <div class="admin-card-title">
+          <span>🏷️</span> Basic Information
+        </div>
+      </div>
+
+      <!-- Product Name -->
+      <div style="margin-bottom: 18px;">
+        <label style="display: block; font-weight: 700; font-size: 0.86rem; color: #334155; margin-bottom: 6px;" for="prodName">
+          Product Model Name <span style="color: #ef4444;">*</span>
+        </label>
+        <input 
+          type="text" 
+          id="prodName" 
+          name="name" 
+          value="<%= product.name %>" 
+          required 
+          placeholder="e.g. Phonak Audéo Lumity L90-R" 
+          style="width: 100%; height: 46px; padding: 0 16px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-family: inherit; font-size: 0.95rem; outline: none;"
+          oninput="handleNameInput(this.value)"
+        >
+      </div>
+
+      <!-- Slug with Auto-generate -->
+      <div style="margin-bottom: 18px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+          <label style="font-weight: 700; font-size: 0.86rem; color: #334155;" for="prodSlug">
+            URL Slug <span style="color: #ef4444;">*</span>
+          </label>
+          <button 
+            type="button" 
+            onclick="generateSlugFromName()" 
+            style="background: none; border: none; color: #0077ff; font-size: 0.78rem; font-weight: 700; cursor: pointer; text-decoration: underline;"
+          >
+            Auto-generate from name
+          </button>
+        </div>
+        <div style="display: flex; align-items: center; border: 1.5px solid #e2e8f0; border-radius: 10px; background: #f8fafc; overflow: hidden;">
+          <span style="padding: 0 12px; color: #64748b; font-size: 0.85rem; font-family: monospace; border-right: 1px solid #e2e8f0; background: #f1f5f9; height: 46px; display: flex; align-items: center;">
+            /product/
+          </span>
+          <input 
+            type="text" 
+            id="prodSlug" 
+            name="slug" 
+            value="<%= product.slug %>" 
+            required 
+            placeholder="phonak-audeo-lumity-l90-r" 
+            style="flex: 1; height: 46px; padding: 0 14px; border: none; font-family: monospace; font-size: 0.9rem; outline: none; background: #ffffff;"
+          >
+        </div>
+        <div style="font-size: 0.75rem; color: #64748b; margin-top: 4px;">
+          Only lowercase letters, numbers, and hyphens (used for SEO and page address).
+        </div>
+      </div>
+
+      <!-- Short Description -->
+      <div style="margin-bottom: 18px;">
+        <label style="display: block; font-weight: 700; font-size: 0.86rem; color: #334155; margin-bottom: 6px;" for="shortDesc">
+          Short Highlight / Subtitle
+        </label>
+        <input 
+          type="text" 
+          id="shortDesc" 
+          name="shortDescription" 
+          value="<%= product.shortDescription || 'Price for Call: 01771-237740 01715-190901' %>" 
+          placeholder="e.g. Premium Rechargeable BTE Hearing Aid with Bluetooth &amp; Smart Apps" 
+          style="width: 100%; height: 44px; padding: 0 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-family: inherit; font-size: 0.9rem; outline: none;"
+        >
+      </div>
+
+    </div>
+
+    <!-- Rich Description & Clinical Details -->
+    <div class="admin-card">
+      <div class="admin-card-header">
+        <div class="admin-card-title">
+          <span>📄</span> Product Specifications &amp; Clinical Description
+        </div>
+        <!-- Editor Tabs: Write / Preview -->
+        <div style="display: flex; gap: 6px;">
+          <button type="button" id="tabWriteBtn" class="btn-primary" style="padding: 4px 12px; font-size: 0.78rem;" onclick="switchEditorTab('write')">
+            ✏️ Editor
+          </button>
+          <button type="button" id="tabPreviewBtn" class="btn-secondary" style="padding: 4px 12px; font-size: 0.78rem;" onclick="switchEditorTab('preview')">
+            👁️ Preview
+          </button>
+        </div>
+      </div>
+
+      <!-- Formatting Toolbar -->
+      <div id="formattingToolbar" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 8px; margin-bottom: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem; font-weight: 800;" onclick="insertTag('<h2>', '</h2>')">H2</button>
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem; font-weight: 800;" onclick="insertTag('<h3>', '</h3>')">H3</button>
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem; font-weight: 800;" onclick="insertTag('<strong>', '</strong>')"><b>B</b></button>
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem; font-style: italic;" onclick="insertTag('<em>', '</em>')"><i>I</i></button>
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem;" onclick="insertTag('<ul>\n  <li>', '</li>\n</ul>')">Bullet List</button>
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem;" onclick="insertTag('<p>', '</p>')">Paragraph</button>
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem;" onclick="insertTag('<hr />', '')">Divider Line</button>
+        <button type="button" class="btn-secondary" style="padding: 4px 8px; font-size: 0.8rem;" onclick="insertTag('<a href=\'https://abidhearing.com\'>', '</a>')">Link</button>
+      </div>
+
+      <!-- Editor Textarea -->
+      <div id="editorWriteContainer">
+        <textarea 
+          id="productDescTextarea" 
+          name="description" 
+          rows="14" 
+          style="width: 100%; padding: 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-family: 'Inter', monospace; font-size: 0.88rem; line-height: 1.6; outline: none; resize: vertical;"
+          placeholder="Enter detailed product description, acoustic technology, battery specifications, fitting guidelines..."
+        ><%= product.description || '' %></textarea>
+      </div>
+
+      <!-- Live Preview Container -->
+      <div id="editorPreviewContainer" style="display: none; padding: 20px; background: #ffffff; border: 1.5px dashed #cbd5e1; border-radius: 10px; min-height: 250px; font-size: 0.95rem; line-height: 1.7; color: #1e293b;">
+        <div id="previewContentOutput"></div>
+      </div>
+
+      <div style="font-size: 0.78rem; color: #64748b; margin-top: 8px;">
+        💡 You can type plain HTML markup or use the quick buttons above. All formatting renders natively on the patient product page.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Right Column: Media, Brand, Taxonomy & Actions -->
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+
+    <!-- Publish Card -->
+    <div class="admin-card" style="border-top: 4px solid #0077ff;">
+      <div class="admin-card-header" style="margin-bottom: 16px;">
+        <div class="admin-card-title">
+          <span>🚀</span> Status &amp; Save
+        </div>
+      </div>
+
+      <!-- In Stock Toggle -->
+      <div style="margin-bottom: 20px; background: #f8fafc; padding: 14px; border-radius: 10px; border: 1px solid #e2e8f0;">
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+          <input 
+            type="checkbox" 
+            name="inStock" 
+            style="width: 20px; height: 20px; accent-color: #0077ff; cursor: pointer;"
+            <%= product.inStock ? 'checked' : '' %>
+          >
+          <div>
+            <div style="font-weight: 700; color: #06182f; font-size: 0.9rem;">Available in Clinic</div>
+            <div style="font-size: 0.75rem; color: #64748b;">Displays "● In Stock" badge</div>
+          </div>
+        </label>
+      </div>
+
+      <!-- Price / Call to Action Text -->
+      <div style="margin-bottom: 20px;">
+        <label style="display: block; font-weight: 700; font-size: 0.86rem; color: #334155; margin-bottom: 6px;" for="priceText">
+          Pricing / Booking Text
+        </label>
+        <input 
+          type="text" 
+          id="priceText" 
+          name="priceText" 
+          value="<%= product.priceText || 'Call for Best Price: 01771-237740' %>" 
+          placeholder="e.g. Call for Best Price: 01771-237740" 
+          style="width: 100%; height: 44px; padding: 0 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-family: inherit; font-size: 0.9rem; outline: none;"
+        >
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn-primary" style="width: 100%; height: 48px; justify-content: center; font-size: 1rem;">
+        <span>💾</span> <%= isEdit ? 'Update & Publish Changes' : 'Create & Publish Product' %>
+      </button>
+
+      <% if (isEdit) { %>
+        <div style="margin-top: 14px; text-align: center;">
+          <a href="/admin/products" style="color: #64748b; font-size: 0.84rem; text-decoration: none;">Cancel and Go Back</a>
+        </div>
+      <% } %>
+    </div>
+
+    <!-- Product Image Card -->
+    <div class="admin-card">
+      <div class="admin-card-header">
+        <div class="admin-card-title">
+          <span>🖼️</span> Product Photo
+        </div>
+      </div>
+
+      <!-- Image Preview Box -->
+      <div style="background: #f8fafc; border: 1.5px dashed #cbd5e1; border-radius: 12px; padding: 20px; text-align: center; margin-bottom: 16px;">
+        <img 
+          id="imagePreview" 
+          src="<%= product.image || '/images/abid-hearing-care-product-placeholder-dhaka.webp' %>" 
+          alt="Product Preview" 
+          style="max-height: 160px; max-width: 100%; object-fit: contain; margin-bottom: 10px; border-radius: 8px;"
+          onerror="this.src='/images/abid-hearing-care-product-placeholder-dhaka.webp'"
+        >
+        <div id="imagePreviewHint" style="font-size: 0.76rem; color: #64748b;">
+          <%= product.image ? 'Current photo loaded' : 'Upload photo or choose existing file' %>
+        </div>
+      </div>
+
+      <!-- File Upload Input -->
+      <div style="margin-bottom: 16px;">
+        <label style="display: block; font-weight: 700; font-size: 0.84rem; color: #334155; margin-bottom: 6px;">
+          Upload New Image File
+        </label>
+        <input 
+          type="file" 
+          name="productImageFile" 
+          accept="image/*" 
+          onchange="previewUploadedFile(this)"
+          style="width: 100%; font-size: 0.84rem; padding: 8px; border: 1.5px solid #e2e8f0; border-radius: 8px; background: #f8fafc; cursor: pointer;"
+        >
+        <div style="font-size: 0.72rem; color: #64748b; margin-top: 4px;">
+          Supports PNG, WEBP, JPG (auto-stored in /public/images/cms/)
+        </div>
+      </div>
+
+      <!-- Direct Image URL / Path Option -->
+      <div style="margin-bottom: 16px;">
+        <label style="display: block; font-weight: 700; font-size: 0.84rem; color: #334155; margin-bottom: 6px;" for="imageUrlInput">
+          Or Existing Image Path
+        </label>
+        <input 
+          type="text" 
+          id="imageUrlInput" 
+          name="image" 
+          value="<%= product.image || '' %>" 
+          placeholder="/images/..." 
+          oninput="document.getElementById('imagePreview').src = this.value"
+          style="width: 100%; height: 40px; padding: 0 12px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-family: monospace; font-size: 0.82rem; outline: none;"
+        >
+      </div>
+
+      <!-- SEO Alt Text -->
+      <div>
+        <label style="display: block; font-weight: 700; font-size: 0.84rem; color: #334155; margin-bottom: 6px;" for="altText">
+          Image Alt Text (SEO)
+        </label>
+        <input 
+          type="text" 
+          id="altText" 
+          name="altText" 
+          value="<%= product.altText || '' %>" 
+          placeholder="e.g. Phonak Naida Hearing Aid Price Uttara Dhaka" 
+          style="width: 100%; height: 40px; padding: 0 12px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-family: inherit; font-size: 0.85rem; outline: none;"
+        >
+      </div>
+
+    </div>
+
+    <!-- Brand & Category Card -->
+    <div class="admin-card">
+      <div class="admin-card-header">
+        <div class="admin-card-title">
+          <span>🏢</span> Brand &amp; Classification
+        </div>
+      </div>
+
+      <!-- Brand Selection -->
+      <div style="margin-bottom: 18px;">
+        <label style="display: block; font-weight: 700; font-size: 0.86rem; color: #334155; margin-bottom: 6px;">
+          Manufacturer Brand
+        </label>
+        <select 
+          name="brand" 
+          id="brandSelect" 
+          onchange="handleBrandChange(this.value)" 
+          style="width: 100%; height: 44px; padding: 0 12px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-family: inherit; font-size: 0.9rem; outline: none; background: #ffffff;"
+        >
+          <% 
+            const standardBrands = ['Phonak', 'Rexton', 'Unitron', 'Widex', 'Signia', 'Oticon'];
+            const currentBrand = product.brand || 'Phonak';
+            const mergedBrands = [...new Set([...standardBrands, ...allBrands])];
+          %>
+          <% mergedBrands.forEach(b => { %>
+            <option value="<%= b %>" <%= currentBrand.toLowerCase() === b.toLowerCase() ? 'selected' : '' %>><%= b %></option>
+          <% }) %>
+          <option value="__custom__">+ Add Custom Brand</option>
+        </select>
+
+        <input 
+          type="text" 
+          id="brandCustomInput" 
+          name="brandCustom" 
+          placeholder="Type new brand name" 
+          style="display: none; width: 100%; height: 40px; margin-top: 8px; padding: 0 12px; border: 1.5px solid #0077ff; border-radius: 8px; font-family: inherit; font-size: 0.88rem; outline: none;"
+        >
+      </div>
+
+      <!-- Category Selection -->
+      <div style="margin-bottom: 14px;">
+        <label style="display: block; font-weight: 700; font-size: 0.86rem; color: #334155; margin-bottom: 6px;">
+          Category / Style
+        </label>
+        <select 
+          name="category" 
+          id="categorySelect" 
+          onchange="handleCategoryChange(this.value)" 
+          style="width: 100%; height: 44px; padding: 0 12px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-family: inherit; font-size: 0.9rem; outline: none; background: #ffffff;"
+        >
+          <% allCategories.forEach(cat => { %>
+            <option value="<%= cat %>" <%= (product.category || 'Hearing Aids').toLowerCase() === cat.toLowerCase() ? 'selected' : '' %>><%= cat %></option>
+          <% }) %>
+          <option value="__custom__">+ Add Custom Category</option>
+        </select>
+
+        <input 
+          type="text" 
+          id="categoryCustomInput" 
+          name="categoryCustom" 
+          placeholder="Type new category name" 
+          style="display: none; width: 100%; height: 40px; margin-top: 8px; padding: 0 12px; border: 1.5px solid #0077ff; border-radius: 8px; font-family: inherit; font-size: 0.88rem; outline: none;"
+        >
+      </div>
+
+    </div>
+
+  </div>
+
+</form>
+
+<!-- Scripts for slug generation, rich text insertion, tab preview, and image preview -->
+<script>
+  function slugifyText(text) {
+    return text.toString().toLowerCase().trim()
+      .replace(/\s+/g, '-')
+      .replace(/[^\w\-]+/g, '')
+      .replace(/\-\-+/g, '-')
+      .replace(/^-+/, '')
+      .replace(/-+$/, '');
+  }
+
+  function handleNameInput(val) {
+    const slugInput = document.getElementById('prodSlug');
+    // If slug is empty or user is adding a new product, automatically suggest slug
+    <% if (!isEdit) { %>
+      if (slugInput) {
+        slugInput.value = slugifyText(val);
+      }
+    <% } %>
+    const altInput = document.getElementById('altText');
+    if (altInput && !altInput.value) {
+      altInput.value = val + ' - Digital Hearing Aid Price in Dhaka Bangladesh';
+    }
+  }
+
+  function generateSlugFromName() {
+    const nameVal = document.getElementById('prodName').value;
+    const slugInput = document.getElementById('prodSlug');
+    if (nameVal && slugInput) {
+      slugInput.value = slugifyText(nameVal);
+    }
+  }
+
+  function previewUploadedFile(input) {
+    if (input.files && input.files[0]) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        document.getElementById('imagePreview').src = e.target.result;
+        document.getElementById('imagePreviewHint').innerText = 'Selected file: ' + input.files[0].name;
+      };
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  function handleBrandChange(val) {
+    const custom = document.getElementById('brandCustomInput');
+    if (custom) {
+      custom.style.display = val === '__custom__' ? 'block' : 'none';
+      if (val === '__custom__') custom.focus();
+    }
+  }
+
+  function handleCategoryChange(val) {
+    const custom = document.getElementById('categoryCustomInput');
+    if (custom) {
+      custom.style.display = val === '__custom__' ? 'block' : 'none';
+      if (val === '__custom__') custom.focus();
+    }
+  }
+
+  // Formatting Toolbar Helper
+  function insertTag(openTag, closeTag) {
+    const textarea = document.getElementById('productDescTextarea');
+    if (!textarea) return;
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    const text = textarea.value;
+    const selected = text.substring(start, end);
+    const replacement = openTag + selected + closeTag;
+    textarea.value = text.substring(0, start) + replacement + text.substring(end);
+    textarea.focus();
+    textarea.selectionStart = start + openTag.length;
+    textarea.selectionEnd = start + openTag.length + selected.length;
+  }
+
+  // Switch between editor tab and live preview
+  function switchEditorTab(tab) {
+    const writeContainer = document.getElementById('editorWriteContainer');
+    const previewContainer = document.getElementById('editorPreviewContainer');
+    const formattingToolbar = document.getElementById('formattingToolbar');
+    const tabWriteBtn = document.getElementById('tabWriteBtn');
+    const tabPreviewBtn = document.getElementById('tabPreviewBtn');
+    const textarea = document.getElementById('productDescTextarea');
+    const previewOutput = document.getElementById('previewContentOutput');
+
+    if (tab === 'preview') {
+      previewOutput.innerHTML = textarea.value || '<p style="color:#94a3b8; font-style:italic;">No content written yet.</p>';
+      writeContainer.style.display = 'none';
+      formattingToolbar.style.display = 'none';
+      previewContainer.style.display = 'block';
+      tabPreviewBtn.className = 'btn-primary';
+      tabWriteBtn.className = 'btn-secondary';
+    } else {
+      writeContainer.style.display = 'block';
+      formattingToolbar.style.display = 'flex';
+      previewContainer.style.display = 'none';
+      tabWriteBtn.className = 'btn-primary';
+      tabPreviewBtn.className = 'btn-secondary';
+    }
+  }
+</script>
+
+<%- include('./layout-footer') %>

@@ -1,0 +1,238 @@
+<%- include('./layout-header', { title, currentSection }) %>
+
+<!-- Header Banner -->
+<div style="margin-bottom: 28px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+  <div>
+    <h1 style="font-size: 1.85rem; font-weight: 800; color: #06182f; letter-spacing: -0.02em; margin-bottom: 4px;">
+      Welcome to Abid CMS Dashboard
+    </h1>
+    <p style="color: #64748b; font-size: 0.95rem;">
+      Manage digital hearing aids catalog, audiology blog articles, and clinic bookings for Dhaka.
+    </p>
+  </div>
+  <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+    <a href="/admin/products/new" class="btn-primary">
+      <span>➕</span> Add New Product
+    </a>
+    <a href="/admin/blogs/new" class="btn-secondary">
+      <span>✍️</span> Write Blog Post
+    </a>
+  </div>
+</div>
+
+<!-- Stats Grid -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 32px;">
+  
+  <!-- Products Stat -->
+  <div class="admin-card" style="margin-bottom: 0; position: relative; overflow: hidden; border-left: 5px solid #0077ff;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+      <div>
+        <div style="font-size: 0.8rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">Total Products</div>
+        <div style="font-size: 2.2rem; font-weight: 800; color: #06182f;"><%= stats.totalProducts %></div>
+        <div style="font-size: 0.8rem; color: #16a34a; font-weight: 600; margin-top: 4px;">
+          ✓ <%= stats.inStockCount %> In Stock
+        </div>
+      </div>
+      <div style="width: 48px; height: 48px; border-radius: 12px; background: #eef6ff; color: #0077ff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+        🦻
+      </div>
+    </div>
+    <div style="margin-top: 16px; pt: 10px; border-top: 1px solid #f1f5f9;">
+      <a href="/admin/products" style="color: #0077ff; font-size: 0.82rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+        Manage Catalog &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- Blogs Stat -->
+  <div class="admin-card" style="margin-bottom: 0; position: relative; overflow: hidden; border-left: 5px solid #10b981;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+      <div>
+        <div style="font-size: 0.8rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">Published Articles</div>
+        <div style="font-size: 2.2rem; font-weight: 800; color: #06182f;"><%= stats.totalBlogs %></div>
+        <div style="font-size: 0.8rem; color: #10b981; font-weight: 600; margin-top: 4px;">
+          Clinical Audiology Journal
+        </div>
+      </div>
+      <div style="width: 48px; height: 48px; border-radius: 12px; background: #ecfdf5; color: #10b981; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+        📚
+      </div>
+    </div>
+    <div style="margin-top: 16px; pt: 10px; border-top: 1px solid #f1f5f9;">
+      <a href="/admin/blogs" style="color: #10b981; font-size: 0.82rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+        View Articles &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- Inquiries Stat -->
+  <div class="admin-card" style="margin-bottom: 0; position: relative; overflow: hidden; border-left: 5px solid #f59e0b;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+      <div>
+        <div style="font-size: 0.8rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">Patient Inquiries</div>
+        <div style="font-size: 2.2rem; font-weight: 800; color: #06182f;"><%= stats.totalAppointments %></div>
+        <div style="font-size: 0.8rem; color: #f59e0b; font-weight: 600; margin-top: 4px;">
+          Website Consultation Leads
+        </div>
+      </div>
+      <div style="width: 48px; height: 48px; border-radius: 12px; background: #fffbeb; color: #f59e0b; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+        🩺
+      </div>
+    </div>
+    <div style="margin-top: 16px; pt: 10px; border-top: 1px solid #f1f5f9;">
+      <a href="/admin/appointments" style="color: #f59e0b; font-size: 0.82rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+        Review Bookings &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- Brands Stat -->
+  <div class="admin-card" style="margin-bottom: 0; position: relative; overflow: hidden; border-left: 5px solid #8b5cf6;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+      <div>
+        <div style="font-size: 0.8rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">Partner Brands</div>
+        <div style="font-size: 2.2rem; font-weight: 800; color: #06182f;"><%= stats.totalBrands %></div>
+        <div style="font-size: 0.8rem; color: #8b5cf6; font-weight: 600; margin-top: 4px;">
+          Phonak, Rexton, Unitron &amp; more
+        </div>
+      </div>
+      <div style="width: 48px; height: 48px; border-radius: 12px; background: #f5f3ff; color: #8b5cf6; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+        🏢
+      </div>
+    </div>
+    <div style="margin-top: 16px; pt: 10px; border-top: 1px solid #f1f5f9;">
+      <a href="/products" target="_blank" style="color: #8b5cf6; font-size: 0.82rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+        Public Catalog &rarr;
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Split Section: Recent Products & Articles -->
+<div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: start;">
+  
+  <!-- Recent Products Card -->
+  <div class="admin-card">
+    <div class="admin-card-header">
+      <div class="admin-card-title">
+        <span>🦻</span> Recently Updated Products
+      </div>
+      <a href="/admin/products" class="btn-secondary" style="padding: 6px 12px; font-size: 0.8rem;">
+        View All (<%= stats.totalProducts %>)
+      </a>
+    </div>
+
+    <div style="overflow-x: auto;">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th style="width: 60px;">Image</th>
+            <th>Product Name</th>
+            <th>Brand</th>
+            <th>Category</th>
+            <th>Status</th>
+            <th style="text-align: right;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% recentProducts.forEach(prod => { %>
+            <tr>
+              <td>
+                <img 
+                  src="<%= prod.image %>" 
+                  alt="<%= prod.name %>" 
+                  style="width: 44px; height: 44px; object-fit: contain; border-radius: 8px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 2px;"
+                >
+              </td>
+              <td>
+                <div style="font-weight: 700; color: #06182f; text-transform: capitalize;"><%= prod.name %></div>
+                <div style="font-size: 0.75rem; color: #64748b;">/<%= prod.slug %></div>
+              </td>
+              <td>
+                <span class="badge badge-primary"><%= prod.brand %></span>
+              </td>
+              <td style="font-size: 0.82rem; color: #475569;">
+                <%= prod.category || 'Hearing Aids' %>
+              </td>
+              <td>
+                <% if (prod.inStock) { %>
+                  <span class="badge badge-success">In Stock</span>
+                <% } else { %>
+                  <span class="badge badge-danger">Out of Stock</span>
+                <% } %>
+              </td>
+              <td style="text-align: right;">
+                <div style="display: inline-flex; gap: 6px;">
+                  <a href="/product/<%= prod.slug %>" target="_blank" title="View live" style="padding: 6px 10px; background: #eef6ff; color: #0077ff; border-radius: 6px; text-decoration: none; font-size: 0.8rem; font-weight: 700;">
+                    👁️
+                  </a>
+                  <a href="/admin/products/edit/<%= prod.id %>" title="Edit" style="padding: 6px 10px; background: #f1f5f9; color: #0f172a; border-radius: 6px; text-decoration: none; font-size: 0.8rem; font-weight: 700;">
+                    ✏️ Edit
+                  </a>
+                </div>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Recent Blog Posts & Inquiries -->
+  <div>
+    <!-- Blog Articles Card -->
+    <div class="admin-card" style="margin-bottom: 24px;">
+      <div class="admin-card-header">
+        <div class="admin-card-title">
+          <span>📚</span> Clinical Blog Posts
+        </div>
+        <a href="/admin/blogs/new" class="btn-primary" style="padding: 4px 10px; font-size: 0.75rem;">
+          + Write
+        </a>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <% recentBlogs.forEach(post => { %>
+          <div style="padding: 12px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; transition: all 0.2s;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span class="badge badge-primary" style="font-size: 0.7rem;"><%= post.category %></span>
+              <span style="font-size: 0.72rem; color: #64748b;"><%= post.date %></span>
+            </div>
+            <h4 style="font-size: 0.88rem; font-weight: 700; color: #06182f; margin-bottom: 6px; line-height: 1.35;">
+              <%= post.title %>
+            </h4>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem;">
+              <span style="color: #64748b;"><%= post.readTime %></span>
+              <div style="display: flex; gap: 8px;">
+                <a href="/blog/<%= post.slug %>" target="_blank" style="color: #0077ff; font-weight: 700; text-decoration: none;">View</a>
+                <span style="color: #cbd5e1;">&bull;</span>
+                <a href="/admin/blogs/edit/<%= post.slug %>" style="color: #06182f; font-weight: 700; text-decoration: none;">Edit</a>
+              </div>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+
+    <!-- Quick Server Status Card -->
+    <div class="admin-card" style="background: linear-gradient(135deg, #06182f 0%, #004b99 100%); color: #ffffff;">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+        <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #10b981; box-shadow: 0 0 10px #10b981;"></span>
+        <span style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #93c5fd;">Server Engine Status</span>
+      </div>
+      <div style="font-size: 1.05rem; font-weight: 800; margin-bottom: 6px;">
+        Live JSON Synchronizer Active
+      </div>
+      <p style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; margin-bottom: 14px;">
+        Any product or blog post created here instantly publishes to the public catalog, detail pages, and sitemap.
+      </p>
+      <div style="font-size: 0.76rem; color: #93c5fd; font-family: monospace;">
+        📍 Uttara Dhaka &bull; Node Express EJS
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<%- include('./layout-footer') %>
