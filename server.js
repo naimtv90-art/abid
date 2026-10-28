@@ -496,6 +496,20 @@ app.use((req, res) => {
 
 app.use((err, req, res, next) => {
   console.error('[Internal Error]', err);
+  if (res.headersSent) {
+    return next(err);
+  }
+  if (req.originalUrl && req.originalUrl.startsWith('/admin')) {
+    return res.status(500).send(`
+      <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 580px; margin: 50px auto; padding: 30px; border: 1.5px solid #e2e8f0; border-radius: 12px; background: #ffffff; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+        <h2 style="color: #ef4444; margin-top: 0; font-size: 1.4rem;">⚠️ CMS Action Error</h2>
+        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6;">${err.message || 'An unexpected error occurred.'}</p>
+        <div style="margin-top: 24px;">
+          <a href="/admin" style="background: #0077ff; color: #ffffff; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.9rem;">&larr; Return to Admin Dashboard</a>
+        </div>
+      </div>
+    `);
+  }
   res.status(500).send(`
     <div style="font-family: sans-serif; text-align: center; padding: 60px;">
       <h2>Something went wrong</h2>

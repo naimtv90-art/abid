@@ -30,33 +30,64 @@ try {
   // Ignored in read-only serverless environments
 }
 
-// Multer Storage Configuration
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, UPLOAD_DIR);
-  },
-  filename: (req, file, cb) => {
-    const ext = path.extname(file.originalname).toLowerCase();
-    const base = path.basename(file.originalname, ext).replace(/[^a-zA-Z0-9_-]/g, '-').toLowerCase();
-    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E6);
-    cb(null, `cms-${base}-${uniqueSuffix}${ext}`);
-  }
-});
-
+// Multer Storage Configuration (In-Memory for Vercel Serverless & Local compatibility)
 const upload = multer({
-  storage,
-  limits: { fileSize: 10 * 1024 * 1024 }, // 10MB
+  storage: multer.memoryStorage(),
+  limits: { fileSize: 15 * 1024 * 1024 }, // 15MB
   fileFilter: (req, file, cb) => {
-    const allowed = /jpeg|jpg|png|webp|svg|gif/;
+    if (!file || !file.originalname) {
+      return cb(null, true);
+    }
     const ext = path.extname(file.originalname).toLowerCase().replace('.', '');
-    const mime = file.mimetype;
-    if (allowed.test(ext) || allowed.test(mime)) {
+    const mime = (file.mimetype || '').toLowerCase();
+    const isImage = mime.startsWith('image/') || /jpeg|jpg|png|webp|svg|gif|jfif|avif|heic|bmp/.test(ext);
+    if (isImage) {
       cb(null, true);
     } else {
-      cb(new Error('Only image files (jpg, png, webp, svg, gif) are allowed'));
+      cb(new Error('Only image files (jpg, png, webp, svg, gif, avif) are allowed'));
     }
   }
 });
+
+// Process uploaded image buffer: saves to public/images/cms if writable, or encodes to Base64 Data URI
+function processUploadedImage(file, defaultPath = '') {
+  if (!file || !file.buffer || file.buffer.length === 0) {
+    return defaultPath;
+  }
+  
+  // Try saving to public/images/cms if directory is writable (Local Node.js)
+  try {
+    if (!fs.existsSync(UPLOAD_DIR)) {
+      fs.mkdirSync(UPLOAD_DIR, { recursive: true });
+    }
+    const rawExt = path.extname(file.originalname).toLowerCase() || '.webp';
+    const ext = rawExt.startsWith('.') ? rawExt : `.${rawExt}`;
+    const base = path.basename(file.originalname, ext).replace(/[^a-zA-Z0-9_-]/g, '-').toLowerCase() || 'cms-img';
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E6);
+    const fileName = `cms-${base}-${uniqueSuffix}${ext}`;
+    const targetFile = path.join(UPLOAD_DIR, fileName);
+    fs.writeFileSync(targetFile, file.buffer);
+    return `/images/cms/${fileName}`;
+  } catch (err) {
+    // Read-only serverless filesystem (Vercel) -> store as Base64 Data URI
+    console.warn('[CMS Upload] Read-only filesystem, encoding image as base64 data URI:', err.message);
+    const mime = file.mimetype || 'image/jpeg';
+    return `data:${mime};base64,${file.buffer.toString('base64')}`;
+  }
+}
+
+// Safe upload middleware that prevents Multer errors from crashing Express with 500
+function safeUpload(fieldName) {
+  return (req, res, next) => {
+    upload.single(fieldName)(req, res, (err) => {
+      if (err) {
+        console.warn(`[CMS Upload Warning] ${fieldName}:`, err.message);
+        req.uploadError = err.message || 'Image upload error';
+      }
+      next();
+    });
+  };
+}
 
 // Helper: Token Generation & Verification
 function createToken(username) {
@@ -210,20 +241,22 @@ router.get('/products/new', (req, res) => {
     isEdit: false,
     allBrands,
     allCategories,
-    error: req.query.error || null
+    error: req.query.error || null,
+    errMsg: req.query.err_msg || null
   });
 });
 
 // POST /admin/products/new - Save new product
-router.post('/products/new', upload.single('productImageFile'), (req, res) => {
+router.post('/products/new', safeUpload('productImageFile'), (req, res) => {
   try {
-    const body = req.body;
+    const body = req.body || {};
     let imagePath = body.image || '';
 
-    // If an image was uploaded through the file input, prioritize it
+    // If an image was uploaded through the file input, process it safely
     if (req.file) {
-      imagePath = `/images/cms/${req.file.filename}`;
-    } else if (!imagePath) {
+      imagePath = processUploadedImage(req.file, imagePath);
+    }
+    if (!imagePath) {
       imagePath = '/images/abid-hearing-care-product-placeholder-dhaka.webp';
     }
 
@@ -233,17 +266,17 @@ router.post('/products/new', upload.single('productImageFile'), (req, res) => {
       brand: body.brandCustom && body.brand === '__custom__' ? body.brandCustom : body.brand,
       category: body.categoryCustom && body.category === '__custom__' ? body.categoryCustom : body.category,
       image: imagePath,
-      altText: body.altText || `${body.name} - Digital Hearing Aid Price in Dhaka, Bangladesh`,
+      altText: body.altText || `${body.name || 'Hearing Aid'} - Digital Hearing Aid Price in Dhaka, Bangladesh`,
       priceText: body.priceText || 'Call for Best Price: 01771-237740',
       shortDescription: body.shortDescription || '',
       description: body.description || '',
       inStock: body.inStock === 'on' || body.inStock === 'true' || body.inStock === true
     });
 
-    res.redirect(`/admin/products?msg=created&slug=${saved.slug}`);
+    res.redirect(`/admin/products?msg=created&slug=${encodeURIComponent(saved.slug)}`);
   } catch (err) {
     console.error('[CMS Product Save Error]', err);
-    res.redirect('/admin/products/new?error=save_failed');
+    res.redirect(`/admin/products/new?error=save_failed&err_msg=${encodeURIComponent(err.message || 'Failed to save product')}`);
   }
 });
 
@@ -265,33 +298,34 @@ router.get('/products/edit/:id', (req, res) => {
     allBrands,
     allCategories,
     error: req.query.error || null,
+    errMsg: req.query.err_msg || null,
     msg: req.query.msg || null
   });
 });
 
 // POST /admin/products/edit/:id - Update product
-router.post('/products/edit/:id', upload.single('productImageFile'), (req, res) => {
+router.post('/products/edit/:id', safeUpload('productImageFile'), (req, res) => {
   try {
     const existing = contentStore.getProductById(req.params.id);
     if (!existing) {
       return res.redirect('/admin/products?error=not_found');
     }
 
-    const body = req.body;
+    const body = req.body || {};
     let imagePath = body.image || existing.image;
 
     if (req.file) {
-      imagePath = `/images/cms/${req.file.filename}`;
+      imagePath = processUploadedImage(req.file, imagePath);
     }
 
     const updated = contentStore.saveProduct({
       id: existing.id,
-      name: body.name,
+      name: body.name || existing.name,
       slug: body.slug || existing.slug,
       brand: body.brandCustom && body.brand === '__custom__' ? body.brandCustom : body.brand,
       category: body.categoryCustom && body.category === '__custom__' ? body.categoryCustom : body.category,
       image: imagePath,
-      altText: body.altText || `${body.name} - Price in Uttara, Dhaka | Abid Hearing Care Centre`,
+      altText: body.altText || `${body.name || existing.name} - Price in Uttara, Dhaka | Abid Hearing Care Centre`,
       priceText: body.priceText,
       shortDescription: body.shortDescription,
       description: body.description,
@@ -301,7 +335,7 @@ router.post('/products/edit/:id', upload.single('productImageFile'), (req, res) 
     res.redirect(`/admin/products?msg=updated&id=${updated.id}`);
   } catch (err) {
     console.error('[CMS Product Update Error]', err);
-    res.redirect(`/admin/products/edit/${req.params.id}?error=update_failed`);
+    res.redirect(`/admin/products/edit/${req.params.id}?error=update_failed&err_msg=${encodeURIComponent(err.message || 'Failed to update product')}`);
   }
 });
 
@@ -355,19 +389,21 @@ router.get('/blogs/new', (req, res) => {
     },
     isEdit: false,
     allCategories,
-    error: req.query.error || null
+    error: req.query.error || null,
+    errMsg: req.query.err_msg || null
   });
 });
 
 // POST /admin/blogs/new - Save new blog post
-router.post('/blogs/new', upload.single('blogImageFile'), (req, res) => {
+router.post('/blogs/new', safeUpload('blogImageFile'), (req, res) => {
   try {
-    const body = req.body;
+    const body = req.body || {};
     let imagePath = body.image || '';
 
     if (req.file) {
-      imagePath = `/images/cms/${req.file.filename}`;
-    } else if (!imagePath) {
+      imagePath = processUploadedImage(req.file, imagePath);
+    }
+    if (!imagePath) {
       imagePath = '/images/abid-hearing-care-centre-clinic-dhaka-bangladesh.webp';
     }
 
@@ -382,10 +418,10 @@ router.post('/blogs/new', upload.single('blogImageFile'), (req, res) => {
       content: body.content
     });
 
-    res.redirect(`/admin/blogs?msg=created&slug=${saved.slug}`);
+    res.redirect(`/admin/blogs?msg=created&slug=${encodeURIComponent(saved.slug)}`);
   } catch (err) {
     console.error('[CMS Blog Save Error]', err);
-    res.redirect('/admin/blogs/new?error=save_failed');
+    res.redirect(`/admin/blogs/new?error=save_failed&err_msg=${encodeURIComponent(err.message || 'Failed to save article')}`);
   }
 });
 
@@ -405,27 +441,28 @@ router.get('/blogs/edit/:slug', (req, res) => {
     isEdit: true,
     allCategories,
     error: req.query.error || null,
+    errMsg: req.query.err_msg || null,
     msg: req.query.msg || null
   });
 });
 
 // POST /admin/blogs/edit/:slug - Update blog post
-router.post('/blogs/edit/:slug', upload.single('blogImageFile'), (req, res) => {
+router.post('/blogs/edit/:slug', safeUpload('blogImageFile'), (req, res) => {
   try {
     const existing = contentStore.getBlogPostBySlug(req.params.slug);
     if (!existing) {
       return res.redirect('/admin/blogs?error=not_found');
     }
 
-    const body = req.body;
+    const body = req.body || {};
     let imagePath = body.image || existing.image;
 
     if (req.file) {
-      imagePath = `/images/cms/${req.file.filename}`;
+      imagePath = processUploadedImage(req.file, imagePath);
     }
 
     const updated = contentStore.saveBlogPost({
-      title: body.title,
+      title: body.title || existing.title,
       slug: body.slug || existing.slug,
       category: body.categoryCustom && body.category === '__custom__' ? body.categoryCustom : body.category,
       date: body.date || existing.date,
@@ -435,10 +472,10 @@ router.post('/blogs/edit/:slug', upload.single('blogImageFile'), (req, res) => {
       content: body.content
     }, req.params.slug);
 
-    res.redirect(`/admin/blogs?msg=updated&slug=${updated.slug}`);
+    res.redirect(`/admin/blogs?msg=updated&slug=${encodeURIComponent(updated.slug)}`);
   } catch (err) {
     console.error('[CMS Blog Update Error]', err);
-    res.redirect(`/admin/blogs/edit/${req.params.slug}?error=update_failed`);
+    res.redirect(`/admin/blogs/edit/${encodeURIComponent(req.params.slug)}?error=update_failed&err_msg=${encodeURIComponent(err.message || 'Failed to update article')}`);
   }
 });
 
@@ -468,7 +505,7 @@ router.get('/appointments', (req, res) => {
 });
 
 // POST /admin/appointments/delete/:id
-router.post('/appointments/delete/:id', (req, res) => {
+router.post('/admin/appointments/delete/:id', (req, res) => {
   const success = contentStore.deleteAppointment(req.params.id);
   res.redirect('/admin/appointments?msg=' + (success ? 'deleted' : 'error'));
 });
@@ -476,11 +513,11 @@ router.post('/appointments/delete/:id', (req, res) => {
 // -------------------------------------------------------------
 // Quick AJAX Upload Image Endpoint (for rich text editors)
 // -------------------------------------------------------------
-router.post('/api/upload-image', upload.single('image'), (req, res) => {
+router.post('/api/upload-image', safeUpload('image'), (req, res) => {
   if (!req.file) {
-    return res.status(400).json({ success: false, error: 'No image uploaded' });
+    return res.status(400).json({ success: false, error: req.uploadError || 'No image uploaded' });
   }
-  const url = `/images/cms/${req.file.filename}`;
+  const url = processUploadedImage(req.file, '');
   return res.json({ success: true, url });
 });
 

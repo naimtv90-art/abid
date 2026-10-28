@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import os from 'os';
 import { fileURLToPath } from 'url';
 import { products as defaultProducts } from './products.js';
 import { blogPosts as defaultBlogPosts } from './siteData.js';
@@ -8,64 +9,67 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Robust base directory resolution for both local and Vercel serverless
+const isVercel = Boolean(process.env.VERCEL);
+const tmpDir = os.tmpdir();
 const basePath = fs.existsSync(path.join(process.cwd(), 'data')) ? process.cwd() : path.join(__dirname, '..');
 
-const PRODUCTS_FILE = path.join(basePath, 'data', 'products.json');
-const BLOGS_FILE = path.join(basePath, 'data', 'blogs.json');
-const APPOINTMENTS_FILE = path.join(basePath, 'data', 'appointments.json');
+// Seed files bundled with repository
+const SEED_PRODUCTS = path.join(basePath, 'data', 'products.json');
+const SEED_BLOGS = path.join(basePath, 'data', 'blogs.json');
+const SEED_APPOINTMENTS = path.join(basePath, 'data', 'appointments.json');
 
-// Initialize products.json if it doesn't exist (safe for read-only Vercel filesystem)
-try {
-  if (!fs.existsSync(PRODUCTS_FILE)) {
-    fs.writeFileSync(PRODUCTS_FILE, JSON.stringify(defaultProducts, null, 2), 'utf8');
-  }
-} catch (e) {
-  // Read-only serverless environment
-}
-
-// Initialize blogs.json if it doesn't exist (safe for read-only Vercel filesystem)
-try {
-  if (!fs.existsSync(BLOGS_FILE)) {
-    fs.writeFileSync(BLOGS_FILE, JSON.stringify(defaultBlogPosts, null, 2), 'utf8');
-  }
-} catch (e) {
-  // Read-only serverless environment
-}
-
-// Ensure appointments.json exists (safe for read-only Vercel filesystem)
-try {
-  if (!fs.existsSync(APPOINTMENTS_FILE)) {
-    fs.writeFileSync(APPOINTMENTS_FILE, JSON.stringify([], null, 2), 'utf8');
-  }
-} catch (e) {
-  // Read-only serverless environment
-}
+// Storage files (on Vercel serverless, /tmp is the guaranteed writable filesystem)
+const PRODUCTS_FILE = isVercel ? path.join(tmpDir, 'ahcc_products.json') : SEED_PRODUCTS;
+const BLOGS_FILE = isVercel ? path.join(tmpDir, 'ahcc_blogs.json') : SEED_BLOGS;
+const APPOINTMENTS_FILE = isVercel ? path.join(tmpDir, 'ahcc_appointments.json') : SEED_APPOINTMENTS;
 
 // In-memory cache
 let productsCache = null;
 let blogsCache = null;
 
-function readJsonFile(filePath, fallback) {
+function readJsonFile(primaryPath, fallbackPath, fallbackData) {
   try {
-    if (fs.existsSync(filePath)) {
-      const data = fs.readFileSync(filePath, 'utf8');
+    if (fs.existsSync(primaryPath)) {
+      const data = fs.readFileSync(primaryPath, 'utf8');
       return JSON.parse(data);
     }
   } catch (err) {
-    console.error(`[ContentStore] Error reading ${filePath}:`, err);
+    console.warn(`[ContentStore] Reading primary ${primaryPath}:`, err.message);
   }
-  return fallback;
+
+  if (fallbackPath && fallbackPath !== primaryPath) {
+    try {
+      if (fs.existsSync(fallbackPath)) {
+        const data = fs.readFileSync(fallbackPath, 'utf8');
+        return JSON.parse(data);
+      }
+    } catch (err) {
+      console.warn(`[ContentStore] Reading fallback ${fallbackPath}:`, err.message);
+    }
+  }
+
+  return fallbackData;
 }
 
-function writeJsonFile(filePath, data) {
+function writeJsonFile(primaryPath, fallbackPath, data) {
+  let written = false;
   try {
-    fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
-    return true;
+    fs.writeFileSync(primaryPath, JSON.stringify(data, null, 2), 'utf8');
+    written = true;
   } catch (err) {
-    // Graceful fallback for serverless read-only filesystems (Vercel)
-    console.warn(`[ContentStore] Note: ${filePath} cannot be written to disk in serverless environment:`, err.message);
-    return false;
+    console.warn(`[ContentStore] Primary write failed ${primaryPath}:`, err.message);
   }
+
+  if (fallbackPath && fallbackPath !== primaryPath) {
+    try {
+      fs.writeFileSync(fallbackPath, JSON.stringify(data, null, 2), 'utf8');
+      written = true;
+    } catch (err) {
+      // Ignored for read-only serverless file systems
+    }
+  }
+
+  return written;
 }
 
 // Slugify helper
@@ -93,7 +97,7 @@ export const contentStore = {
   // PRODUCTS
   getProducts(filter = {}) {
     if (!productsCache) {
-      productsCache = readJsonFile(PRODUCTS_FILE, defaultProducts);
+      productsCache = readJsonFile(PRODUCTS_FILE, SEED_PRODUCTS, defaultProducts);
     }
     let list = [...productsCache];
 
@@ -174,7 +178,7 @@ export const contentStore = {
     }
 
     productsCache = list;
-    writeJsonFile(PRODUCTS_FILE, list);
+    writeJsonFile(PRODUCTS_FILE, SEED_PRODUCTS, list);
     return newProduct;
   },
 
@@ -184,7 +188,7 @@ export const contentStore = {
     const filtered = list.filter(p => p.id !== numericId && String(p.id) !== String(id));
     if (filtered.length !== list.length) {
       productsCache = filtered;
-      writeJsonFile(PRODUCTS_FILE, filtered);
+      writeJsonFile(PRODUCTS_FILE, SEED_PRODUCTS, filtered);
       return true;
     }
     return false;
@@ -193,7 +197,7 @@ export const contentStore = {
   // BLOG POSTS
   getBlogPosts(filter = {}) {
     if (!blogsCache) {
-      blogsCache = readJsonFile(BLOGS_FILE, defaultBlogPosts);
+      blogsCache = readJsonFile(BLOGS_FILE, SEED_BLOGS, defaultBlogPosts);
     }
     let list = [...blogsCache];
 
@@ -264,7 +268,7 @@ export const contentStore = {
     }
 
     blogsCache = list;
-    writeJsonFile(BLOGS_FILE, list);
+    writeJsonFile(BLOGS_FILE, SEED_BLOGS, list);
     return post;
   },
 
@@ -273,7 +277,7 @@ export const contentStore = {
     const filtered = list.filter(b => b.slug !== slug);
     if (filtered.length !== list.length) {
       blogsCache = filtered;
-      writeJsonFile(BLOGS_FILE, filtered);
+      writeJsonFile(BLOGS_FILE, SEED_BLOGS, filtered);
       return true;
     }
     return false;
@@ -281,14 +285,14 @@ export const contentStore = {
 
   // APPOINTMENTS
   getAppointments() {
-    return readJsonFile(APPOINTMENTS_FILE, []);
+    return readJsonFile(APPOINTMENTS_FILE, SEED_APPOINTMENTS, []);
   },
 
   deleteAppointment(id) {
     const list = this.getAppointments();
     const filtered = list.filter(a => a.id !== id);
     if (filtered.length !== list.length) {
-      writeJsonFile(APPOINTMENTS_FILE, filtered);
+      writeJsonFile(APPOINTMENTS_FILE, SEED_APPOINTMENTS, filtered);
       return true;
     }
     return false;

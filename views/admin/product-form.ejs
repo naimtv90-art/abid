@@ -21,7 +21,7 @@
 
 <% if (error) { %>
   <div class="toast-msg toast-danger">
-    <span>⚠️ An error occurred while saving the product. Please verify fields and try again.</span>
+    <span>⚠️ <%= typeof errMsg !== 'undefined' && errMsg ? errMsg : 'An error occurred while saving the product. Please verify fields and try again.' %></span>
   </div>
 <% } %>
 
