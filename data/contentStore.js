@@ -26,6 +26,7 @@ const APPOINTMENTS_FILE = isVercel ? path.join(tmpDir, 'ahcc_appointments.json')
 // In-memory cache
 let productsCache = null;
 let blogsCache = null;
+let appointmentsCache = null;
 
 function readJsonFile(primaryPath, fallbackPath, fallbackData) {
   try {
@@ -285,13 +286,34 @@ export const contentStore = {
 
   // APPOINTMENTS
   getAppointments() {
-    return readJsonFile(APPOINTMENTS_FILE, SEED_APPOINTMENTS, []);
+    if (!appointmentsCache) {
+      appointmentsCache = readJsonFile(APPOINTMENTS_FILE, SEED_APPOINTMENTS, []);
+    }
+    return appointmentsCache || [];
+  },
+
+  saveAppointment(data) {
+    const list = [...this.getAppointments()];
+    const appointment = {
+      id: data.id || ('apt_' + Date.now()),
+      name: (data.name || '').trim() || 'Anonymous Client',
+      phone: (data.phone || '').trim(),
+      preferredDate: data.preferredDate || new Date().toISOString().split('T')[0],
+      service: data.service || 'General Audiology Consultation',
+      notes: data.notes || '',
+      submittedAt: data.submittedAt || new Date().toISOString()
+    };
+    list.unshift(appointment);
+    appointmentsCache = list;
+    writeJsonFile(APPOINTMENTS_FILE, SEED_APPOINTMENTS, list);
+    return appointment;
   },
 
   deleteAppointment(id) {
     const list = this.getAppointments();
     const filtered = list.filter(a => a.id !== id);
     if (filtered.length !== list.length) {
+      appointmentsCache = filtered;
       writeJsonFile(APPOINTMENTS_FILE, SEED_APPOINTMENTS, filtered);
       return true;
     }

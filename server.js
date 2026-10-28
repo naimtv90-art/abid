@@ -431,28 +431,13 @@ app.post('/api/appointment', (req, res) => {
     if (ageGroup) noteParts.push(`Age Group: ${ageGroup}`);
     if (branch) noteParts.push(`Branch: ${branch}`);
 
-    const appointment = {
-      id: 'apt_' + Date.now(),
+    const appointment = contentStore.saveAppointment({
       name: name ? name.trim() : 'Anonymous Client',
       phone: phone.trim(),
       preferredDate: preferredDate || new Date().toISOString().split('T')[0],
       service: service || 'General Audiology Consultation',
-      notes: noteParts.join(' | ') || '',
-      submittedAt: new Date().toISOString()
-    };
-
-    // Save to appointments.json
-    let existing = [];
-    try {
-      if (fs.existsSync(appointmentsFile)) {
-        existing = JSON.parse(fs.readFileSync(appointmentsFile, 'utf8'));
-      }
-    } catch (e) {
-      existing = [];
-    }
-
-    existing.unshift(appointment);
-    fs.writeFileSync(appointmentsFile, JSON.stringify(existing, null, 2));
+      notes: noteParts.join(' | ') || ''
+    });
 
     console.log(`[Appointment] Received booking from ${appointment.name} (${appointment.phone}) for ${appointment.service}`);
 
