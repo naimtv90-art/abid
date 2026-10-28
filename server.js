@@ -419,19 +419,25 @@ Sitemap: https://abidhearing.com/sitemap.xml
 // Appointment / Consultation Submission Handler
 app.post('/api/appointment', (req, res) => {
   try {
-    const { name, phone, preferredDate, service, notes } = req.body;
+    const { name, phone, preferredDate, service, notes, message, ageGroup, branch } = req.body;
     
     if (!phone) {
       return res.status(400).json({ success: false, error: 'Phone number is required' });
     }
 
+    const noteParts = [];
+    if (notes) noteParts.push(notes);
+    if (message) noteParts.push(message);
+    if (ageGroup) noteParts.push(`Age Group: ${ageGroup}`);
+    if (branch) noteParts.push(`Branch: ${branch}`);
+
     const appointment = {
       id: 'apt_' + Date.now(),
-      name: name || 'Anonymous Client',
+      name: name ? name.trim() : 'Anonymous Client',
       phone: phone.trim(),
       preferredDate: preferredDate || new Date().toISOString().split('T')[0],
       service: service || 'General Audiology Consultation',
-      notes: notes || '',
+      notes: noteParts.join(' | ') || '',
       submittedAt: new Date().toISOString()
     };
 

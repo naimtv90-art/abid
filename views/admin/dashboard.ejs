@@ -109,6 +109,96 @@
 
 </div>
 
+<!-- Recent Appointments Card (Live Patient Bookings) -->
+<div class="admin-card" style="margin-bottom: 28px; border-left: 5px solid #0077ff;">
+  <div class="admin-card-header">
+    <div class="admin-card-title">
+      <span>🩺</span> Recent Patient Inquiries &amp; Appointments
+      <span class="badge badge-primary" style="margin-left: 8px; font-size: 0.75rem;"><%= stats.totalAppointments %> Total</span>
+    </div>
+    <a href="/admin/appointments" class="btn-primary" style="padding: 6px 14px; font-size: 0.8rem; text-decoration: none;">
+      View All Bookings &rarr;
+    </a>
+  </div>
+
+  <% if (!recentAppointments || recentAppointments.length === 0) { %>
+    <div style="text-align: center; padding: 32px 20px; color: #64748b;">
+      <div style="font-size: 2rem; margin-bottom: 8px;">📋</div>
+      <div style="font-weight: 700; color: #06182f; margin-bottom: 4px;">No appointment requests yet</div>
+      <div style="font-size: 0.85rem;">When patients book an appointment from the website, they will appear here in real time.</div>
+    </div>
+  <% } else { %>
+    <div style="overflow-x: auto;">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Patient Name</th>
+            <th>Phone Contact</th>
+            <th>Service Requested</th>
+            <th>Preferred Date / Time</th>
+            <th>Notes / Symptoms</th>
+            <th>Submitted</th>
+            <th style="text-align: right;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% recentAppointments.forEach(apt => { %>
+            <% 
+              const cleanPhone = (apt.phone || '').replace(/[^0-9]/g, '');
+              const waNumber = cleanPhone.startsWith('88') ? cleanPhone : ('88' + cleanPhone);
+            %>
+            <tr>
+              <td>
+                <div style="font-weight: 800; color: #06182f; font-size: 0.92rem;">
+                  <%= apt.name || 'Anonymous Client' %>
+                </div>
+              </td>
+              <td>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <a href="tel:<%= apt.phone %>" style="color: #0077ff; font-weight: 700; text-decoration: none; font-family: monospace;">
+                    <%= apt.phone %>
+                  </a>
+                  <% if (cleanPhone) { %>
+                    <a 
+                      href="https://wa.me/<%= waNumber %>?text=Hello%20<%= encodeURIComponent(apt.name || 'Sir/Madam') %>,%20this%20is%20Abid%20Hearing%20Care%20Centre%20regarding%20your%20consultation%20booking." 
+                      target="_blank" 
+                      title="Chat on WhatsApp"
+                      style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: #25d366; color: #fff; font-size: 0.75rem; text-decoration: none;"
+                    >
+                      💬
+                    </a>
+                  <% } %>
+                </div>
+              </td>
+              <td>
+                <span class="badge badge-primary" style="font-size: 0.75rem;">
+                  <%= apt.service || 'Audiology Consultation' %>
+                </span>
+              </td>
+              <td style="font-weight: 600; color: #334155; font-size: 0.85rem;">
+                <%= apt.preferredDate || 'Flexible' %>
+              </td>
+              <td style="font-size: 0.82rem; color: #64748b; max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="<%= apt.notes || '' %>">
+                <%= apt.notes || '—' %>
+              </td>
+              <td style="font-size: 0.78rem; color: #94a3b8; white-space: nowrap;">
+                <%= apt.submittedAt ? new Date(apt.submittedAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' }) : 'Recent' %>
+              </td>
+              <td style="text-align: right; white-space: nowrap;">
+                <form method="POST" action="/admin/appointments/delete/<%= apt.id %>" onsubmit="return confirm('Remove this patient inquiry?');" style="display: inline;">
+                  <button type="submit" title="Remove Inquiry" class="btn-danger" style="padding: 4px 8px; font-size: 0.75rem;">
+                    🗑️
+                  </button>
+                </form>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  <% } %>
+</div>
+
 <!-- Split Section: Recent Products & Articles -->
 <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: start;">
   

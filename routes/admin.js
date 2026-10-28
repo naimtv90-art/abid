@@ -505,7 +505,7 @@ router.get('/appointments', (req, res) => {
 });
 
 // POST /admin/appointments/delete/:id
-router.post('/admin/appointments/delete/:id', (req, res) => {
+router.post('/appointments/delete/:id', (req, res) => {
   const success = contentStore.deleteAppointment(req.params.id);
   res.redirect('/admin/appointments?msg=' + (success ? 'deleted' : 'error'));
 });

@@ -258,7 +258,7 @@ function initHearingQuiz() {
 
 // 5. Booking Form Handlers
 function initAppointmentForms() {
-  const forms = document.querySelectorAll('.appointment-form');
+  const forms = document.querySelectorAll('.appointment-form, [data-booking-form]');
 
   forms.forEach(form => {
     form.addEventListener('submit', async (e) => {
