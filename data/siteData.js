@@ -19,8 +19,9 @@ export const clinicInfo = {
   whatsapp: '8801771237740',
   emails: ['abidhearing@gmail.com', 'info@abidhearing.com'],
   hours: {
-    regular: 'Saturday – Thursday: 10:00 AM – 10:00 PM',
-    friday: 'Friday: By appointment only'
+    regular: '10:00 AM – 10:00 PM',
+    days: 'Open 7 Days a Week (Everyday)',
+    friday: 'Open 7 Days a Week (Everyday)'
   },
   googleMapsUrl: 'https://maps.google.com/maps?q=Abid+Hearing+Care+Center+Sector+7+Uttara+Dhaka&hl=en&z=16&output=embed',
   social: {
