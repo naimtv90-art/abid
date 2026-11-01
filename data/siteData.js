@@ -4,7 +4,7 @@ export const clinicInfo = {
   tagline: 'Hearing means quality of life — Make better living',
   subtagline: 'Leading audiology and digital hearing aid fitting clinic in Bangladesh since 2014.',
   estYear: 2014,
-  experienceYears: 10,
+  experienceYears: 13,
   happyPatients: '10,000+',
   address: {
     line1: 'Oasis Complex, House-59, Sonargaon Janapath Road (1st Floor)',
@@ -147,7 +147,7 @@ export const leadership = [
     name: 'Mohammad Haidar Ali',
     role: 'Founder & Lead Audiologist',
     credentials: 'Clinical Competence in Audiology (CCA)',
-    experience: '12+ Years Experience in Diagnostic Audiology & Digital Fitting',
+    experience: '13+ Years Experience in Diagnostic Audiology & Digital Fitting',
     bio: 'Dedicated to ethical, patient-centered hearing healthcare in Bangladesh. Specializes in complex pediatric hearing fittings, bone-conduction systems, and audiological diagnostics.'
   },
   {
