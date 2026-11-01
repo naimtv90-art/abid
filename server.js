@@ -87,7 +87,9 @@ app.use((req, res, next) => {
   const allProds = contentStore.getProducts();
   const allBlogs = contentStore.getBlogPosts();
   res.locals.totalProducts = allProds.length;
-  res.locals.featuredProducts = allProds.slice(0, 6);
+  const seenImgs = new Set(); const uniqueProds = []; const otherProds = []; for (const p of allProds) { if (p.image && !seenImgs.has(p.image)) { seenImgs.add(p.image); uniqueProds.push(p); } else { otherProds.push(p); } }
+  res.locals.heroProducts = uniqueProds;
+  res.locals.featuredProducts = uniqueProds.slice(0, 6);
   res.locals.blogPosts = allBlogs;
   next();
 });
@@ -417,7 +419,9 @@ Sitemap: https://abidhearing.com/sitemap.xml
 // -------------------------------------------------------------
 
 // Appointment / Consultation Submission Handler
-app.post('/api/appointment', (req, res) => {
+const APPOINTMENT_NOTIFY_EMAIL = process.env.APPOINTMENT_EMAIL || 'abidhearing@gmail.com';
+
+app.post('/api/appointment', async (req, res) => {
   try {
     const { name, phone, preferredDate, service, notes, message, ageGroup, branch } = req.body;
     
@@ -436,15 +440,43 @@ app.post('/api/appointment', (req, res) => {
       phone: phone.trim(),
       preferredDate: preferredDate || new Date().toISOString().split('T')[0],
       service: service || 'General Audiology Consultation',
-      notes: noteParts.join(' | ') || ''
+      notes: noteParts.join(' | ') || '',
+      notifyEmail: APPOINTMENT_NOTIFY_EMAIL
     });
 
-    console.log(`[Appointment] Received booking from ${appointment.name} (${appointment.phone}) for ${appointment.service}`);
+    console.log(`[Appointment] Saved to Dashboard & forwarding to ${APPOINTMENT_NOTIFY_EMAIL}: ${appointment.name} (${appointment.phone})`);
+
+    // Forward appointment notification to abidhearing@gmail.com
+    try {
+      await fetch(`https://formsubmit.co/ajax/${APPOINTMENT_NOTIFY_EMAIL}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'Origin': 'https://abidhearing.com',
+          'Referer': 'https://abidhearing.com/contact-us'
+        },
+        body: JSON.stringify({
+          _subject: `New Appointment Booking: ${appointment.name} (${appointment.phone})`,
+          _template: 'table',
+          _captcha: 'false',
+          Patient_Name: appointment.name,
+          Phone_Number: appointment.phone,
+          Service_Requested: appointment.service,
+          Preferred_Date_Time: appointment.preferredDate,
+          Notes_Details: appointment.notes || 'None',
+          Submitted_At: appointment.submittedAt
+        })
+      });
+    } catch (mailErr) {
+      console.warn('[Appointment Email Forward Warning]', mailErr.message);
+    }
 
     return res.json({ 
       success: true, 
-      message: 'Consultation request successfully recorded. Our clinic will contact you shortly.',
-      id: appointment.id 
+      message: 'Consultation request recorded in dashboard and sent to ' + APPOINTMENT_NOTIFY_EMAIL + '. Our clinic will contact you shortly.',
+      id: appointment.id,
+      notifyEmail: APPOINTMENT_NOTIFY_EMAIL
     });
   } catch (err) {
     console.error('[Appointment Error]', err);

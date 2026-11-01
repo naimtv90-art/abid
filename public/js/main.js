@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initModal();
   initHearingQuiz();
   initAppointmentForms();
+  initHeroCarousel();
 });
 
 // 1. Mobile Menu Toggle
@@ -301,4 +302,87 @@ function initAppointmentForms() {
       }
     });
   });
+}
+
+
+// 6. Hero Product Slider Carousel (Continuous Side-to-Side Scroll)
+function initHeroCarousel() {
+  const el = document.querySelector('.ahcc-ps');
+  if (!el) return;
+
+  const vp = el.querySelector('.ahcc-ps-viewport');
+  const prev = el.querySelector('.ahcc-ps-prev');
+  const next = el.querySelector('.ahcc-ps-next');
+  const cards = el.querySelectorAll('.ahcc-ps-card');
+  if (!vp || !cards.length) return;
+
+  const speed = parseInt(el.getAttribute('data-speed'), 10) || 2500;
+  let timer = null;
+  let resumeTimer = null;
+
+  function step() {
+    return cards.length > 1 ? (cards[1].offsetLeft - cards[0].offsetLeft) : 220;
+  }
+
+  function atEnd() {
+    return vp.scrollLeft + vp.clientWidth >= vp.scrollWidth - 10;
+  }
+
+  function go(dir) {
+    const s = step();
+    if (dir > 0) {
+      if (atEnd()) {
+        vp.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        vp.scrollBy({ left: s, behavior: 'smooth' });
+      }
+    } else {
+      if (vp.scrollLeft <= 10) {
+        vp.scrollTo({ left: vp.scrollWidth, behavior: 'smooth' });
+      } else {
+        vp.scrollBy({ left: -s, behavior: 'smooth' });
+      }
+    }
+  }
+
+  function stop() {
+    clearInterval(timer);
+    timer = null;
+    clearTimeout(resumeTimer);
+  }
+
+  function start() {
+    stop();
+    timer = setInterval(() => {
+      if (!document.hidden) {
+        go(1);
+      }
+    }, speed);
+  }
+
+  if (prev) {
+    prev.addEventListener('click', (e) => {
+      e.preventDefault();
+      go(-1);
+      start();
+    });
+  }
+
+  if (next) {
+    next.addEventListener('click', (e) => {
+      e.preventDefault();
+      go(1);
+      start();
+    });
+  }
+
+  el.addEventListener('mouseenter', stop);
+  el.addEventListener('mouseleave', start);
+  el.addEventListener('touchstart', stop, { passive: true });
+  el.addEventListener('touchend', () => {
+    clearTimeout(resumeTimer);
+    resumeTimer = setTimeout(start, 3500);
+  }, { passive: true });
+
+  start();
 }

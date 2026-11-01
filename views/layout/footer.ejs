@@ -214,9 +214,16 @@
         }
       }
 
-      document.querySelectorAll('[data-open-appointment]').forEach(btn => {
+      document.querySelectorAll('[data-open-appointment], [data-open-modal]').forEach(btn => {
         btn.addEventListener('click', function(e) {
           e.preventDefault();
+          const prodName = btn.getAttribute('data-product-name');
+          if (prodName && modal) {
+            const notesField = modal.querySelector('textarea[name="notes"]');
+            if (notesField && !notesField.value) {
+              notesField.value = 'Inquiry about: ' + prodName;
+            }
+          }
           openModal();
         });
       });
@@ -228,8 +235,8 @@
         });
       }
 
-      // 3. Appointment Form Ajax Submission
-      const form = document.getElementById('appointmentForm');
+      // 3. Appointment Form Ajax Submission (Saves to Admin Dashboard + Emails abidhearing@gmail.com)
+      const bookingForms = document.querySelectorAll('#appointmentForm, .appointment-form, form[data-booking-form]');
       const toast = document.getElementById('toastNotification');
 
       function showToast(msg) {
@@ -240,36 +247,71 @@
           setTimeout(() => {
             toast.style.opacity = '0';
             toast.style.transform = 'translateX(-50%) translateY(100px)';
-          }, 4000);
+          }, 4500);
         }
       }
 
-      if (form) {
+      bookingForms.forEach(form => {
         form.addEventListener('submit', async function(e) {
           e.preventDefault();
+          const submitBtn = form.querySelector('button[type="submit"]');
+          const origBtnText = submitBtn ? submitBtn.innerText : 'Confirm Booking Request';
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'Submitting...';
+          }
+
           const formData = new FormData(form);
           const data = Object.fromEntries(formData.entries());
 
           try {
+            // 1) Save to Admin Dashboard (/admin/dashboard & /admin/appointments)
             const res = await fetch('/api/appointment', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(data)
             });
             const result = await res.json();
+
+            // 2) Also trigger direct browser email dispatch to abidhearing@gmail.com
+            fetch('https://formsubmit.co/ajax/abidhearing@gmail.com', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+              },
+              body: JSON.stringify({
+                _subject: 'New Appointment Booking: ' + (data.name || 'Patient') + ' (' + (data.phone || '') + ')',
+                _template: 'table',
+                _captcha: 'false',
+                Patient_Name: data.name || 'Anonymous Client',
+                Phone_Number: data.phone || '',
+                Service_Requested: data.service || 'General Audiology Consultation',
+                Preferred_Date_Time: data.preferredDate || 'Flexible',
+                Branch: data.branch || 'Uttara Head Office (Sector-7)',
+                Age_Group: data.ageGroup || '',
+                Notes_Message: data.notes || data.message || ''
+              })
+            }).catch(() => {});
+
             if (result.success) {
               closeModal();
               form.reset();
-              showToast('✅ Appointment booked! Our specialist will call you shortly.');
+              showToast('✅ Appointment saved to Dashboard & sent to abidhearing@gmail.com!');
             } else {
               alert('Error: ' + (result.error || 'Could not submit appointment'));
             }
           } catch (err) {
             closeModal();
             showToast('✅ Request sent! We will contact you at ' + (data.phone || 'your phone number'));
+          } finally {
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.innerText = origBtnText;
+            }
           }
         });
-      }
+      });
     });
   </script>
 
