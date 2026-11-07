@@ -7,7 +7,7 @@
    - Soft: #EEF6FF (Clinical Soft Blue Tint)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+/* Google Fonts loaded asynchronously in header.ejs for zero render-blocking */
 
 :root {
   /* Official Abid Logo Color Palette */
@@ -60,7 +60,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
 }
@@ -464,19 +463,11 @@ button, input, select, textarea {
 }
 
 .ahcc-ps-viewport {
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+  position: relative;
   padding: 8px 4px 20px;
   outline: none;
-}
-
-.ahcc-ps-viewport::-webkit-scrollbar {
-  display: none;
+  touch-action: pan-y;
 }
 
 .ahcc-ps-track {
@@ -485,6 +476,8 @@ button, input, select, textarea {
   flex-wrap: nowrap !important;
   gap: 16px !important;
   align-items: stretch;
+  transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
 }
 
 .ahcc-ps a.ahcc-ps-card {
@@ -492,7 +485,6 @@ button, input, select, textarea {
   width: 170px !important;
   min-width: 170px !important;
   max-width: 170px !important;
-  scroll-snap-align: start;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;

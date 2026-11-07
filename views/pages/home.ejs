@@ -40,10 +40,14 @@
 
       <div class="ahcc-ps-viewport" tabindex="0">
         <div class="ahcc-ps-track">
-          <% (typeof heroProducts !== 'undefined' ? heroProducts : featuredProducts).forEach(prod => { %>
+          <% (typeof heroProducts !== 'undefined' ? heroProducts : featuredProducts).forEach((prod, idx) => { %>
             <a class="ahcc-ps-card" href="/product/<%= prod.slug %>" title="<%= prod.name %>" draggable="false">
               <span class="ahcc-ps-img">
-                <img src="<%= prod.image %>" alt="<%= prod.altText || (prod.name + ' – Digital Hearing Aid Abid Hearing Care Centre Bangladesh') %>" loading="eager" draggable="false">
+                <% if (idx < 4) { %>
+                  <img src="<%= prod.image %>" alt="<%= prod.altText || (prod.name + ' – Digital Hearing Aid Abid Hearing Care Centre Bangladesh') %>" width="150" height="150" loading="eager" <%- idx === 0 ? 'fetchpriority="high"' : '' %> decoding="async" draggable="false">
+                <% } else { %>
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<%= prod.image %>" alt="<%= prod.altText || (prod.name + ' – Digital Hearing Aid Abid Hearing Care Centre Bangladesh') %>" width="150" height="150" loading="lazy" decoding="async" draggable="false">
+                <% } %>
               </span>
             </a>
           <% }) %>
@@ -286,7 +290,7 @@
         <div class="product-card">
           <div class="product-thumb">
             <span class="product-brand-tag"><%= prod.brand || 'Phonak' %></span>
-            <img src="<%= prod.image %>" alt="<%= prod.altText || (prod.name + ' - Abid Hearing Care Centre') %>" loading="lazy">
+            <img src="<%= prod.image %>" alt="<%= prod.altText || (prod.name + ' - Abid Hearing Care Centre') %>" width="220" height="200" loading="lazy" decoding="async">
           </div>
           <div class="product-body">
             <div class="product-type"><%= prod.category || 'Digital Hearing Aid' %></div>
@@ -379,7 +383,7 @@
           <button class="btn btn-primary btn-sm" data-open-appointment="uttara">Book Consultation at Uttara</button>
         </div>
         <div class="clinic-map-wrap">
-          <iframe title="Abid Hearing Care Centre Location" src="https://maps.google.com/maps?q=Abid+Hearing+Care+Center+Sector+7+Uttara+Dhaka&amp;hl=en&amp;z=16&amp;output=embed" loading="lazy"></iframe>
+          <iframe title="Abid Hearing Care Centre Location" data-src="https://maps.google.com/maps?q=Abid+Hearing+Care+Center+Sector+7+Uttara+Dhaka&amp;hl=en&amp;z=16&amp;output=embed" src="about:blank" loading="lazy"></iframe>
         </div>
       </div>
     </div>
@@ -387,45 +391,86 @@
 </section>
 
 
-<!-- Continuous Hero Product Carousel Script -->
+<!-- Continuous Hero Product Carousel Script (Composited Transform, Zero LCP Scroll Invalidation) -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
+    // Lazy-load Google Maps iframe only when user scrolls near the clinic section
+    const mapIframe = document.querySelector('.clinic-map-wrap iframe[data-src]');
+    if (mapIframe && 'IntersectionObserver' in window) {
+      const mapObs = new IntersectionObserver(function(entries, obs) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            mapIframe.src = mapIframe.getAttribute('data-src');
+            mapIframe.removeAttribute('data-src');
+            obs.disconnect();
+          }
+        });
+      }, { rootMargin: '250px' });
+      mapObs.observe(mapIframe);
+    } else if (mapIframe) {
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          mapIframe.src = mapIframe.getAttribute('data-src');
+        }, 3000);
+      });
+    }
+
     const el = document.querySelector('.ahcc-ps');
     if (!el) return;
 
     const vp = el.querySelector('.ahcc-ps-viewport');
+    const track = el.querySelector('.ahcc-ps-track');
     const prev = el.querySelector('.ahcc-ps-prev');
     const next = el.querySelector('.ahcc-ps-next');
     const cards = el.querySelectorAll('.ahcc-ps-card');
-    if (!vp || !cards.length) return;
+    if (!vp || !track || !cards.length) return;
 
-    const speed = parseInt(el.getAttribute('data-speed'), 10) || 2500;
+    const speed = parseInt(el.getAttribute('data-speed'), 10) || 2800;
+    let currentIndex = 0;
     let timer = null;
     let resumeTimer = null;
+
+    function loadCardImage(idx) {
+      if (idx < 0 || idx >= cards.length) return;
+      const img = cards[idx].querySelector('img[data-src]');
+      if (img) {
+        img.src = img.getAttribute('data-src');
+        img.removeAttribute('data-src');
+      }
+    }
+
+    function preloadNearbyImages() {
+      for (let i = currentIndex; i <= currentIndex + 5 && i < cards.length; i++) {
+        loadCardImage(i);
+      }
+    }
 
     function step() {
       return cards.length > 1 ? (cards[1].offsetLeft - cards[0].offsetLeft) : 186;
     }
 
-    function atEnd() {
-      return vp.scrollLeft + vp.clientWidth >= vp.scrollWidth - 10;
+    function maxIndex() {
+      const s = step();
+      const maxOffset = Math.max(0, track.scrollWidth - vp.clientWidth);
+      return Math.max(0, Math.ceil(maxOffset / s));
+    }
+
+    function renderOffset() {
+      const s = step();
+      const maxOff = Math.max(0, track.scrollWidth - vp.clientWidth);
+      const offset = Math.min(currentIndex * s, maxOff);
+      track.style.transform = 'translate3d(' + (-offset) + 'px, 0, 0)';
     }
 
     function go(dir) {
-      const s = step();
+      const maxIdx = maxIndex();
       if (dir > 0) {
-        if (atEnd()) {
-          vp.scrollTo({ left: 0, behavior: 'smooth' });
-        } else {
-          vp.scrollBy({ left: s, behavior: 'smooth' });
-        }
+        currentIndex = currentIndex >= maxIdx ? 0 : currentIndex + 1;
       } else {
-        if (vp.scrollLeft <= 10) {
-          vp.scrollTo({ left: vp.scrollWidth, behavior: 'smooth' });
-        } else {
-          vp.scrollBy({ left: -s, behavior: 'smooth' });
-        }
+        currentIndex = currentIndex <= 0 ? maxIdx : currentIndex - 1;
       }
+      preloadNearbyImages();
+      renderOffset();
     }
 
     function stop() {
@@ -459,15 +504,35 @@
       });
     }
 
-    el.addEventListener('mouseenter', stop);
+    let touchStartX = 0;
+    el.addEventListener('mouseenter', function() {
+      preloadNearbyImages();
+      stop();
+    });
     el.addEventListener('mouseleave', start);
-    el.addEventListener('touchstart', stop, { passive: true });
-    el.addEventListener('touchend', function() {
+    el.addEventListener('touchstart', function(e) {
+      preloadNearbyImages();
+      if (e.touches && e.touches[0]) touchStartX = e.touches[0].clientX;
+      stop();
+    }, { passive: true });
+    el.addEventListener('touchend', function(e) {
+      if (e.changedTouches && e.changedTouches[0] && touchStartX) {
+        const dx = touchStartX - e.changedTouches[0].clientX;
+        if (Math.abs(dx) > 30) {
+          go(dx > 0 ? 1 : -1);
+        }
+      }
       clearTimeout(resumeTimer);
       resumeTimer = setTimeout(start, 3500);
     }, { passive: true });
 
-    start();
+    // Start carousel after window load so initial LCP & page metrics settle cleanly
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        preloadNearbyImages();
+        start();
+      }, 3500);
+    });
   });
 </script>
 

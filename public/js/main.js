@@ -305,44 +305,60 @@ function initAppointmentForms() {
 }
 
 
-// 6. Hero Product Slider Carousel (Continuous Side-to-Side Scroll)
+// 6. Hero Product Slider Carousel (Continuous Side-to-Side Composited Transform)
 function initHeroCarousel() {
   const el = document.querySelector('.ahcc-ps');
-  if (!el) return;
+  if (!el || el.dataset.initialized) return;
+  el.dataset.initialized = '1';
 
   const vp = el.querySelector('.ahcc-ps-viewport');
+  const track = el.querySelector('.ahcc-ps-track');
   const prev = el.querySelector('.ahcc-ps-prev');
   const next = el.querySelector('.ahcc-ps-next');
   const cards = el.querySelectorAll('.ahcc-ps-card');
-  if (!vp || !cards.length) return;
+  if (!vp || !track || !cards.length) return;
 
   const speed = parseInt(el.getAttribute('data-speed'), 10) || 2500;
+  let currentIndex = 0;
   let timer = null;
   let resumeTimer = null;
+  let deferredLoaded = false;
 
-  function step() {
-    return cards.length > 1 ? (cards[1].offsetLeft - cards[0].offsetLeft) : 220;
+  function loadDeferredImages() {
+    if (deferredLoaded) return;
+    deferredLoaded = true;
+    el.querySelectorAll('img[data-src]').forEach(img => {
+      img.src = img.getAttribute('data-src');
+      img.removeAttribute('data-src');
+    });
   }
 
-  function atEnd() {
-    return vp.scrollLeft + vp.clientWidth >= vp.scrollWidth - 10;
+  function step() {
+    return cards.length > 1 ? (cards[1].offsetLeft - cards[0].offsetLeft) : 186;
+  }
+
+  function maxIndex() {
+    const s = step();
+    const maxOffset = Math.max(0, track.scrollWidth - vp.clientWidth);
+    return Math.max(0, Math.ceil(maxOffset / s));
+  }
+
+  function renderOffset() {
+    const s = step();
+    const maxOff = Math.max(0, track.scrollWidth - vp.clientWidth);
+    const offset = Math.min(currentIndex * s, maxOff);
+    track.style.transform = `translate3d(${-offset}px, 0, 0)`;
   }
 
   function go(dir) {
-    const s = step();
+    loadDeferredImages();
+    const maxIdx = maxIndex();
     if (dir > 0) {
-      if (atEnd()) {
-        vp.scrollTo({ left: 0, behavior: 'smooth' });
-      } else {
-        vp.scrollBy({ left: s, behavior: 'smooth' });
-      }
+      currentIndex = currentIndex >= maxIdx ? 0 : currentIndex + 1;
     } else {
-      if (vp.scrollLeft <= 10) {
-        vp.scrollTo({ left: vp.scrollWidth, behavior: 'smooth' });
-      } else {
-        vp.scrollBy({ left: -s, behavior: 'smooth' });
-      }
+      currentIndex = currentIndex <= 0 ? maxIdx : currentIndex - 1;
     }
+    renderOffset();
   }
 
   function stop() {
@@ -376,13 +392,24 @@ function initHeroCarousel() {
     });
   }
 
-  el.addEventListener('mouseenter', stop);
+  el.addEventListener('mouseenter', () => {
+    loadDeferredImages();
+    stop();
+  });
   el.addEventListener('mouseleave', start);
-  el.addEventListener('touchstart', stop, { passive: true });
+  el.addEventListener('touchstart', () => {
+    loadDeferredImages();
+    stop();
+  }, { passive: true });
   el.addEventListener('touchend', () => {
     clearTimeout(resumeTimer);
     resumeTimer = setTimeout(start, 3500);
   }, { passive: true });
 
-  start();
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      loadDeferredImages();
+      start();
+    }, 1500);
+  });
 }
